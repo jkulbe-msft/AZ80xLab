@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.1" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+    <policyNamespaces>
+        <target prefix="terminalServer-AVD" namespace="Microsoft.Policies.TerminalServer-AVD" />
+        <using prefix="terminalserver" namespace="Microsoft.Policies.TerminalServer" />
+    </policyNamespaces>
+    <resources minRequiredRevision="1.0" />
+
+    <supportedOn>
+        <definitions>
+            <definition name="AVD_SUPPORTED" displayName="$(string.AVD_SUPPORTED)" />
+        </definitions>
+    </supportedOn>
+    <categories>
+        <category name="AVD_GP_NODE" displayName="$(string.AVD_GP_NODE)" explainText="$(string.AVD_User_Help)">
+            <parentCategory ref="terminalserver:TS_TERMINAL_SERVER" />
+        </category>
+    </categories>
+    <policies>
+
+        <!-- Graphics Policies -->
+
+        <policy name="AVD_SERVER_SCREEN_CAPTURE_PROTECTION" class="Machine" displayName="$(string.AVD_SERVER_SCREEN_CAPTURE_PROTECTION)" explainText="$(string.AVD_SERVER_SCREEN_CAPTURE_PROTECTION_EXPLAIN)" key="SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services" valueName="fEnableScreenCaptureProtect">
+            <parentCategory ref="AVD_GP_NODE" />
+            <supportedOn ref="AVD_SUPPORTED" />
+            <enabledValue>
+                <decimal value="1" />
+            </enabledValue>
+            <disabledValue>
+                <decimal value="0" />
+            </disabledValue>
+        </policy>
+
+        <!-- Transport Policies -->
+
+        <policy name="AVD_SERVER_UDP_PORT_REDIRECTOR" class="Machine" displayName="$(string.AVD_SERVER_UDP_PORT_REDIRECTOR)" presentation="$(presentation.AVD_SERVER_UDP_PORT_REDIRECTOR)" explainText="$(string.AVD_SERVER_UDP_PORT_REDIRECTOR_EXPLAIN)" key="SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services" valueName="fUseUdpPortRedirector">
+            <parentCategory ref="AVD_GP_NODE" />
+            <supportedOn ref="AVD_SUPPORTED" />
+            <enabledValue>
+                <decimal value="1" />
+            </enabledValue>
+            <disabledValue>
+                <decimal value="0" />
+            </disabledValue>
+            <elements>
+                <decimal id="Part_UdpRedirectorPort" valueName="UdpRedirectorPort" minValue="1024" maxValue="65535" storeAsText="false" />
+            </elements>
+        </policy>
+    </policies>
+</policyDefinitions>
