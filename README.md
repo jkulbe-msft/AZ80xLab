@@ -21,14 +21,14 @@ Storage Spaces Direct Cluster nodes with Hyper-V role forming cluster S2D1.
 Hyper-V is configured and a VM is pre-created on the Cluster Shared Volume. To use the VM, start it to complete setup, eject the DVD and import the machine as a cluster role in Hyper-V, e.g. to demo Live Migration.
 
 # Azure preparation instructions
-- deploy the Bicep file to a resource group of your choice, example in PowerShell:
+Deploy the Bicep file to a resource group of your choice, example in PowerShell:
 ```PowerShell
 Install-Module Az
 Connect-AzAccount
 New-AzResourceGroup -Name "AZ80xLab" -Location westeurope
 New-AzResourceGroupDeployment -Name "AZ80xLab" -ResourceGroupName "AZ80xLab" -TemplateFile .\HyperV.bicep
 ```
-This willl set up a virtual machine in Azure capable of running Hyper-V, downlaod the AutomatedLab module and prepare it with a Windows Sevrer 2022 Evaluation image. It will also clone this repository into C:\git\AZ80xLab. 
+This willl set up a virtual machine in Azure capable of running Hyper-V, download the AutomatedLab module and prepare it with a Windows Sevrer 2022 Evaluation image. It will also clone this repository into C:\git\AZ80xLab. 
 
 After deployment, connect to the VM, launch PowerShell as administrator and launch C:\git\AZ80xLab\AZ80x.ps1. Note: while creating the external switch in Hyper-V, you will lose the RDP connection and need to reconnect. Follw Lab setup instructions (below) from this point
 
