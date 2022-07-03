@@ -4,7 +4,7 @@ param(
 
 $labName = 'AZ80x',
 
-$vmpath = "D:\$labname",
+$vmpath = "E:\$labname",
 
 $domainName = 'contoso.com',
 
