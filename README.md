@@ -40,9 +40,9 @@ After deployment, connect to the VM, launch PowerShell as administrator and laun
 Start-BitsTransfer -Destination C:\LabSources\ISOs\WindowsServer2022Eval.iso -Source 'https://go.microsoft.com/fwlink/p/?LinkID=2195280&clcid=0x409&culture=en-us&country=US'
 ```
 # Lab setup instructions
-After preparation, run AZ80x.ps1. The script will prompt for a user name and password to be used for the environment. You can specify further parameters (TODO: add help), e.g. 
+After preparation, run AZ80x.ps1. The script will prompt for a user name and password to be used for the environment. You can specify further parameters in the header of the script, e.g. paths. (TODO: add help and make headers into parameters)
 ```PowerShell
-AZ80x.ps1 -DomainName litware.local -VMPath D:\MyLab -LabName MyLab
+AZ80x.ps1
 ```
 To entirely remove the lab environment run the following. Replace AZ80x with your own lab name if you specified one.
 ```PowerShell

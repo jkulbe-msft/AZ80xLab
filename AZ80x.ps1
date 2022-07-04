@@ -1,32 +1,22 @@
 #Requires -RunAsAdministrator
 
-param(
+$labName = 'AZ80x'
 
-$labName = 'AZ80x',
+$vmpath = "E:\$labname"
 
-$vmpath = "E:\$labname",
+$domainName = 'contoso.com'
 
-$domainName = 'contoso.com',
+$osName = 'Windows Server 2022 Datacenter Evaluation'
 
-$osName = 'Windows Server 2022 Datacenter Evaluation',
-
-$osNameWithDesktop = 'Windows Server 2022 Datacenter Evaluation (Desktop Experience)',
+$osNameWithDesktop = 'Windows Server 2022 Datacenter Evaluation (Desktop Experience)'
 
 $cred = (Get-Credential -Message 'Enter user name and password for lab machines')
 
-)
 
 $iso = (Get-LabAvailableOperatingSystem | where OperatingSystemName -like $osNameWithDesktop).IsoPath
 
 $username = $cred.UserName
 $passwd = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto([System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($cred.Password))
-
-If (!(Get-VMSwitch -Name 'NATSwitch' -ErrorAction SilentlyContinue))
-{
-    New-VMSwitch -SwitchName 'NATSwitch' -SwitchType Internal
-    New-NetIPAddress -IPAddress 192.168.51.1 -PrefixLength 24 -InterfaceAlias 'vEthernet (NATSwitch)'
-    New-NetNAT -Name 'NATNetwork' -InternalIPInterfaceAddressPrefix 192.168.51.0/24
-}
 
 If (!(Get-VMSwitch -Name 'External' -ErrorAction SilentlyContinue))
 {
@@ -36,13 +26,11 @@ If (!(Get-VMSwitch -Name 'External' -ErrorAction SilentlyContinue))
 New-LabDefinition -Name $labname -DefaultVirtualizationEngine HyperV -VmPath $vmpath
 
 Add-LabVirtualNetworkDefinition -Name $labname -AddressSpace '192.168.50.0/24'
-#Add-LabVirtualNetworkDefinition -Name 'External' -HyperVProperties @{ SwitchType = 'External'; AdapterName = ((Get-NetRoute -DestinationPrefix 0.0.0.0/0).InterfaceAlias) }
 Add-LabVirtualNetworkDefinition -Name 'External'
 
 $netAdapter = @()
 $netAdapter += New-LabNetworkAdapterDefinition -VirtualSwitch $labname
 $netAdapter += New-LabNetworkAdapterDefinition -VirtualSwitch 'External' -UseDhcp
-#$netAdapter += New-LabNetworkAdapterDefinition -VirtualSwitch 'NATSwitch'  -Ipv4Address 192.168.51.2 -Ipv4Gateway 192.168.51.1 
 
 #defining default parameter values, as these ones are the same for all the machines
 $PSDefaultParameterValues = @{
