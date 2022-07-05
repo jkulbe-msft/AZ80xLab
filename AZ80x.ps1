@@ -38,7 +38,7 @@ $PSDefaultParameterValues = @{
     'Add-LabMachineDefinition:Memory' = 2GB
     #'Add-LabMachineDefinition:MinMemory' = 1GB
     #'Add-LabMachineDefinition:MaxMemory' = 8GB
-    'Add-LabMachineDefinition:EnableWindowsFirewall' = $true
+    #'Add-LabMachineDefinition:EnableWindowsFirewall' = $true
     'Add-LabMachineDefinition:Processors' = 2
     'Add-LabMachineDefinition:OperatingSystem' = $osName
 }
