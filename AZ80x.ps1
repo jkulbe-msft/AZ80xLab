@@ -2,7 +2,7 @@
 
 $labName = 'AZ80x'
 
-$vmpath = "E:\$labname"
+$vmpath = "F:\$labname"
 
 $domainName = 'contoso.com'
 
@@ -12,25 +12,28 @@ $osNameWithDesktop = 'Windows Server 2022 Datacenter Evaluation (Desktop Experie
 
 $cred = (Get-Credential -Message 'Enter user name and password for lab machines')
 
-
 $iso = (Get-LabAvailableOperatingSystem | where OperatingSystemName -like $osNameWithDesktop).IsoPath
 
 $username = $cred.UserName
 $passwd = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto([System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($cred.Password))
 
+Enable-LabHostRemoting -Force
+
+<#
 If (!(Get-VMSwitch -Name 'External' -ErrorAction SilentlyContinue))
 {
     New-VMSwitch -SwitchName 'External' -NetAdapterName (Get-NetRoute -DestinationPrefix 0.0.0.0/0).InterfaceAlias -AllowManagementOS:$true
 }
+#>
 
 New-LabDefinition -Name $labname -DefaultVirtualizationEngine HyperV -VmPath $vmpath
 
 Add-LabVirtualNetworkDefinition -Name $labname -AddressSpace '192.168.50.0/24'
-Add-LabVirtualNetworkDefinition -Name 'External'
+Add-LabVirtualNetworkDefinition -Name 'NestedSwitch'
 
 $netAdapter = @()
 $netAdapter += New-LabNetworkAdapterDefinition -VirtualSwitch $labname
-$netAdapter += New-LabNetworkAdapterDefinition -VirtualSwitch 'External' -UseDhcp
+$netAdapter += New-LabNetworkAdapterDefinition -VirtualSwitch 'NestedSwitch' -UseDhcp
 
 #defining default parameter values, as these ones are the same for all the machines
 $PSDefaultParameterValues = @{
@@ -52,14 +55,14 @@ Add-LabMachineDefinition -Name 'DC1' -Roles RootDC,Routing -NetworkAdapter $netA
 # Admin server
 Add-LabDiskDefinition -Name 'ADM1-Data' -DiskSizeInGb 10 -Label 'Data' -DriveLetter S
 Add-LabDiskDefinition -Name 'ADM1-Logs' -DiskSizeInGb 10 -Label 'Logs' -DriveLetter L
-Add-LabMachineDefinition -Name 'ADM1' -Roles CARoot,WindowsAdminCenter,FileServer -IsDomainJoined -Network $labname -OperatingSystem $osNameWithDesktop -DiskName 'ADM1-Data','ADM1-Logs' -MinMemory 1GB -MaxMemory 8GB
+Add-LabMachineDefinition -Name 'ADM1' -Roles CARoot,WindowsAdminCenter,FileServer -IsDomainJoined -Network $labname -OperatingSystem $osNameWithDesktop -DiskName 'ADM1-Data','ADM1-Logs' -MinMemory 1GB -MaxMemory 8GB -Gateway 192.168.50.3
 
 # file server
 Add-LabDiskDefinition -Name 'SRV1-Data' -DiskSizeInGb 10 -Label 'Data' -DriveLetter S
 Add-LabDiskDefinition -Name 'SRV1-Logs' -DiskSizeInGb 10 -Label 'Logs' -DriveLetter L
 Add-LabDiskDefinition -Name 'SRV1-Dedup' -DiskSizeInGb 10 -Label 'Dedup' -DriveLetter D
 Add-LabDiskDefinition -Name 'SRV1-iSCSI' -DiskSizeInGb 40 -Label 'iSCSI' -DriveLetter I
-Add-LabMachineDefinition -Name 'SRV1' -Roles FileServer -IsDomainJoined -Network $labname -DiskName 'SRV1-Data','SRV1-Logs','SRV1-Dedup','SRV1-iSCSI' -MinMemory 512MB -MaxMemory 4GB
+Add-LabMachineDefinition -Name 'SRV1' -Roles FileServer -IsDomainJoined -Network $labname -DiskName 'SRV1-Data','SRV1-Logs','SRV1-Dedup','SRV1-iSCSI' -MinMemory 512MB -MaxMemory 4GB -Gateway 192.168.50.3
 
 
 # S2D cluster
@@ -67,11 +70,11 @@ Add-LabMachineDefinition -Name 'SRV1' -Roles FileServer -IsDomainJoined -Network
     Add-LabDiskDefinition -Name "S2D-Disk1-$($_)" -DiskSizeInGb 25 -SkipInitialize
     Add-LabDiskDefinition -Name "S2D-Disk2-$($_)" -DiskSizeInGb 25 -SkipInitialize
 }
-Add-LabMachineDefinition -Name 'S2D1-01' -Roles HyperV -IsDomainJoined -Network $labname -DiskName 'S2D-Disk1-1','S2D-Disk1-2','S2D-Disk1-3' -Memory 4GB
-Add-LabMachineDefinition -Name 'S2D1-02' -Roles HyperV -IsDomainJoined -Network $labname -DiskName 'S2D-Disk2-1','S2D-Disk2-2','S2D-Disk2-3' -Memory 4GB
+Add-LabMachineDefinition -Name 'S2D1-01' -Roles HyperV -IsDomainJoined -Network $labname -DiskName 'S2D-Disk1-1','S2D-Disk1-2','S2D-Disk1-3' -Memory 4GB -Gateway 192.168.50.3
+Add-LabMachineDefinition -Name 'S2D1-02' -Roles HyperV -IsDomainJoined -Network $labname -DiskName 'S2D-Disk2-1','S2D-Disk2-2','S2D-Disk2-3' -Memory 4GB -Gateway 192.168.50.3
 
-Add-LabMachineDefinition -Name 'CL1-01' -Network $labname -IsDomainJoined -MinMemory 512MB -MaxMemory 4GB
-Add-LabMachineDefinition -Name 'CL1-02' -Network $labname -IsDomainJoined -MinMemory 512MB -MaxMemory 4GB
+Add-LabMachineDefinition -Name 'CL1-01' -Network $labname -IsDomainJoined -MinMemory 512MB -MaxMemory 4GB -Gateway 192.168.50.3
+Add-LabMachineDefinition -Name 'CL1-02' -Network $labname -IsDomainJoined -MinMemory 512MB -MaxMemory 4GB -Gateway 192.168.50.3
 
 Install-Lab -DelayBetweenComputers 180
 

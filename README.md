@@ -1,6 +1,89 @@
 # AZ80xLab
 playground environment for AZ80x
 
+# Hyper-V Host Virtual Machine with nested VMs.
+
+This template will automate the deployment of a Virtual Machine to be a Hyper-V Host to be used for nested virtualization. Nested Virtual Machines will be able to communicate out to the internet and to other resources on your network.
+
+The setup is completed based on the procedure from the article [Nested VMs in Azure Virtual Networks](https://docs.microsoft.com/virtualization/hyper-v-on-windows/user-guide/nested-virtualization-azure-virtual-network)
+
+This template creates the following resources by default:
+
++    Virtual Network with four Subnets
++    Virtual Machine to be the Hyper-V Host
++    Public IP Address for remote access to Hyper-V Host
++    Network Security Groups with Default Rules
++    Route Table for Azure Virtual Machines to communicate with nested Virtual Machines
++    DSC Extension to install Windows Features
++    Custom Script Extension to configure Hyper-V Server
+
+Click the button below to deploy from the portal:
+
+[![Deploy To Azure](https://raw.githubusercontent.com/jkulbe-msft/AZ80xLab/main/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fjkulbe-msft%2FAZ80xLab%2Fmain%2Fazuredeploy.json)
+[![Visualize](https://raw.githubusercontent.com/jkulbe-msft/AZ80xLab/main/images/visualizebutton.svg?sanitize=true)](http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fjkulbe-msft%2FAZ80xLab%2Fmain%2Fazuredeploy.json)
+
+## Final Configuration
+
+The environment in this guide has the below configurations. This section is intended to be used as a reference.
+
+1. Azure Virtual Network Information.
+    + VNet High Level Configuration.
+        + Name: Nested-Fun
+        + Address Space: 10.0.0.0/22
+        + Note: This will be made up of four Subnets. Also, these ranges are not set in stone. Feel free to address your environment however you want.
+
+    + First Subnet High Level Configuration.
+        + Name: NAT
+        + Address Space: 10.0.0.0/24
+        + Note: This is where our Hyper-V hosts primary NIC resides. This will be used to handle outbound NAT for the nested VMs. It will be the gateway to the internet for your nested VMs.
+
+    + Second Subnet High Level Configuration.
+        + Name: Hyper-V-LAN
+        + Address Space: 10.0.1.0/24
+        + Note:  Our Hyper-V host will have a second NIC that will be used to handle the routing between the nested VMs and non-internet resources external to the Hyper-V host.
+
+    + Third Subnet High Level Configuration.
+        + Name: Ghosted
+        + Address Space: 10.0.2.0/24
+        + Note:  This will be a “floating” subnet. The address space will be consumed by our nested VMs and exists to handle route advertisements back to on-premises. No VMs will actually be deployed into this subnet.
+
+    + Fourth Subnet High Level Configuration.
+        + Name: Azure-VMs
+        + Address Space: 10.0.3.0/24
+        + Note: Subnet containing Azure VMs.
+
+2. Our Hyper-V host has the below NIC configurations.
+    + Primary NIC
+        + IP Address: 10.0.0.4
+        + Subnet Mask: 255.255.255.0
+        + Default Gateway: 10.0.0.1
+        + DNS: Configured for DHCP
+        + IP Forwarding Enabled: No
+
+    + Secondary NIC
+        + IP Address: 10.0.1.4
+        + Subnet Mask: 255.255.255.0
+        + Default Gateway: Empty
+        + DNS: Configured for DHCP
+        + IP Forwarding Enabled: Yes
+
+    + Hyper-V Created NIC for Internal Virtual Switch
+        + IP Address: 10.0.2.1
+        + Subnet Mask: 255.255.255.0
+        + Default Gateway: Empty
+
+3. Our Route Table will have a single rule.
+    + Rule 1
+        + Name: Nested-VMs
+        + Destination: 10.0.2.0/24
+        + Next Hop: Virtual Appliance - 10.0.1.4
+
+## Post Deployment Steps
+
+Once the deployment is complete to access your Hyper-V Host an inbound security rule will need to be created on your NAT Subnet NSG.
+
+Beyond this the solution does support network communication between on-premises resources and the nested virtual machines. To achieve this route tables will need to be created on the GatewaySubnet and additional routes created in RRAS on the Hyper-V Host
+
 # Description
 You can use this set of scripts to deploy a lab environment for AZ800/AZ-801 powered by AutomatedLab (https://automatedlab.org/en/latest/). 
 ## Environment
@@ -20,25 +103,8 @@ Cluster nodes forming a failover cluster (CLUSTER1), using 3 iSCSI disks offered
 Storage Spaces Direct Cluster nodes with Hyper-V role forming cluster S2D1. 
 Hyper-V is configured and a VM is pre-created on the Cluster Shared Volume. To use the VM, start it to complete setup, eject the DVD and import the machine as a cluster role in Hyper-V, e.g. to demo Live Migration.
 
-# Azure preparation instructions
-Deploy the Bicep file to a resource group of your choice, example in PowerShell:
-```PowerShell
-Install-Module Az
-Connect-AzAccount
-New-AzResourceGroup -Name "AZ80xLab" -Location westeurope
-New-AzResourceGroupDeployment -Name "AZ80xLab" -ResourceGroupName "AZ80xLab" -TemplateFile .\HyperV.bicep
-```
-This willl set up a virtual machine in Azure capable of running Hyper-V, download the AutomatedLab module and prepare it with a Windows Sevrer 2022 Evaluation image. It will also clone this repository into C:\git\AZ80xLab. 
-
 After deployment, connect to the VM, launch PowerShell as administrator and launch C:\git\AZ80xLab\AZ80x.ps1. Note: while creating the external switch in Hyper-V, you will lose the RDP connection and need to reconnect. Follw Lab setup instructions (below) from this point
 
-# Local preparation instructions
-- Run PowerShell as an admin
-- install the AutomatedLab module (install-module AutomatedLab)
-- download ISO files as required and store them in C:\Labsources\ISO. To get an Evaluation version of Windows Sevrer 2022, run 
-```PowerShell
-Start-BitsTransfer -Destination C:\LabSources\ISOs\WindowsServer2022Eval.iso -Source 'https://go.microsoft.com/fwlink/p/?LinkID=2195280&clcid=0x409&culture=en-us&country=US'
-```
 # Lab setup instructions
 After preparation, run AZ80x.ps1. The script will prompt for a user name and password to be used for the environment. You can specify further parameters in the header of the script, e.g. paths. (TODO: add help and make headers into parameters)
 ```PowerShell
