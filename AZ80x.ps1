@@ -74,7 +74,7 @@ Add-LabMachineDefinition -Name 'S2D1-02' -Roles HyperV -IsDomainJoined -Network 
 Add-LabMachineDefinition -Name 'CL1-01' -Network $labname -IsDomainJoined -MinMemory 512MB -MaxMemory 4GB -Gateway 192.168.50.3
 Add-LabMachineDefinition -Name 'CL1-02' -Network $labname -IsDomainJoined -MinMemory 512MB -MaxMemory 4GB -Gateway 192.168.50.3
 
-Install-Lab -DelayBetweenComputers 180
+Install-Lab -DelayBetweenComputers 120
 
 # Features
 $dcjob = Install-LabWindowsFeature -FeatureName RSAT -ComputerName 'DC1' -IncludeAllSubFeature -IncludeManagementTools
@@ -236,7 +236,7 @@ Restart-LabVM -ComputerName S2D1-01,S2D1-02
 Copy-LabFileItem -Path 'C:\LabSources\ISOs\WindowsServer2022Eval.iso' -ComputerName 'S2D1-01' -DestinationFolderPath C:\iso
 Invoke-LabCommand -ActivityName "configure S2D cluster" -ComputerName 'S2D1-01' -ScriptBlock {
     New-VM -Name 'ClusteredVM' -MemoryStartupBytes 2GB -NewVHDPath 'C:\ClusterStorage\CSV\ClusteredVM.vhdx' -NewVHDSizeBytes 45GB -Generation 2 -Path 'C:\ClusterStorage\CSV\'
-    Add-VMDvdDrive -VMName 'ClusteredVM' -Path 'C:\LabSources\ISOs\WindowsServer2022Eval.iso'
+    Add-VMDvdDrive -VMName 'ClusteredVM' -Path 'C:\iso\WindowsServer2022Eval.iso'
     Get-VM -Name 'ClusteredVM' | Set-VM -ProcessorCount 2
 }
 
