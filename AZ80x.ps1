@@ -1,21 +1,19 @@
 #Requires -RunAsAdministrator
 
 $labName = 'AZ80x'
-
 $vmpath = "F:\$labname"
 
-$domainName = 'contoso.com'
+# $domainName = 'contoso.com'
 
 $osName = 'Windows Server 2022 Datacenter Evaluation'
-
 $osNameWithDesktop = 'Windows Server 2022 Datacenter Evaluation (Desktop Experience)'
 
-$cred = (Get-Credential -Message 'Enter user name and password for lab machines')
+# $cred = (Get-Credential -Message 'Enter user name and password for lab machines')
 
-$iso = (Get-LabAvailableOperatingSystem | where OperatingSystemName -like $osNameWithDesktop).IsoPath
+# $iso = (Get-LabAvailableOperatingSystem | where OperatingSystemName -like $osNameWithDesktop).IsoPath
 
-$username = $cred.UserName
-$passwd = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto([System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($cred.Password))
+#$username = $cred.UserName
+# $passwd = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto([System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($cred.Password))
 
 Enable-LabHostRemoting -Force
 
@@ -37,7 +35,7 @@ $netAdapter += New-LabNetworkAdapterDefinition -VirtualSwitch 'NestedSwitch' -Us
 
 #defining default parameter values, as these ones are the same for all the machines
 $PSDefaultParameterValues = @{
-    'Add-LabMachineDefinition:DomainName' = $domainName
+    'Add-LabMachineDefinition:DomainName' = 'contoso.com'
     'Add-LabMachineDefinition:Memory' = 2GB
     #'Add-LabMachineDefinition:MinMemory' = 1GB
     #'Add-LabMachineDefinition:MaxMemory' = 8GB
@@ -46,8 +44,8 @@ $PSDefaultParameterValues = @{
     'Add-LabMachineDefinition:OperatingSystem' = $osName
 }
 
-Add-LabDomainDefinition -Name $domainName -AdminUser $username -AdminPassword $passwd
-Set-Labinstallationcredential -Username $username -Password $passwd
+#Add-LabDomainDefinition -Name 'contoso.com' -AdminUser $username -AdminPassword $passwd
+#Set-Labinstallationcredential -Username $username -Password $passwd
 
 # Domain Controller
 Add-LabMachineDefinition -Name 'DC1' -Roles RootDC,Routing -NetworkAdapter $netAdapter -MinMemory 512MB -MaxMemory 4GB
@@ -100,15 +98,16 @@ Wait-LWLabJob -Job $wacjob -ProgressIndicator 10 -NoDisplay -PassThru
 Get-LabVM | ? Name -ne 'dc1' | Restart-LabVM -Wait
 
 # AD setup
-Invoke-LabCommand -ActivityName "OUs part 1" -ComputerName DC1 -ScriptBlock { New-ADOrganizationalUnit -Name "Resources" -Path "DC=$(($using:domainName -split "\.")[-2]),DC=$(($using:domainName -split "\.")[-1])" } -Variable $domainName
-Invoke-LabCommand -ActivityName "OUs part 2" -ComputerName DC1 -ScriptBlock { "Users","Computers","Groups" | Foreach-Object { New-ADOrganizationalUnit -Name $_ -Path "OU=Resources,DC=$(($using:domainName -split "\.")[-2]),DC=$(($using:domainName -split "\.")[-1])"} } -Variable $domainName
-Invoke-LabCommand -ActivityName "Users" -ComputerName DC1 -ScriptBlock { "User1","User2","DelegatedIpamUser","AdminInSilo" | Foreach-Object { New-ADUser -Name $_ -AccountPassword ($using:passwd | ConvertTo-SecureString -AsPlainText -Force) -PasswordNeverExpires $true -Enabled $true -Path "OU=Users,OU=Resources,DC=$(($using:domainName -split "\.")[-2]),DC=$(($using:domainName -split "\.")[-1])"} } -Variable $domainName,$passwd
+Invoke-LabCommand -ActivityName "OUs part 1" -ComputerName DC1 -ScriptBlock { New-ADOrganizationalUnit -Name "Resources" -Path "DC=contoso,DC=com" }
+Invoke-LabCommand -ActivityName "OUs part 2" -ComputerName DC1 -ScriptBlock { "Users","Computers","Groups" | Foreach-Object { New-ADOrganizationalUnit -Name $_ -Path "OU=Resources,DC=contoso,DC=com"} }
+Invoke-LabCommand -ActivityName "Users" -ComputerName DC1 -ScriptBlock { "User1","User2","DelegatedIpamUser","AdminInSilo" | Foreach-Object { New-ADUser -Name $_ -AccountPassword 'Somepass1!' -PasswordNeverExpires $true -Enabled $true -Path "OU=Users,OU=Resources,DC=contoso,DC=com"} }
 Invoke-LabCommand -ActivityName "second admin permissions" -ComputerName DC1 -ScriptBlock { Add-ADGroupMember -Identity "Domain Admins" -Members 'AdminInSilo'  }
 Copy-LabFileItem -Path $PSScriptRoot\PolicyDefinitions -ComputerName DC1 -DestinationFolderPath C:\Windows\Sysvol\domain\Policies
 Copy-LabFileItem -Path $PSScriptRoot\SecurityBaselineGPO -ComputerName DC1 -DestinationFolderPath C:\Lab
 Invoke-LabCommand -ActivityName "GPO import" -ComputerName DC1 -ScriptBlock { C:\Lab\SecurityBaselineGPO\import-baselinegpo.ps1 }
 Invoke-LabCommand -ActivityName "resgister AD Schema extension" -ComputerName ADM1 -ScriptBlock { regsvr32 /s schmmgmt.dll }
 # Authentication Silo
+# TODO add GPO to enable Kerberos armoring
 Invoke-LabCommand -ActivityName "Authentication Silo" -ComputerName DC1 -ScriptBlock {  
     New-ADAuthenticationPolicy -Name "Reduced_Admin_TGT" `
                                -Description "Authentication policy to set 2 hour Ticket Granting Ticket for administrators" `
@@ -156,9 +155,9 @@ Invoke-LabCommand -ActivityName "Authentication Silo" -ComputerName DC1 -ScriptB
 Invoke-LabCommand -ActivityName "configure DHCP server" -ComputerName 'ADM1' -ScriptBlock {
     Add-DhcpServerInDC
     Add-DhcpServerv4Scope -Name "LabScope" -StartRange 192.168.50.100 -EndRange 192.168.50.200 -SubnetMask 255.255.255.0
-    Set-DhcpServerv4OptionValue -DnsDomain $using:domainname -DnsServer 192.168.50.3
+    Set-DhcpServerv4OptionValue -DnsDomain 'contoso.com' -DnsServer 192.168.50.3
     Set-DhcpServerv4OptionValue -ScopeId 192.168.50.100 -Router 192.168.50.3
-} -Variable $domainName
+}
 
 
 # SMB share
@@ -190,22 +189,22 @@ Invoke-LabCommand -ActivityName "iScsi target" -ComputerName SRV1 -ScriptBlock {
     New-IscsiVirtualDisk -Path I:\ISCSI\disk2.vhdx -size 10GB
     New-IscsiVirtualDisk -Path I:\ISCSI\disk3.vhdx -size 10GB
     
-    New-IscsiServerTarget iSCSI-L03 -InitiatorIds "IQN:iqn.1991-05.com.microsoft:cl1-01.$using:domainname","IQN:iqn.1991-05.com.microsoft:cl1-02.$using:domainname"
+    New-IscsiServerTarget iSCSI-L03 -InitiatorIds "IQN:iqn.1991-05.com.microsoft:cl1-01.contoso.com","IQN:iqn.1991-05.com.microsoft:cl1-02.contoso.com"
     
     Add-IscsiVirtualDiskTargetMapping iSCSI-L03 I:\ISCSI\Disk1.VHDX
     Add-IscsiVirtualDiskTargetMapping iSCSI-L03 I:\ISCSI\Disk2.VHDX
     Add-IscsiVirtualDiskTargetMapping iSCSI-L03 I:\ISCSI\Disk3.VHDX
 
     Restart-Service WinTarget
-} -Variable $domainName
+}
 # and mount them to CL1-01/-02
 Invoke-LabCommand -ActivityName "iScsi initiator" -ComputerName 'CL1-01','CL1-02' -ScriptBlock {
     Set-Service -ServiceName MSiSCSI -StartupType Automatic
     Start-Service -ServiceName MSiSCSI
     Enable-NetFirewallRule 'MsiScsi-In-TCP','MsiScsi-Out-TCP'
-    New-iSCSITargetPortal -TargetPortalAddress "SRV1.$using:domainName"
+    New-iSCSITargetPortal -TargetPortalAddress "SRV1.contoso.com"
     Connect-iSCSITarget -NodeAddress iqn.1991-05.com.microsoft:srv1-iSCSI-L03-target -IsPersistent $true
-} -Variable $domainName
+}
 # intialize cluster disks
 Invoke-LabCommand -ActivityName "iScsi disk init" -ComputerName 'CL1-01' -ScriptBlock {
     Get-Disk | Where OperationalStatus -eq 'Offline' | Initialize-Disk -PartitionStyle MBR
@@ -234,11 +233,11 @@ Invoke-LabCommand -ActivityName "configure S2D cluster" -ComputerName 'S2D1-01' 
     New-Volume -StoragePoolFriendlyName 'S2D on S2D1' -FriendlyName "CSV" -FileSystem CSVFS_ReFS -UseMaximumSize
 }
 Restart-LabVM -ComputerName S2D1-01,S2D1-02
-Copy-LabFileItem -Path $iso -ComputerName 'S2D1-01' -DestinationFolderPath C:\iso
+Copy-LabFileItem -Path 'C:\LabSources\ISOs\WindowsServer2022Eval.iso' -ComputerName 'S2D1-01' -DestinationFolderPath C:\iso
 Invoke-LabCommand -ActivityName "configure S2D cluster" -ComputerName 'S2D1-01' -ScriptBlock {
     New-VM -Name 'ClusteredVM' -MemoryStartupBytes 2GB -NewVHDPath 'C:\ClusterStorage\CSV\ClusteredVM.vhdx' -NewVHDSizeBytes 45GB -Generation 2 -Path 'C:\ClusterStorage\CSV\'
-    Add-VMDvdDrive -VMName 'ClusteredVM' -Path "C:\ISO\$(Split-Path $using:iso -Leaf)"
+    Add-VMDvdDrive -VMName 'ClusteredVM' -Path 'C:\LabSources\ISOs\WindowsServer2022Eval.iso'
     Get-VM -Name 'ClusteredVM' | Set-VM -ProcessorCount 2
-} -Variable $domainName, $iso
+}
 
 Show-LabDeploymentSummary -Detailed
