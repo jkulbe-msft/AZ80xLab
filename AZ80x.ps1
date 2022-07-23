@@ -1,5 +1,5 @@
 #Requires -RunAsAdministrator
-
+Start-Transcript -Path C:\transcripts\AZ801x.txt
 $labName = 'AZ80x'
 $vmpath = "F:\$labname"
 
@@ -241,3 +241,4 @@ Invoke-LabCommand -ActivityName "configure S2D cluster" -ComputerName 'S2D1-01' 
 }
 
 Show-LabDeploymentSummary -Detailed
+Stop-Transcript
