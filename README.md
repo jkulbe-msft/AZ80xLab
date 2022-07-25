@@ -22,6 +22,30 @@ Click the button below to deploy from the portal:
 [![Deploy To Azure](https://raw.githubusercontent.com/jkulbe-msft/AZ80xLab/main/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fjkulbe-msft%2FAZ80xLab%2Fmain%2Fazuredeploy.json)
 [![Visualize](https://raw.githubusercontent.com/jkulbe-msft/AZ80xLab/main/images/visualizebutton.svg?sanitize=true)](http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fjkulbe-msft%2FAZ80xLab%2Fmain%2Fazuredeploy.json)
 
+# Description
+You can use this set of scripts to deploy a lab environment for AZ800/AZ-801 powered by AutomatedLab (https://automatedlab.org/en/latest/). 
+## Environment
+### DC1
+Domain Controller, DNS, RRAS service offering internet connectivity to the rest of the machines
+Configured Features: several user in the "Resources" OU, several sample and Security Baseline GPOs (not linked), central ADMX store, authentication silo/policy
+### ADM1
+Admin server, the only one with a GUI. 
+Configured Roles/Features: RSAT, Windows Admin Center with all available extensions, PKI, DHCP
+Prepared roles for further confguration: IPAM, System Insights, Storage Migration Services, Storage Replica, File Services
+### SRV1
+iSCSI target offering three disks to the failover cluster nodes
+Prepared roles for further confguration: Data Dedeuplication, Storage Replica
+### CL1-01/CL1-02
+Cluster nodes forming a failover cluster (CLUSTER1), using 3 iSCSI disks offered from SRV1.
+### S2D1-01/S2D1-01
+Storage Spaces Direct Cluster nodes with Hyper-V role forming cluster S2D1. 
+
+For documentation about AutomatedLab please refer to https://automatedlab.org/en/latest/
+
+## Post Deployment Steps
+
+Once the deployment is complete to access your Hyper-V Host an inbound security rule will need to be created on your NAT Subnet NSG.
+
 ## Final Configuration
 
 The environment in this guide has the below configurations. This section is intended to be used as a reference.
@@ -78,41 +102,4 @@ The environment in this guide has the below configurations. This section is inte
         + Destination: 10.0.2.0/24
         + Next Hop: Virtual Appliance - 10.0.1.4
 
-## Post Deployment Steps
-
-Once the deployment is complete to access your Hyper-V Host an inbound security rule will need to be created on your NAT Subnet NSG.
-
 Beyond this the solution does support network communication between on-premises resources and the nested virtual machines. To achieve this route tables will need to be created on the GatewaySubnet and additional routes created in RRAS on the Hyper-V Host
-
-# Description
-You can use this set of scripts to deploy a lab environment for AZ800/AZ-801 powered by AutomatedLab (https://automatedlab.org/en/latest/). 
-## Environment
-### DC1
-Domain Controller, DNS, RRAS service offering internet connectivity to the rest of the machines
-Configured Features: several user in the "Resources" OU, several sample and Security Baseline GPOs (not linked), central ADMX store, authentication silo/policy
-### ADM1
-Admin server, the only one with a GUI. 
-Configured Roles/Features: RSAT, Windows Admin Center with all available extensions, PKI, DHCP
-Prepared roles for further confguration: IPAM, System Insights, Storage Migration Services, Storage Replica, File Services
-### SRV1
-iSCSI target offering three disks to the failover cluster nodes
-Prepared roles for further confguration: Data Dedeuplication, Storage Replica
-### CL1-01/CL1-02
-Cluster nodes forming a failover cluster (CLUSTER1), using 3 iSCSI disks offered from SRV1.
-### S2D1-01/S2D1-01
-Storage Spaces Direct Cluster nodes with Hyper-V role forming cluster S2D1. 
-Hyper-V is configured and a VM is pre-created on the Cluster Shared Volume. To use the VM, start it to complete setup, eject the DVD and import the machine as a cluster role in Hyper-V, e.g. to demo Live Migration.
-
-After deployment, connect to the VM, launch PowerShell as administrator and launch C:\git\AZ80xLab\AZ80x.ps1. Note: while creating the external switch in Hyper-V, you will lose the RDP connection and need to reconnect. Follw Lab setup instructions (below) from this point
-
-# Lab setup instructions
-After preparation, run AZ80x.ps1. The script will prompt for a user name and password to be used for the environment. You can specify further parameters in the header of the script, e.g. paths. (TODO: add help and make headers into parameters)
-```PowerShell
-AZ80x.ps1
-```
-To entirely remove the lab environment run the following. Replace AZ80x with your own lab name if you specified one.
-```PowerShell
-Import-Lab AZ80x
-Remove-Lab
-```
-For documentation about AutomatedLab please refer to https://automatedlab.org/en/latest/
