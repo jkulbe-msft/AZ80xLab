@@ -28,14 +28,14 @@ The user name and password for the Hyper-V machines is Administrator/Somepass!
 ## Environment
 ### DC1
 Domain Controller, DNS, RRAS service offering internet connectivity to the rest of the machines
-Configured Features: several user in the "Resources" OU, several sample and Security Baseline GPOs (not linked), central ADMX store, authentication silo/policy
+Configured Features: several users in the "Resources" OU, several sample and Security Baseline GPOs (not linked), central ADMX store, authentication silo/policy
 ### ADM1
 Admin server, the only one with a GUI. 
 Configured Roles/Features: RSAT, Windows Admin Center with all available extensions, PKI, DHCP
 Prepared roles for further confguration: IPAM, System Insights, Storage Migration Services, Storage Replica, File Services
 ### SRV1
 iSCSI target offering three disks to the failover cluster nodes
-Prepared roles for further confguration: Data Dedeuplication, Storage Replica
+Prepared roles for further confguration: Data Deduplication, Storage Replica
 ### CL1-01/CL1-02
 Cluster nodes forming a failover cluster (CLUSTER1), using 3 iSCSI disks offered from SRV1.
 ### S2D1-01/S2D1-01
