@@ -24,7 +24,7 @@ Click the button below to deploy from the portal:
 
 # Description
 You can use this set of scripts to deploy a lab environment for AZ-800/AZ-801 powered by AutomatedLab (https://automatedlab.org/en/latest/). 
-The user name and password for the Hyper-V machines is Administrator/Somepass!
+The user name and password for the Hyper-V machines is Administrator/Somepass1
 ## Environment
 ### DC1
 Domain Controller, DNS, RRAS service offering internet connectivity to the rest of the machines
