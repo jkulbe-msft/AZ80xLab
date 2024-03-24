@@ -326,9 +326,6 @@
             }
           ]
         },
-        "additionalCapabilities": {
-                    "hibernationEnabled": true
-        },
         "osProfile": {
           "computerName": "[parameters('HostVirtualMachineName')]",
           "adminUsername": "[parameters('HostAdminUsername')]",
