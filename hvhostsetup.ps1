@@ -49,16 +49,22 @@ Update-LabSysinternalsTools
 Start-BitsTransfer -Destination C:\LabSources\ISOs\WindowsServer2022Eval.iso -Source 'https://go.microsoft.com/fwlink/p/?LinkID=2195280&clcid=0x409&culture=en-us&country=US'
 Unblock-LabSources
 #install git
-Install-Module Chocolatey
-Install-ChocolateySoftware
-Enable-ChocolateyFeature -Name allowGlobalConfirmation
-Install-ChocolateyPackage -Name git -Confirm:$false
-[Environment]::SetEnvironmentVariable('Path',($Env:Path + ';' + 'C:\Program Files\Git\bin'),'Machine')
-[Environment]::SetEnvironmentVariable('Path',($Env:Path + ';' + 'C:\Program Files\Git\bin'),'Process')
-[Environment]::SetEnvironmentVariable('GIT_REDIRECT_STDERR','2>&1' ,'Machine')
-[Environment]::SetEnvironmentVariable('GIT_REDIRECT_STDERR','2>&1' ,'Process')
-New-Item -Path C:\git -ItemType Directory -Force
-& $env:ProgramFiles\git\bin\git.exe clone https://github.com/jkulbe-msft/AZ80xLab "C:\git\AZ80xLab"
+#Install-Module Chocolatey
+#Install-ChocolateySoftware
+#Enable-ChocolateyFeature -Name allowGlobalConfirmation
+#Install-ChocolateyPackage -Name git -Confirm:$false
+# Install-PackageProvider ChocolateyGet -Force
+
+#[Environment]::SetEnvironmentVariable('Path',($Env:Path + ';' + 'C:\Program Files\Git\bin'),'Machine')
+#[Environment]::SetEnvironmentVariable('Path',($Env:Path + ';' + 'C:\Program Files\Git\bin'),'Process')
+#[Environment]::SetEnvironmentVariable('GIT_REDIRECT_STDERR','2>&1' ,'Machine')
+#[Environment]::SetEnvironmentVariable('GIT_REDIRECT_STDERR','2>&1' ,'Process')
+#New-Item -Path C:\git -ItemType Directory -Force
+#& $env:ProgramFiles\git\bin\git.exe clone https://github.com/jkulbe-msft/AZ80xLab "C:\git\AZ80xLab"
+Invoke-WebRequest -uri https://github.com/jkulbe-msft/AZ80xLab/archive/refs/heads/main.zip
+New-Item -Path C:\git -ItemType Directory -Force 
+Invoke-Webrequest -URI 'https://github.com/jkulbe-msft/AZ80xLab/archive/refs/heads/main.zip' -OutFile C:\git\AZ80xLab.zip
+Expand-Archive -Path C:\git\AZ80xLab.zip -DestinationPath c:\git
 
 Stop-Transcript
 
