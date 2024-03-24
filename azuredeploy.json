@@ -326,10 +326,32 @@
             }
           ]
         },
+        "additionalCapabilities": {
+                    "hibernationEnabled": true
+        },
         "osProfile": {
           "computerName": "[parameters('HostVirtualMachineName')]",
           "adminUsername": "[parameters('HostAdminUsername')]",
-          "adminPassword": "[parameters('HostAdminPassword')]"
+          "adminPassword": "[parameters('HostAdminPassword')]",
+          "windowsConfiguration": {
+            "enableAutomaticUpdates": true,
+            "provisionVmAgent": true,
+            "patchSettings": {
+              "enableHotpatching":  true,
+              "patchMode": "AutomaticByPlatform",
+              "automaticByPlatformSettings": {
+              "rebootSetting": "Never",
+              "bypassPlatformSafetyChecksOnUserSchedule": true
+              }
+            }
+          }
+        },
+        "securityProfile": {
+                    "securityType": "TrustedLaunch",
+                    "uefiSettings": {
+                        "secureBootEnabled": true,
+                        "vTpmEnabled": true
+                    }
         },
         "networkProfile": {
           "networkInterfaces": [
