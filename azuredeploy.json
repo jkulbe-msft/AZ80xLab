@@ -302,7 +302,7 @@
           "imageReference": {
             "publisher": "MicrosoftWindowsServer",
             "offer": "WindowsServer",
-            "sku": "2022-Datacenter-azure-edition-hotpatch",
+            "sku": "2022-Datacenter-azure-edition",
             "version": "latest"
           },
           "osDisk": {
@@ -334,17 +334,9 @@
             "enableAutomaticUpdates": true,
             "provisionVmAgent": true,
             "patchSettings": {
-              "enableHotpatching":  true,
               "patchMode": "AutomaticByPlatform"
             }
           }
-        },
-        "securityProfile": {
-                    "securityType": "TrustedLaunch",
-                    "uefiSettings": {
-                        "secureBootEnabled": true,
-                        "vTpmEnabled": true
-                    }
         },
         "networkProfile": {
           "networkInterfaces": [
