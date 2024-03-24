@@ -338,11 +338,7 @@
             "provisionVmAgent": true,
             "patchSettings": {
               "enableHotpatching":  true,
-              "patchMode": "AutomaticByPlatform",
-              "automaticByPlatformSettings": {
-              "rebootSetting": "Never",
-              "bypassPlatformSafetyChecksOnUserSchedule": true
-              }
+              "patchMode": "AutomaticByPlatform"
             }
           }
         },
