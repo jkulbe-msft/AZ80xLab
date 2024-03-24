@@ -302,7 +302,7 @@
           "imageReference": {
             "publisher": "MicrosoftWindowsServer",
             "offer": "WindowsServer",
-            "sku": "2022-Datacenter-azure-edition",
+            "sku": "2022-Datacenter-azure-edition-hotpatch",
             "version": "latest"
           },
           "osDisk": {
@@ -318,7 +318,7 @@
               "lun": 0,
               "name": "[format('{0}DataDisk1', parameters('HostVirtualMachineName'))]",
               "createOption": "Empty",
-              "diskSizeGB": 256,
+              "diskSizeGB": 512,
               "caching": "ReadOnly",
               "managedDisk": {
                 "storageAccountType": "Premium_LRS"
