@@ -41,6 +41,7 @@ Install-Module -Name Pester -SkipPublisherCheck -Force
 Install-Module -Name AutomatedLab -AllowClobber -Force
 [Environment]::SetEnvironmentVariable('AUTOMATEDLAB_TELEMETRY_OPTIN', 'true', 'Machine')
 $env:AUTOMATEDLAB_TELEMETRY_OPTIN = 'true'
+Start-Sleep 15 # wait before importing the module
 Import-Module AutomatedLab -Force
 New-LabSourcesFolder -DriveLetter C -Force
 Enable-LabHostRemoting -Force
