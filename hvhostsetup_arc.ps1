@@ -38,11 +38,10 @@ Get-Disk | Where-Object -Property PartitionStyle -EQ "RAW" | Initialize-Disk -Pa
 
 Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
 Install-Module -Name Pester -SkipPublisherCheck -Force
-Start-Sleep 15 # wait before importing the module
 Install-Module -Name AutomatedLab -AllowClobber -Force
 [Environment]::SetEnvironmentVariable('AUTOMATEDLAB_TELEMETRY_OPTIN', 'true', 'Machine')
 $env:AUTOMATEDLAB_TELEMETRY_OPTIN = 'true'
-Import-Module AutomatedLab -Force
+# Import-Module AutomatedLab -Force
 New-LabSourcesFolder -DriveLetter C -Force
 Enable-LabHostRemoting -Force
 Update-LabSysinternalsTools
