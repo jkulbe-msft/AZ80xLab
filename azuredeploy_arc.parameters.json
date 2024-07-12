@@ -15,7 +15,7 @@
       }
     },
     "HVHostSetupScript": {
-      "value": "hvhostsetup.ps1",
+      "value": "hvhostsetup_arc.ps1",
       "metadata": {
         "description": "Script to run to deploy lab Hyper-V environment"
       }

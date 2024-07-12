@@ -22,6 +22,10 @@ Click the button below to deploy from the portal:
 [![Deploy To Azure](https://raw.githubusercontent.com/jkulbe-msft/AZ80xLab/main/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fjkulbe-msft%2FAZ80xLab%2Fmain%2Fazuredeploy.json)
 [![Visualize](https://raw.githubusercontent.com/jkulbe-msft/AZ80xLab/main/images/visualizebutton.svg?sanitize=true)](http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fjkulbe-msft%2FAZ80xLab%2Fmain%2Fazuredeploy.json)
 
+Deploy Arc lab to Azure:
+[![Deploy Arc lab to Azure](https://raw.githubusercontent.com/jkulbe-msft/AZ80xLab/main/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fjkulbe-msft%2FAZ80xLab%2Fmain%2Fazuredeploy.json?parameters=https%3A%2F%2Fraw.githubusercontent.com%2Fjkulbe-msft%2FAZ80xLab%2Fmain%2Fazuredeploy_arc.parameters.json)
+
+
 # Description
 You can use this set of scripts to deploy a lab environment for AZ-800/AZ-801 powered by AutomatedLab (https://automatedlab.org/en/latest/). 
 The user name and password for the Hyper-V machines is Administrator/Somepass1
