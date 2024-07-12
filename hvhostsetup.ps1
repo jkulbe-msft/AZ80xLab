@@ -61,9 +61,9 @@ Unblock-LabSources
 #[Environment]::SetEnvironmentVariable('GIT_REDIRECT_STDERR','2>&1' ,'Process')
 #New-Item -Path C:\git -ItemType Directory -Force
 #& $env:ProgramFiles\git\bin\git.exe clone https://github.com/jkulbe-msft/AZ80xLab "C:\git\AZ80xLab"
-Invoke-WebRequest -uri https://github.com/jkulbe-msft/AZ80xLab/archive/refs/heads/main.zip
+Invoke-WebRequest -uri https://github.com/jkulbe-msft/AZ80xLab/archive/refs/heads/main.zip -UseBasicParsing
 New-Item -Path C:\git -ItemType Directory -Force 
-Invoke-Webrequest -URI 'https://github.com/jkulbe-msft/AZ80xLab/archive/refs/heads/main.zip' -OutFile C:\git\AZ80xLab.zip
+Invoke-Webrequest -URI 'https://github.com/jkulbe-msft/AZ80xLab/archive/refs/heads/main.zip' -OutFile C:\git\AZ80xLab.zip -UseBasicParsing
 Expand-Archive -Path C:\git\AZ80xLab.zip -DestinationPath c:\git
 
 Stop-Transcript
