@@ -145,7 +145,7 @@ Add-LabMachineDefinition -Name 'S2D1-02' -Roles HyperV -IsDomainJoined -Network 
 Add-LabMachineDefinition -Name 'CL1-01' -Network $labname -IsDomainJoined -MinMemory 512MB -MaxMemory 4GB -Gateway 192.168.50.3
 Add-LabMachineDefinition -Name 'CL1-02' -Network $labname -IsDomainJoined -MinMemory 512MB -MaxMemory 4GB -Gateway 192.168.50.3
 
-Install-Lab -DelayBetweenComputers 120
+Install-Lab -DelayBetweenComputers 60
 
 # Features
 $dcjob = Install-LabWindowsFeature -FeatureName RSAT -ComputerName 'DC1' -IncludeAllSubFeature -IncludeManagementTools

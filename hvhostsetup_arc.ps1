@@ -110,7 +110,7 @@ Add-LabMachineDefinition -Name 'SRV1' -Roles FileServer,SQLServer2022 -IsDomainJ
 # Linux
 Add-LabMachineDefinition -Name 'LIN1' -OperatingSystem $osLinux -MinMemory 512MB -MaxMemory 4GB -Network $labname -Gateway 192.168.50.3 
 
-Install-Lab -DelayBetweenComputers 120
+Install-Lab -DelayBetweenComputers 60
 
 # Features
 $dcjob = Install-LabWindowsFeature -FeatureName RSAT -ComputerName 'DC1' -IncludeAllSubFeature -IncludeManagementTools
