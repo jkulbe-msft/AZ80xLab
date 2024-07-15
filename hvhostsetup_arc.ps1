@@ -108,9 +108,9 @@ Add-LabDiskDefinition -Name 'SRV1-Logs' -DiskSizeInGb 10 -Label 'Logs' -DriveLet
 Add-LabMachineDefinition -Name 'SRV1' -Roles FileServer,SQLServer2022 -IsDomainJoined -DiskName 'SRV1-Data','SRV1-Logs' -OperatingSystem $osNameWithDesktop -MinMemory 1GB -MaxMemory 8GB  -Network $labname -Gateway 192.168.50.3 
 
 # Linux
-Add-LabMachineDefinition -Name 'LIN1' -OperatingSystem $osLinux -MinMemory 512MB -MaxMemory 4GB -Network $labname -Gateway 192.168.50.3 
+Add-LabMachineDefinition -Name 'LIN1' -OperatingSystem $osLinux -IsDomainJoined -MinMemory 512MB -MaxMemory 4GB -Network $labname -Gateway 192.168.50.3 
 
-Install-Lab -DelayBetweenComputers 60
+Install-Lab -DelayBetweenComputers 60 -ErrorAction Continue
 
 # Features
 $dcjob = Install-LabWindowsFeature -FeatureName RSAT -ComputerName 'DC1' -IncludeAllSubFeature -IncludeManagementTools
