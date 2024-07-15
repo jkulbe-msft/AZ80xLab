@@ -23,7 +23,7 @@ Click the button below to deploy from the portal:
 [![Visualize](https://raw.githubusercontent.com/jkulbe-msft/AZ80xLab/main/images/visualizebutton.svg?sanitize=true)](http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fjkulbe-msft%2FAZ80xLab%2Fmain%2Fazuredeploy.json)
 
 Deploy Arc lab to Azure:
-[![Deploy Arc lab to Azure](https://raw.githubusercontent.com/jkulbe-msft/AZ80xLab/main/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fjkulbe-msft%2FAZ80xLab%2Fmain%2Fazuredeploy.json?parameters=https%3A%2F%2Fraw.githubusercontent.com%2Fjkulbe-msft%2FAZ80xLab%2Fmain%2Fazuredeploy_arc.parameters.json)
+[![Deploy Arc lab to Azure](https://raw.githubusercontent.com/jkulbe-msft/AZ80xLab/main/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fjkulbe-msft%2FAZ80xLab%2Fmain%2Fazuredeploy_arc.json)
 
 
 # Description
