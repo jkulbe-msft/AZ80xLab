@@ -53,7 +53,7 @@ Start-BitsTransfer -Destination C:\LabSources\sql2022-ssei-dev.exe -Source 'http
 Start-Process -FilePath C:\LabSources\sql2022-ssei-dev.exe -ArgumentList "/action=download /mediatype=iso /mediapath=C:\LabSources\ISOs /quiet" -Wait
 
 # download Ubuntu Desktop
-Start-BitsTransfer -Destination C:\LabSources\ISOs\ubuntu-24.04-live-server-amd64.iso -Source 'https://mirror.pilotfiber.com/ubuntu-iso/24.04/ubuntu-24.04-live-server-amd64.iso'
+Start-BitsTransfer -Destination C:\LabSources\ISOs\ubuntu-24.04-desktop-amd64.iso -Source 'https://mirror.pilotfiber.com/ubuntu-iso/24.04/ubuntu-24.04-live-server-amd64.iso'
 
 Unblock-LabSources
 
@@ -105,7 +105,7 @@ Add-LabMachineDefinition -Name 'DC1' -Roles RootDC,Routing -NetworkAdapter $netA
 # file and SQL server
 Add-LabDiskDefinition -Name 'SRV1-Data' -DiskSizeInGb 10 -Label 'Data' -DriveLetter S
 Add-LabDiskDefinition -Name 'SRV1-Logs' -DiskSizeInGb 10 -Label 'Logs' -DriveLetter L
-Add-LabMachineDefinition -Name 'SRV1' -Roles FileServer,SQLServer2022 -IsDomainJoined -DiskName 'SRV1-Data','SRV1-Logs' -OperatingSystem $osNameWithDesktop -MinMemory 1GB -MaxMemory 8GB  -Gateway 192.168.50.3 
+Add-LabMachineDefinition -Name 'SRV1' -Roles FileServer,SQLServer2022 -IsDomainJoined -DiskName 'SRV1-Data','SRV1-Logs' -OperatingSystem $osNameWithDesktop -MinMemory 1GB -MaxMemory 8GB  -Network $labname -Gateway 192.168.50.3 
 
 # Linux
 Add-LabMachineDefinition -Name 'LIN1' -OperatingSystem $osLinux -MinMemory 512MB -MaxMemory 4GB -Network $labname -Gateway 192.168.50.3 
