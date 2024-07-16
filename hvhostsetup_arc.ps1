@@ -74,7 +74,7 @@ $vmpath = "F:\$labname"
 
 $osName = 'Windows Server 2022 Datacenter Evaluation'
 $osNameWithDesktop = 'Windows Server 2022 Datacenter Evaluation (Desktop Experience)'
-$osLinux = 'Ubuntu 24.04 LTS "Noble Numbat"'
+$osLinux = 'Ubuntu-Server 24.04 LTS "Noble Numbat"'
 
 Enable-LabHostRemoting -Force
 
