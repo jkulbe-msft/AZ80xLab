@@ -404,7 +404,7 @@
           "fileUris": [
             "[variables('HVHostSetupScriptUri')]"
           ],
-          "commandToExecute": "[format('powershell -ExecutionPolicy Unrestricted -File {4} -NIC1IPAddress \"{0}\" -NIC2IPAddress \"{1}\" -GhostedSubnetPrefix \"{2}\" -VirtualNetworkPrefix \"{3}\"', reference(resourceId('Microsoft.Resources/deployments', 'createNic1')).outputs.assignedIp.value, reference(resourceId('Microsoft.Resources/deployments', 'createNic2')).outputs.assignedIp.value, parameters('ghostedSubnetPrefix'), parameters('virtualNetworkAddressPrefix'), parameters('HVHostSetupScript'))]"
+          "commandToExecute": "[format('powershell -ExecutionPolicy Unrestricted -File {4} -NIC1IPAddress \\\"{0}\\\" -NIC2IPAddress \\\"{1}\\\" -GhostedSubnetPrefix \\\"{2}\\\" -VirtualNetworkPrefix \\\"{3}\\\"', reference(resourceId('Microsoft.Resources/deployments', 'createNic1')).outputs.assignedIp.value, reference(resourceId('Microsoft.Resources/deployments', 'createNic2')).outputs.assignedIp.value, parameters('ghostedSubnetPrefix'), parameters('virtualNetworkAddressPrefix'), parameters('HVHostSetupScript'))]"
         }
       },
       "dependsOn": [
