@@ -176,7 +176,7 @@
     },
     "HVHostSetupScript": {
       "type": "string",
-      "defaultValue": "hvhostsetup.ps1",
+      "defaultValue": "hvhostsetup_arc.ps1",
       "metadata": {
         "description": "Script to run to deploy lab Hyper-V environment"
       }
