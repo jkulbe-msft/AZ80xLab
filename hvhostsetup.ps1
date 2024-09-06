@@ -8,10 +8,16 @@ param (
 
 Start-Transcript -Path C:\transcripts\hvhostsetup.txt
 
+Write-Output "NIC1IPAddress: $NIC1IPAddress"
+Write-Output "NIC2IPAddress: $NIC2IPAddress"
+Write-Output "GhostedSubnetPrefix: $GhostedSubnetPrefix"
+Write-Output "VirtualNetworkPrefix: $VirtualNetworkPrefix"
+
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
 Install-Module Subnet -Force
 
+Set-VMHost -EnableEnhancedSessionMode $True
 New-VMSwitch -Name "NestedSwitch" -SwitchType Internal
 
 $NIC1IP = Get-NetIPAddress | Where-Object -Property AddressFamily -EQ IPv4 | Where-Object -Property IPAddress -EQ $NIC1IPAddress
@@ -45,6 +51,7 @@ $env:AUTOMATEDLAB_TELEMETRY_OPTIN = 'true'
 New-LabSourcesFolder -DriveLetter C -Force
 Enable-LabHostRemoting -Force
 Update-LabSysinternalsTools
+Set-PSFConfig -Module AutomatedLab -Name DoNotWaitForLinux -Value $true
 # download Windows Server 2022 Evaluation
 Start-BitsTransfer -Destination C:\LabSources\ISOs\WindowsServer2022Eval.iso -Source 'https://go.microsoft.com/fwlink/p/?LinkID=2195280&clcid=0x409&culture=en-us&country=US'
 Unblock-LabSources
@@ -66,6 +73,8 @@ New-Item -Path C:\git -ItemType Directory -Force
 Invoke-Webrequest -URI 'https://github.com/jkulbe-msft/AZ80xLab/archive/refs/heads/main.zip' -OutFile C:\git\AZ80xLab.zip -UseBasicParsing
 Expand-Archive -Path C:\git\AZ80xLab.zip -DestinationPath c:\git
 
+Unblock-LabSources
+
 Stop-Transcript
 
 # install lab machines
@@ -80,9 +89,7 @@ $osName = 'Windows Server 2022 Datacenter Evaluation'
 $osNameWithDesktop = 'Windows Server 2022 Datacenter Evaluation (Desktop Experience)'
 
 # $cred = (Get-Credential -Message 'Enter user name and password for lab machines')
-
 # $iso = (Get-LabAvailableOperatingSystem | where OperatingSystemName -like $osNameWithDesktop).IsoPath
-
 #$username = $cred.UserName
 # $passwd = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto([System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($cred.Password))
 

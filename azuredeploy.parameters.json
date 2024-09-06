@@ -13,12 +13,6 @@
       "metadata": {
         "description": "Admin User Password for the Host Virtual Machine"
       }
-    },
-    "HVHostSetupScript": {
-      "value": "hvhostsetup.ps1",
-      "metadata": {
-        "description": "Script to run to deploy lab Hyper-V environment"
-      }
     }
   }
 }
