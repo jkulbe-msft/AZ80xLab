@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<ListXmlStoreOfProductKey>
+  <Timestamp>
+    <dateTime>0001-01-01T00:00:00</dateTime>
+  </Timestamp>
+  <ID>
+    <guid>00000000-0000-0000-0000-000000000000</guid>
+  </ID>
+  <Metadata>
+    <ArrayOfString />
+  </Metadata>
+  <ProductKey OperatingSystemName="Windows Server 2025 Standard Evaluation" Key="D764K-2NDRG-47T6Q-P8T8W-YP6DF" Version="10.0.26085.1" />
+  <ProductKey OperatingSystemName="Windows Server 2025 Standard Evaluation (Desktop Experience)" Key="D764K-2NDRG-47T6Q-P8T8W-YP6DF" Version="10.0.26085.1" />
+  <ProductKey OperatingSystemName="Windows Server 2025 Datacenter Evaluation" Key="D764K-2NDRG-47T6Q-P8T8W-YP6DF" Version="10.0.26085.1" />
+  <ProductKey OperatingSystemName="Windows Server 2025 Datacenter Evaluation (Desktop Experience)" Key="D764K-2NDRG-47T6Q-P8T8W-YP6DF" Version="10.0.26085.1" />
+
+</ListXmlStoreOfProductKey>

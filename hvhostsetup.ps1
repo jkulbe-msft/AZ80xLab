@@ -52,8 +52,9 @@ New-LabSourcesFolder -DriveLetter C -Force
 Enable-LabHostRemoting -Force
 Update-LabSysinternalsTools
 Set-PSFConfig -Module AutomatedLab -Name DoNotWaitForLinux -Value $true
-# download Windows Server 2022 Evaluation
-Start-BitsTransfer -Destination C:\LabSources\ISOs\WindowsServer2022Eval.iso -Source 'https://go.microsoft.com/fwlink/p/?LinkID=2195280&clcid=0x409&culture=en-us&country=US'
+# download Windows Server 2025 Evaluation
+# Start-BitsTransfer -Destination C:\LabSources\ISOs\WindowsServer2022Eval.iso -Source 'https://go.microsoft.com/fwlink/p/?LinkID=2195280&clcid=0x409&culture=en-us&country=US'
+Start-BitsTransfer -Destination C:\LabSources\ISOs\WindowsServer2025Eval.iso -Source 'https://go.microsoft.com/fwlink/?linkid=2293312&clcid=0x409&culture=en-us&country=us'
 Unblock-LabSources
 #install git
 #Install-Module Chocolatey
@@ -72,7 +73,7 @@ Invoke-WebRequest -uri https://github.com/jkulbe-msft/AZ80xLab/archive/refs/head
 New-Item -Path C:\git -ItemType Directory -Force 
 Invoke-Webrequest -URI 'https://github.com/jkulbe-msft/AZ80xLab/archive/refs/heads/main.zip' -OutFile C:\git\AZ80xLab.zip -UseBasicParsing
 Expand-Archive -Path C:\git\AZ80xLab.zip -DestinationPath c:\git
-
+Copy-Item -Source C:\git\AZ80xLab-main\ProductKeysCustom.xml -Destination $env:ProgramData\AutomatedLab\Assets\ProductKeysCustom.xml -Force
 Unblock-LabSources
 
 Stop-Transcript
@@ -85,8 +86,8 @@ $vmpath = "F:\$labname"
 
 # $domainName = 'contoso.com'
 
-$osName = 'Windows Server 2022 Datacenter Evaluation'
-$osNameWithDesktop = 'Windows Server 2022 Datacenter Evaluation (Desktop Experience)'
+$osName = 'Windows Server 2025 Datacenter Evaluation'
+$osNameWithDesktop = 'Windows Server 2025 Datacenter Evaluation (Desktop Experience)'
 
 # $cred = (Get-Credential -Message 'Enter user name and password for lab machines')
 # $iso = (Get-LabAvailableOperatingSystem | where OperatingSystemName -like $osNameWithDesktop).IsoPath
