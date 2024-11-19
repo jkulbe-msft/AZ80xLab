@@ -73,7 +73,7 @@ Invoke-WebRequest -uri https://github.com/jkulbe-msft/AZ80xLab/archive/refs/head
 New-Item -Path C:\git -ItemType Directory -Force 
 Invoke-Webrequest -URI 'https://github.com/jkulbe-msft/AZ80xLab/archive/refs/heads/main.zip' -OutFile C:\git\AZ80xLab.zip -UseBasicParsing
 Expand-Archive -Path C:\git\AZ80xLab.zip -DestinationPath c:\git
-Copy-Item -Source C:\git\AZ80xLab-main\ProductKeysCustom.xml -Destination $env:ProgramData\AutomatedLab\Assets\ProductKeysCustom.xml -Force
+Copy-Item C:\git\AZ80xLab-main\ProductKeysCustom.xml -Destination $env:ProgramData\AutomatedLab\Assets\ProductKeysCustom.xml -Force
 Unblock-LabSources
 
 Stop-Transcript
