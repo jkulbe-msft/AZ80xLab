@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2011 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <displayName>Anzeigenamen hier eingeben</displayName>
+  <description>Beschreibung hier eingeben</description>
+  <resources>
+    <stringTable>
+      <string id="Cat_OpsMgr">System Center - Operations Manager</string>
+      <string id="Pol_LogonTypePolicy">Überwachen von Anmeldetyp für Aktionskonto</string>
+      <string id="Pol_LogonTypePolicy_Help">Mit dieser Richtlinie wird der Anmeldetyp für Aktionskonten oder ausführende Konten gesteuert, die von den vom System Center-Verwaltungsdienst gestarteten Arbeitsprozessen (MonitoringHost.exe) verwendet werden.
+
+Wenn für den überwachten Server die Sicherheitseinstellung "Interaktive Anmeldung: Smartcard erforderlich" in der lokalen Sicherheitsrichtlinie konfiguriert ist, kann der auf diesem Server ausgeführte System Center-Verwaltungsdienst Arbeitsprozesse, die ausführende Konten oder Aktionskonten verwenden (mit den Anmeldeinformationen eines Domänenkontos), nicht anmelden, da er Zugriff auf die Smartcard hat. Dieses Problem kann durch Umschalten auf den Anmeldetyp "Dienst" vermieden werden. Einige Überwachungsaktivitäten, die auf Systemressourcen zugreifen, die Administratorberechtigungen oder Berechtigungen zur interaktiven Anmeldung erfordern, werden möglicherweise nicht erfolgreich ausgeführt.
+
+Der Standardanmeldetyp ist "Interaktiv".
+      </string>
+      <string id="Lbl_LogonTypePolicyCombo">Anmeldetyp</string>
+      <string id="Lbl_LogonTypeInteractive">Interaktiv</string>
+      <string id="Lbl_LogonTypeBatch">Batch</string>
+      <string id="Lbl_LogonTypeService">Dienst</string>
+      <string id="Pol_RuntimeClrGarbageCollectorType">Typ des .NET-Garbage Collector-Arbeitsprozesses</string>
+      <string id="Pol_RuntimeClrGarbageCollectorType_Help">Mit dieser Richtlinie wird der Modus gesteuert, in dem der Microsoft .NET-Garbage Collector ausgeführt wird.
+ 
+ Der Arbeitsstations-Garbage Collector benötigt weniger Arbeitsspeicher, kann bei hoher Auslastung aber eine höhere CPU-Nutzung verursachen. Der Server-Garbage Collector benötigt mehr Arbeitsspeicher, verursacht bei hoher Auslastung aber eine geringere CPU-Nutzung.
+ 
+ Standardmäßig wird der Arbeitsstations-Garbage Collector für Agents und der Server-Garbage Collector für Verwaltungsserver verwendet.</string>
+      <string id="Pol_RuntimeClrGarbageCollectorTypeChoice">Garbage Collector-Modus</string>
+      <string id="Pol_RuntimeClrGarbageCollectorUseConcurrent">Parallelitätsmodus des .NET-Garbage Collector-Arbeitsprozesses</string>
+      <string id="Pol_RuntimeClrGarbageCollectorUseConcurrent_Help">
+        Über diese Richtlinie wird der Parallelitätsmodus für den Microsoft .Net Garbage Collector-Arbeitsprozess festgelegt.
+
+        Bei der parallelen Speicherbereinigung können die Threads gleichzeitig mit einem dedizierten Thread ausgeführt werden, von dem die Speicherbereinigung während des größten Teils der Prozessdauer erledigt wird. Diese Option wirkt sich nur auf Speicherbereinigungen der zweiten Generation aus. Generation 0 und 1 sind nie gleichzeitig, da sie sehr schnell abgeschlossen sind.
+
+        Es handelt sich hierbei um eine erweiterte Optimierungsoption, die im Normalfall nicht verändert werden sollte.
+
+        Standardmäßig wird die nicht-parallele Speicherbereinigung verwendet.
+      </string>
+      <string id="Pol_RuntimeClrGarbageCollectorUseConcurrentChoice">Parallelitätsmodus der Speicherbereinigung</string>
+      <string id="Pol_RuntimeClrVersion">Version des Microsoft .Net Framework-Arbeitsprozesses</string>
+      <string id="Pol_RuntimeClrVersion_Help">Mit dieser Richtlinie wird gesteuert, welche Version von Microsoft .Net Framework für das Hosten von verwaltetem Code in Arbeitsprozessen verwendet wird, die vom System Center-Verwaltungsdienst gestartet werden.
+      
+Diese Richtlinie gilt nur für Agents nicht für Verwaltungsserver. Für Verwaltungsserver darf die .NET Framework-Version nicht geändert werden.
+
+Wenn diese Richtlinie nicht angegeben wird, wird standardmäßig Microsoft .NET Framework 2.0 verwendet, wenn der Agent unter Windows 7 oder auf einem älteren Betriebssystem ausgeführt wird. Bei einer neueren Windows-Version als Windows 7 wird standardmäßig Microsoft .NET Framework 4.0 verwendet.</string>
+      <string id="Lbl_RuntimeClrVersionCombo">Framework-Version</string>
+      <string id="Lbl_RuntimeClrVersion20">2.0</string>
+      <string id="Lbl_RuntimeClrVersion40">4.0</string>
+    </stringTable>
+    <presentationTable>
+      <presentation id="Pol_LogonTypePolicy">
+        <text>Geben Sie für Aktionskonten und ausführende Konten den Anmeldetyp an, der von den vom System Center-Verwaltungsdienst erstellten Arbeitsprozessen (MonitoringHost.exe) verwendet wird.</text>
+        <text> </text>
+        <text>Hinweis: Bei Verwendung der Anmeldetypen "Dienst" oder "Batch" werden einige Überwachungsaktivitäten, die auf Systemressourcen zugreifen, die Administrator- oder interaktive Anmeldeberechtigungen erfordern, möglicherweise nicht erfolgreich ausgeführt.</text>
+        <text> </text>
+        <dropdownList refId="Lbl_LogonTypePolicyCombo" defaultItem="1">Anmeldetyp: </dropdownList>
+        <text> </text>
+        <text>Batch = Die Anmeldung erfolgt für einen Batchprozess.</text>
+        <text>Interaktiv = Verwendet den interaktiven Anmeldetyp. Dieser entspricht der normalen Benutzeranmeldung.</text>
+        <text>Dienst = Die Anmeldung erfolgt für ein Dienstkonto.</text>
+      </presentation>
+      <presentation id="Pol_RuntimeClrGarbageCollectorType">
+        <text>Geben Sie an, in welchem Modus der Microsoft .NET Framework-Garbage Collector bei Arbeitsprozessen ausgeführt werden soll, die durch den System Center-Verwaltungsdienst erstellt wurden.</text>
+        <checkBox refId="Pol_RuntimeClrGarbageCollectorTypeChoice" defaultChecked="true">Arbeitsstations-Garbage Collector verwenden</checkBox>
+        <text>Aktiviert = Arbeitsstations-Garbage Collector wird verwendet</text>
+        <text>Deaktiviert = Server-Garbage Collector wird verwendet</text>
+      </presentation>
+      <presentation id="Pol_RuntimeClrGarbageCollectorUseConcurrent">
+        <text>Geben Sie an, in welchem Parallelitätsmodus der Microsoft .NET Framework-Garbage Collector bei Arbeitsprozessen ausgeführt werden soll, die durch den System Center-Verwaltungsdienst erstellt wurden.</text>
+        <checkBox refId="Pol_RuntimeClrGarbageCollectorUseConcurrentChoice" defaultChecked="false">Parallele Speicherbereinigung verwenden</checkBox>
+        <text>Aktiviert = parallele Speicherbereinigung verwenden.</text>
+        <text>Deaktiviert = parallele Speicherbereinigung nicht verwenden.</text>
+      </presentation>
+      <presentation id="Pol_RuntimeClrVersion">
+        <text>Geben Sie an, welche Microsoft .NET Framework-Version für Arbeitsprozesse verwendet werden soll, die durch den System Center-Verwaltungsdienst erstellt wurden.</text>
+        <text> </text>
+        <dropdownList refId="Lbl_RuntimeClrVersionCombo" defaultItem="0">Framework-Version: </dropdownList>
+        <text> </text>
+        <text>2.0 = Microsoft .NET Framework 2.0-Laufzeit wird verwendet. Dies schließt die Versionen 3.0 oder 3.5 ein, wenn sie auf dem System installiert sind.</text>
+        <text>4.0 = Microsoft .NET Framework 4-Laufzeit wird verwendet.</text>
+      </presentation>
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>

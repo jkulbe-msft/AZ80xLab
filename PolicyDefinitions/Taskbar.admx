@@ -54,7 +54,7 @@
         </policy>
         <policy name="HideSCAMeetNow" class="User" displayName="$(string.HideSCAMeetNow)" explainText="$(string.HideSCAMeetNow_Help)" key="Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" valueName="HideSCAMeetNow">
             <parentCategory ref="windows:StartMenu" />
-            <supportedOn ref="windows:SUPPORTED_Windows_10_0_19H1" />
+            <supportedOn ref="windows:SUPPORTED_Windows_10_0" />
             <enabledValue>
                 <decimal value="1" />
             </enabledValue>
@@ -132,7 +132,7 @@
                 <decimal value="0" />
             </disabledValue>
         </policy>
-        <policy name="TaskbarNoPinnedList" class="User" displayName="$(string.TaskbarNoPinnedList)" explainText="$(string.TaskbarNoPinnedList_Help)" key="Software\Policies\Microsoft\Windows\Explorer" valueName="TaskbarNoPinnedList">
+        <policy name="TaskbarNoPinnedList" class="Both" displayName="$(string.TaskbarNoPinnedList)" explainText="$(string.TaskbarNoPinnedList_Help)" key="Software\Policies\Microsoft\Windows\Explorer" valueName="TaskbarNoPinnedList">
             <parentCategory ref="windows:StartMenu" />
             <supportedOn ref="windows:SUPPORTED_Windows7" />
             <enabledValue>
@@ -222,7 +222,7 @@
                 <decimal value="2" />
             </disabledValue>
         </policy>
-        <policy name="DisableNotificationCenter" class="User" displayName="$(string.DisableNotificationCenter)" explainText="$(string.DisableNotificationCenter_Help)" key="Software\Policies\Microsoft\Windows\Explorer" valueName="DisableNotificationCenter">
+        <policy name="DisableNotificationCenter" class="Both" displayName="$(string.DisableNotificationCenter)" explainText="$(string.DisableNotificationCenter_Help)" key="Software\Policies\Microsoft\Windows\Explorer" valueName="DisableNotificationCenter">
             <parentCategory ref="windows:StartMenu" />
             <supportedOn ref="windows:SUPPORTED_Windows_10_0" />
             <enabledValue>
@@ -288,6 +288,16 @@
                     </item>
                 </enum>
             </elements>
+        </policy>
+        <policy name="HideTaskViewButton" class="Both" displayName="$(string.HideTaskViewButton)" explainText="$(string.HideTaskViewButton_Help)" key="Software\Policies\Microsoft\Windows\Explorer" valueName="HideTaskViewButton">
+            <parentCategory ref="windows:StartMenu" />
+            <supportedOn ref="windows:SUPPORTED_Windows_11_0_NOSERVER_ENTERPRISE_EDUCATION_PRO_SANDBOX" />
+            <enabledValue>
+                <decimal value="1" />
+            </enabledValue>
+            <disabledValue>
+                <decimal value="0" />
+            </disabledValue>
         </policy>
     </policies>
 </policyDefinitions>

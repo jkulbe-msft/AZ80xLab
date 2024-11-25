@@ -8,33 +8,27 @@
   <resources minRequiredRevision="1.0" />
   <supportedOn>
     <definitions>
-      <definition name="0cfb4e0b8f4f0a708a1b001eb3048750" displayName="$(string.0cfb4e0b8f4f0a708a1b001eb3048750)" />
-      <definition name="18aba9a1585c1a6d76e6736fcb39d2b8" displayName="$(string.18aba9a1585c1a6d76e6736fcb39d2b8)" />
-      <definition name="65e68fdb5c72c08c04d825d434c43964" displayName="$(string.65e68fdb5c72c08c04d825d434c43964)" />
-      <definition name="8d89edaa317214eee0022894c0065c03" displayName="$(string.8d89edaa317214eee0022894c0065c03)" />
-      <definition name="1012a2b91972a53a7888838a3a276834" displayName="$(string.1012a2b91972a53a7888838a3a276834)" />
-      <definition name="5be0b4c6ad5ab3c93bda1c0244f6d1cb" displayName="$(string.5be0b4c6ad5ab3c93bda1c0244f6d1cb)" />
-      <definition name="564801452e7a36a014c203011eb4975d" displayName="$(string.564801452e7a36a014c203011eb4975d)" />
-      <definition name="c58309e00747afb63483df80cdf843d3" displayName="$(string.c58309e00747afb63483df80cdf843d3)" />
-      <definition name="2a6ef2f6dc30c6436deb209b6779266b" displayName="$(string.2a6ef2f6dc30c6436deb209b6779266b)" />
+      <definition name="366cf3eec6a8bd75ff4f6d84a46f1c68" displayName="$(string.366cf3eec6a8bd75ff4f6d84a46f1c68)" />
+      <definition name="b6fa43649764c3f6e85f04dee5e926b1" displayName="$(string.b6fa43649764c3f6e85f04dee5e926b1)" />
+      <definition name="a9442527f3270f84c19325b927c855b6" displayName="$(string.a9442527f3270f84c19325b927c855b6)" />
     </definitions>
   </supportedOn>
   <categories>
     <category name="2594ab6a0d5b818dbbc9ccba35b26929" displayName="$(string.2594ab6a0d5b818dbbc9ccba35b26929)" />
-    <category name="d7b8a9babaaedbc7b58034d8ef9da5da" displayName="$(string.d7b8a9babaaedbc7b58034d8ef9da5da)">
+    <category name="b7aa8e0a05d28c621efbc8fa076a7a56" displayName="$(string.b7aa8e0a05d28c621efbc8fa076a7a56)">
       <parentCategory ref="2594ab6a0d5b818dbbc9ccba35b26929" />
     </category>
-    <category name="0df0aa016cc68438eff38e3f95ea511b" displayName="$(string.0df0aa016cc68438eff38e3f95ea511b)">
-      <parentCategory ref="d7b8a9babaaedbc7b58034d8ef9da5da" />
+    <category name="58155d9cd5795e30bb720b3ef6996d44" displayName="$(string.58155d9cd5795e30bb720b3ef6996d44)">
+      <parentCategory ref="2594ab6a0d5b818dbbc9ccba35b26929" />
     </category>
-    <category name="063ce13be83fe20d42ca6d23861eef23" displayName="$(string.063ce13be83fe20d42ca6d23861eef23)">
-      <parentCategory ref="0df0aa016cc68438eff38e3f95ea511b" />
+    <category name="b0592220d6643c2e0c23bc7a00044694" displayName="$(string.b0592220d6643c2e0c23bc7a00044694)">
+      <parentCategory ref="2594ab6a0d5b818dbbc9ccba35b26929" />
     </category>
-    <category name="20aada25346cd8d3ba46b4cc90ec8c3d" displayName="$(string.20aada25346cd8d3ba46b4cc90ec8c3d)">
-      <parentCategory ref="d7b8a9babaaedbc7b58034d8ef9da5da" />
+    <category name="ab2ac8b0e3dc39a91cb839231a8ec990" displayName="$(string.ab2ac8b0e3dc39a91cb839231a8ec990)">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
     </category>
-    <category name="ab0dd337fef4d410935aeedbce6a66e6" displayName="$(string.ab0dd337fef4d410935aeedbce6a66e6)">
-      <parentCategory ref="d7b8a9babaaedbc7b58034d8ef9da5da" />
+    <category name="52960ad22b1e09a5cda5228ae61c4544" displayName="$(string.52960ad22b1e09a5cda5228ae61c4544)">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
     </category>
     <category name="6a0b4022f3fb5302d7535c6053c98986" displayName="$(string.6a0b4022f3fb5302d7535c6053c98986)">
       <parentCategory ref="2594ab6a0d5b818dbbc9ccba35b26929" />
@@ -42,36 +36,68 @@
     <category name="1e07548adbc5c619c55b3d9dffe70e78" displayName="$(string.1e07548adbc5c619c55b3d9dffe70e78)">
       <parentCategory ref="6a0b4022f3fb5302d7535c6053c98986" />
     </category>
-    <category name="45019325e62c825e056911b5137887f7" displayName="$(string.45019325e62c825e056911b5137887f7)">
-      <parentCategory ref="1e07548adbc5c619c55b3d9dffe70e78" />
-    </category>
-    <category name="66530266148a698477a6d33560717d5d" displayName="$(string.66530266148a698477a6d33560717d5d)">
-      <parentCategory ref="6a0b4022f3fb5302d7535c6053c98986" />
-    </category>
     <category name="a885268a05693066a9ec2ba0c5ac3240" displayName="$(string.a885268a05693066a9ec2ba0c5ac3240)">
       <parentCategory ref="6a0b4022f3fb5302d7535c6053c98986" />
     </category>
-    <category name="b8f3d24eae9ad612a8c81be009950edf" displayName="$(string.b8f3d24eae9ad612a8c81be009950edf)">
-      <parentCategory ref="2594ab6a0d5b818dbbc9ccba35b26929" />
-    </category>
   </categories>
   <policies>
-    <policy name="1408ce246826df266446890a55b551dc" class="Machine" displayName="$(string.a93497f5d52d35e6414cc2fc17db2ec5)" explainText="$(string.20a62e519a6b27d13a70465a8f29de43)" presentation="$(presentation.1408ce246826df266446890a55b551dc)" key="Software\FSLogix\Apps">
+    <policy name="8577e7b0c7d8183f0e24ed714eccb588" class="Machine" displayName="$(string.5c2d859b36492a4378e0c11117631345)" explainText="$(string.cf20277d9d43f983e9f70e26469efe02)" presentation="$(presentation.8577e7b0c7d8183f0e24ed714eccb588)" key="Software\FSLogix\Apps" valueName="CleanupInvalidSessions">
       <parentCategory ref="2594ab6a0d5b818dbbc9ccba35b26929" />
-      <supportedOn ref="0cfb4e0b8f4f0a708a1b001eb3048750" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="73539d7d53c94e7170378ead108ca114" class="Machine" displayName="$(string.a1e5d176dfd8a3be7e3fe17aa617b280)" explainText="$(string.b20fa64207855a38d0b0807673ffe3be)" presentation="$(presentation.73539d7d53c94e7170378ead108ca114)" key="Software\FSLogix\Apps" valueName="RoamRecycleBin">
+      <parentCategory ref="2594ab6a0d5b818dbbc9ccba35b26929" />
+      <supportedOn ref="b6fa43649764c3f6e85f04dee5e926b1" />
+    </policy>
+    <policy name="25e10eed769a84049b0bfa0912435af0" class="Machine" displayName="$(string.0b425ca0ac84e5cf0c3a5af616bb3ded)" explainText="$(string.3f1f85a081a813ec4c20c802bb44a9cb)" presentation="$(presentation.25e10eed769a84049b0bfa0912435af0)" key="Software\FSLogix\Apps" valueName="VHDCompactDisk">
+      <parentCategory ref="2594ab6a0d5b818dbbc9ccba35b26929" />
+      <supportedOn ref="b6fa43649764c3f6e85f04dee5e926b1" />
+    </policy>
+    <policy name="3905e4d8084ba07377b3b091501c1c2a" class="Machine" displayName="$(string.41aa78eed2769e858c87b7751532c0b3)" explainText="$(string.6191339733b84b0350f7daedde54683e)" presentation="$(presentation.3905e4d8084ba07377b3b091501c1c2a)" key="SYSTEM\CurrentControlSet\Services\frxccd\Parameters">
+      <parentCategory ref="b7aa8e0a05d28c621efbc8fa076a7a56" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <enum id="1408ce246826df266446890a55b551dc" key="Software\FSLogix\Apps" valueName="RoamSearch">
-          <item displayName="$(string.c9b65b15b13c010a09576230571c6ade)">
+        <text id="3905e4d8084ba07377b3b091501c1c2a" key="SYSTEM\CurrentControlSet\Services\frxccd\Parameters" valueName="CacheDirectory" required="true" />
+      </elements>
+    </policy>
+    <policy name="dc93f54eda731f62ee95d04f5475343a" class="Machine" displayName="$(string.feaeec77e1baf5243b4291c7385f1b2f)" explainText="$(string.1aeafe58c7c8eef2a7e29150988df8f4)" presentation="$(presentation.dc93f54eda731f62ee95d04f5475343a)" key="SYSTEM\CurrentControlSet\Services\frxccds\Parameters">
+      <parentCategory ref="b7aa8e0a05d28c621efbc8fa076a7a56" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+      <elements>
+        <text id="dc93f54eda731f62ee95d04f5475343a" key="SYSTEM\CurrentControlSet\Services\frxccds\Parameters" valueName="ProxyDirectory" required="true" />
+      </elements>
+    </policy>
+    <policy name="b9fb7ce97b052c5e4820ebb69ac590d8" class="Machine" displayName="$(string.3305fd0f4221f3ba02315d7b0eed72bc)" explainText="$(string.f68def2993b7e3999380c23edd9b3423)" presentation="$(presentation.b9fb7ce97b052c5e4820ebb69ac590d8)" key="SYSTEM\CurrentControlSet\Services\frxccds\Parameters">
+      <parentCategory ref="b7aa8e0a05d28c621efbc8fa076a7a56" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+      <elements>
+        <text id="b9fb7ce97b052c5e4820ebb69ac590d8" key="SYSTEM\CurrentControlSet\Services\frxccds\Parameters" valueName="WriteCacheDirectory" required="true" />
+      </elements>
+    </policy>
+    <policy name="c576e4e8c67e6e445a2e81ea80bf40df" class="Machine" displayName="$(string.a10bbda1e1716b54ce58585758a16d57)" explainText="$(string.e2827fa69b8e9528f2f716b1e8dd211f)" presentation="$(presentation.c576e4e8c67e6e445a2e81ea80bf40df)" key="Software\FSLogix\Logging" valueName="AdsComputerGroup">
+      <parentCategory ref="58155d9cd5795e30bb720b3ef6996d44" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="0362ff7e3e0ceca08ec456e1d56a950c" class="Machine" displayName="$(string.099386c5f76426069308e5231679af40)" explainText="$(string.bc827ac08a5018d1128bbb86cc8be55f)" presentation="$(presentation.0362ff7e3e0ceca08ec456e1d56a950c)" key="Software\FSLogix\Logging" valueName="DriverInterface">
+      <parentCategory ref="58155d9cd5795e30bb720b3ef6996d44" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="3de183f904d2e4e955dfa1ca372d3de0" class="Machine" displayName="$(string.271e8c351ecdb7e90259dd1154fad898)" explainText="$(string.235f4a18730867f2284f78b1c70aeae0)" presentation="$(presentation.3de183f904d2e4e955dfa1ca372d3de0)" key="Software\FSLogix\Logging">
+      <parentCategory ref="58155d9cd5795e30bb720b3ef6996d44" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+      <elements>
+        <enum id="3de183f904d2e4e955dfa1ca372d3de0" key="Software\FSLogix\Logging" valueName="LoggingEnabled">
+          <item displayName="$(string.b053b537f1eaebac14a08b5a21e49f5b)">
             <value>
               <decimal value="0" />
             </value>
           </item>
-          <item displayName="$(string.ca912445211dafefc51c5ea9a8910f63)">
+          <item displayName="$(string.31ac05782482cc7efa462b8dd24fa749)">
             <value>
               <decimal value="1" />
             </value>
           </item>
-          <item displayName="$(string.a6723e7c3e59b78ed07f669f8ea4a305)">
+          <item displayName="$(string.649a5272e103661b690e40318ff8b2f2)">
             <value>
               <decimal value="2" />
             </value>
@@ -79,22 +105,165 @@
         </enum>
       </elements>
     </policy>
-    <policy name="095343fa0c8b70c9a94ece25c0982bc6" class="Machine" displayName="$(string.9f367579e4661509361ed8f5afba98fa)" explainText="$(string.f993f196f2e7f7c3f3e2bd8f7e8a8cd5)" presentation="$(presentation.095343fa0c8b70c9a94ece25c0982bc6)" key="Software\FSLogix\Logging">
-      <parentCategory ref="2594ab6a0d5b818dbbc9ccba35b26929" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
+    <policy name="7b6decf54f6462a2011e9b9fd13aae18" class="Machine" displayName="$(string.a6e3dde1a6c087addfc7a39844a642b1)" explainText="$(string.100b5b68b585048b34d0d6d6ee1b8fe0)" presentation="$(presentation.7b6decf54f6462a2011e9b9fd13aae18)" key="Software\FSLogix\Logging" valueName="Font">
+      <parentCategory ref="58155d9cd5795e30bb720b3ef6996d44" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="f00515640a549a756287f6e8e72b830a" class="Machine" displayName="$(string.8bf5444650b5a5f7eef8d9a04470edf9)" explainText="$(string.a53984c8ae5abd5f35e8f792c1108980)" presentation="$(presentation.f00515640a549a756287f6e8e72b830a)" key="Software\FSLogix\Logging" valueName="FrxLauncher">
+      <parentCategory ref="58155d9cd5795e30bb720b3ef6996d44" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="79e7756639031bf1621e9529eb15641a" class="Machine" displayName="$(string.dd4b37702ed408bf003ebb1f36989249)" explainText="$(string.e9020c3a3045c4d5d744b8b1ef7a7444)" presentation="$(presentation.79e7756639031bf1621e9529eb15641a)" key="Software\FSLogix\Logging" valueName="IEPlugin">
+      <parentCategory ref="58155d9cd5795e30bb720b3ef6996d44" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="1eaf6ad17eff43a1ed717c79170b2b10" class="Machine" displayName="$(string.f4581adec0747c2a46099c6b224753a6)" explainText="$(string.d9c9366ecdd193f33b445819d93c22f1)" presentation="$(presentation.1eaf6ad17eff43a1ed717c79170b2b10)" key="Software\FSLogix\Logging" valueName="JavaRuleEditor">
+      <parentCategory ref="58155d9cd5795e30bb720b3ef6996d44" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="b6e699d5e11f2ee5fc830930cf61f7a3" class="Machine" displayName="$(string.0983cc1933ebe530f8c553a70d8b7f6f)" explainText="$(string.cee4972979c6d56fd10d5c4ac5fb53d0)" presentation="$(presentation.b6e699d5e11f2ee5fc830930cf61f7a3)" key="Software\FSLogix\Logging">
+      <parentCategory ref="58155d9cd5795e30bb720b3ef6996d44" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <enum id="095343fa0c8b70c9a94ece25c0982bc6" key="Software\FSLogix\Logging" valueName="LoggingEnabled">
-          <item displayName="$(string.14252a17868945a51018c2af84797b84)">
+        <text id="b6e699d5e11f2ee5fc830930cf61f7a3" key="Software\FSLogix\Logging" valueName="LogDir" required="true" />
+      </elements>
+    </policy>
+    <policy name="dde425bc5fd9754670f514a41b7fae89" class="Machine" displayName="$(string.b88d97a63353d9843b241dfc58d08147)" explainText="$(string.abe8dfb6a9c7a6b9257c67dc1ced91e8)" presentation="$(presentation.dde425bc5fd9754670f514a41b7fae89)" key="Software\FSLogix\Logging">
+      <parentCategory ref="58155d9cd5795e30bb720b3ef6996d44" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+      <elements>
+        <decimal id="dde425bc5fd9754670f514a41b7fae89" key="Software\FSLogix\Logging" valueName="LogFileKeepingPeriod" required="true" maxValue="180" />
+      </elements>
+    </policy>
+    <policy name="cb4fceeed196b3d7f7b8789f1a451801" class="Machine" displayName="$(string.990530fd4a495cfd39c848f454ad61fd)" explainText="$(string.8baf94e06d37c7135113034572b5209b)" presentation="$(presentation.cb4fceeed196b3d7f7b8789f1a451801)" key="Software\FSLogix\Logging" valueName="Network">
+      <parentCategory ref="58155d9cd5795e30bb720b3ef6996d44" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="9e15d6d6a459e030e4ebd2e97d782a7e" class="Machine" displayName="$(string.4ad8958692db8088231fcb99001433d1)" explainText="$(string.f4d3cb3da60f34c6fb041ddddc5e7cd6)" presentation="$(presentation.9e15d6d6a459e030e4ebd2e97d782a7e)" key="Software\FSLogix\Logging" valueName="ODFC">
+      <parentCategory ref="58155d9cd5795e30bb720b3ef6996d44" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="5b5ef701c8e6e4c0c2325db89641185a" class="Machine" displayName="$(string.227fcfadb5a7cf3a7d69adcb0e0761c3)" explainText="$(string.e425b6c70b861f756f74374ada76a877)" presentation="$(presentation.5b5ef701c8e6e4c0c2325db89641185a)" key="Software\FSLogix\Logging" valueName="Printer">
+      <parentCategory ref="58155d9cd5795e30bb720b3ef6996d44" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="09f763dd272c35ff9be8198911ca535d" class="Machine" displayName="$(string.b8cb7bdc9bd84b9b195d553aebb8f0f1)" explainText="$(string.55ec875765eb842c8795453e9fe6ef7b)" presentation="$(presentation.09f763dd272c35ff9be8198911ca535d)" key="Software\FSLogix\Logging" valueName="ProcessStart">
+      <parentCategory ref="58155d9cd5795e30bb720b3ef6996d44" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="8b5974062e71d917768947d301df19a7" class="Machine" displayName="$(string.8fb1e6406f5a1c613ba223464913e093)" explainText="$(string.30b9057c585ee592a038d1707068f91d)" presentation="$(presentation.8b5974062e71d917768947d301df19a7)" key="Software\FSLogix\Logging" valueName="ConfigTool">
+      <parentCategory ref="58155d9cd5795e30bb720b3ef6996d44" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="0d3492eb5a48680d614eab95f3ba9b93" class="Machine" displayName="$(string.8aa7675f411b1bc5a8d1df85355b17e3)" explainText="$(string.9c377347daa5d6f9880c94e9f5019cb1)" presentation="$(presentation.0d3492eb5a48680d614eab95f3ba9b93)" key="Software\FSLogix\Logging" valueName="Profile">
+      <parentCategory ref="58155d9cd5795e30bb720b3ef6996d44" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="05d6cfb3329ad5dd2a3e777c8c7aaf9a" class="Machine" displayName="$(string.c5daf75a69946ed4c0af41d558e68325)" explainText="$(string.2475b680b3c3c80415ef60ce32d9e6a9)" presentation="$(presentation.05d6cfb3329ad5dd2a3e777c8c7aaf9a)" key="Software\FSLogix\Logging" valueName="RuleCompilation">
+      <parentCategory ref="58155d9cd5795e30bb720b3ef6996d44" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="b49162b569e68db17f8995dacc521b75" class="Machine" displayName="$(string.ab7639f979997001c7748a7b2803ab76)" explainText="$(string.1699eda67a0002ec4b6a4b6cadda74c8)" presentation="$(presentation.b49162b569e68db17f8995dacc521b75)" key="Software\FSLogix\Logging" valueName="RuleEditor">
+      <parentCategory ref="58155d9cd5795e30bb720b3ef6996d44" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="f840f66462a6a2f6504260d6d444ac08" class="Machine" displayName="$(string.dd735e3348d1928f6a17725e6589efa9)" explainText="$(string.9c2e1c34fb9c566aa1d71fbced8b43c5)" presentation="$(presentation.f840f66462a6a2f6504260d6d444ac08)" key="Software\FSLogix\Logging" valueName="SearchPlugin">
+      <parentCategory ref="58155d9cd5795e30bb720b3ef6996d44" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="ebfa0980feb28b78ba877d7d987ad9d2" class="Machine" displayName="$(string.861eaa879e188d2b59587c25ccc9515f)" explainText="$(string.0b2bf7c75f4e2b128652060bd4578d65)" presentation="$(presentation.ebfa0980feb28b78ba877d7d987ad9d2)" key="Software\FSLogix\Logging" valueName="Search">
+      <parentCategory ref="58155d9cd5795e30bb720b3ef6996d44" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="42197807b70472bdea023cf365afe49b" class="Machine" displayName="$(string.5190dd34b4f2da633235624e581fb522)" explainText="$(string.3485bb5fdc935759e78ad0d7432e69c7)" presentation="$(presentation.42197807b70472bdea023cf365afe49b)" key="Software\FSLogix\Logging" valueName="Service">
+      <parentCategory ref="58155d9cd5795e30bb720b3ef6996d44" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="d3477bca56ce3f88628dc0bdf6fcb0d5" class="Machine" displayName="$(string.73299986bcb5346e1c58c6a6770a650f)" explainText="$(string.c94b4dd3247b39aaadeb1ae74d543ed0)" presentation="$(presentation.d3477bca56ce3f88628dc0bdf6fcb0d5)" key="Software\Policies\FSLogix\ODFC" valueName="AccessNetworkAsComputerObject">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="cd5899a908d3ad5ed924dba9c37f05da" class="Machine" displayName="$(string.3041aa5a8c5e844e563b247c0665d772)" explainText="$(string.d403cc95ce72c588bb8bf73cd98316eb)" presentation="$(presentation.cd5899a908d3ad5ed924dba9c37f05da)" key="Software\Policies\FSLogix\ODFC">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+      <elements>
+        <text id="cd5899a908d3ad5ed924dba9c37f05da" key="Software\Policies\FSLogix\ODFC" valueName="AttachVHDSDDL" required="true" />
+      </elements>
+    </policy>
+    <policy name="c7b12fa4618bb367718394a7562f1bd0" class="Machine" displayName="$(string.271e8c351ecdb7e90259dd1154fad898)" explainText="$(string.62e12996e474866f5bdf7d9304c4a604)" presentation="$(presentation.c7b12fa4618bb367718394a7562f1bd0)" key="Software\Policies\FSLogix\ODFC" valueName="Enabled">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="0626e334af1eb73823145c4d2762e5ad" class="Machine" displayName="$(string.d2d48e101e58926ebad3f04190ef7244)" explainText="$(string.55b115b720b911b392b079659a36b201)" presentation="$(presentation.0626e334af1eb73823145c4d2762e5ad)" key="Software\Policies\FSLogix\ODFC" valueName="IncludeOfficeActivation">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="866df6a31834f608f1b3bd0ded96def8" class="Machine" displayName="$(string.a6978c9c9903fdb8b0c6de690942e4e3)" explainText="$(string.b90f571d90cc6ba8d97c8c7543650f54)" presentation="$(presentation.866df6a31834f608f1b3bd0ded96def8)" key="Software\Policies\FSLogix\ODFC" valueName="IncludeOneDrive">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="07fac334495bf3fb824da387b2d4554f" class="Machine" displayName="$(string.66cd269580f499253643ac8a5d6ee2c5)" explainText="$(string.0760de23fcc41ff023c9bd5190f0f869)" presentation="$(presentation.07fac334495bf3fb824da387b2d4554f)" key="Software\Policies\FSLogix\ODFC" valueName="IncludeOneNote">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="678065d09dd5f848f00f67e6d9368a6a" class="Machine" displayName="$(string.63c7d1e45695b18679d333bf1dab156f)" explainText="$(string.95bf01d05631ebd1ff53ce9644981f5f)" presentation="$(presentation.678065d09dd5f848f00f67e6d9368a6a)" key="Software\Policies\FSLogix\ODFC" valueName="IncludeOneNote_UWP">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="cafad5ae5c7d6d13cd3298fc9522c862" class="Machine" displayName="$(string.30965133a57c95158b0e91e30d84faea)" explainText="$(string.efb2ace8e0d34edda9f28f4f4f2439ec)" presentation="$(presentation.cafad5ae5c7d6d13cd3298fc9522c862)" key="Software\Policies\FSLogix\ODFC" valueName="IncludeOutlook">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="3731b5134112d0f7352f95cccec88cd8" class="Machine" displayName="$(string.ae19c9131d7ce4416c65a00f56fbe7c7)" explainText="$(string.bf9ba3d8decd3567ecb29e8aca66c1a2)" presentation="$(presentation.3731b5134112d0f7352f95cccec88cd8)" key="Software\Policies\FSLogix\ODFC" valueName="IncludeOutlookPersonalization">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="c3728d7dd38e6639fcf7c140421ba1a4" class="Machine" displayName="$(string.16171fbca829639007dcdaa6158d858c)" explainText="$(string.0fea6526da6e51fd93ad9877eb769c95)" presentation="$(presentation.c3728d7dd38e6639fcf7c140421ba1a4)" key="Software\Policies\FSLogix\ODFC" valueName="IncludeSharepoint">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="a0d6efc89591c35cda307a4259adfd81" class="Machine" displayName="$(string.3ad3a81b854fb02a531cb891c200d67a)" explainText="$(string.1c613097c9404d2d8d6619a6df48051b)" presentation="$(presentation.a0d6efc89591c35cda307a4259adfd81)" key="Software\Policies\FSLogix\ODFC" valueName="IncludeSkype">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="46941aeb7584574aba270a94e7b05aec" class="Machine" displayName="$(string.11dd33be3bd7e1de1f558c614fc11a37)" explainText="$(string.5ca722d8496b88be036b5fbcaab54d70)" presentation="$(presentation.46941aeb7584574aba270a94e7b05aec)" key="Software\Policies\FSLogix\ODFC" valueName="IncludeTeams">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="8ab1d4e5cb0b7258a4fd087713b86f3e" class="Machine" displayName="$(string.871a9293666cbfa37ad34a770dd5af29)" explainText="$(string.93708cc061b75a64c37af60e6d9d9963)" presentation="$(presentation.8ab1d4e5cb0b7258a4fd087713b86f3e)" key="Software\Policies\FSLogix\ODFC" valueName="IsDynamic">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="7ebc284a6bd4b7f1e57320ea7ed6e4eb" class="Machine" displayName="$(string.46ecd62882dbf029862d6d289c85a16e)" explainText="$(string.8db547dd79b1a437cd9012257225593f)" presentation="$(presentation.7ebc284a6bd4b7f1e57320ea7ed6e4eb)" key="Software\Policies\FSLogix\ODFC">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+      <elements>
+        <decimal id="7ebc284a6bd4b7f1e57320ea7ed6e4eb" key="Software\Policies\FSLogix\ODFC" valueName="LockedRetryInterval" required="true" maxValue="600" />
+      </elements>
+    </policy>
+    <policy name="6657b130a099b3d1ac687f21a6eb5dbf" class="Machine" displayName="$(string.d116d601ae64d92666f1be1c9035a476)" explainText="$(string.e61f8e1ec71b4891d4d0437115c5293a)" presentation="$(presentation.6657b130a099b3d1ac687f21a6eb5dbf)" key="Software\Policies\FSLogix\ODFC">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+      <elements>
+        <decimal id="6657b130a099b3d1ac687f21a6eb5dbf" key="Software\Policies\FSLogix\ODFC" valueName="LockedRetryCount" required="true" maxValue="600" />
+      </elements>
+    </policy>
+    <policy name="43f10638484203b91dca2afbc641ffa5" class="Machine" displayName="$(string.5bcb8e6f55d4dc0a25b7d1db96838024)" explainText="$(string.ebaa97a41178cfd8fb294ac2b428ea0b)" presentation="$(presentation.43f10638484203b91dca2afbc641ffa5)" key="Software\Policies\FSLogix\ODFC">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+      <elements>
+        <enum id="43f10638484203b91dca2afbc641ffa5" key="Software\Policies\FSLogix\ODFC" valueName="MirrorLocalOSTToVHD">
+          <item displayName="$(string.b9bde13e06317e87c8d74eb33f41bf62)">
             <value>
               <decimal value="0" />
             </value>
           </item>
-          <item displayName="$(string.757198515decfc884fe051a2738c1648)">
+          <item displayName="$(string.b53a923f926ae256d7e424ad4aaa37de)">
             <value>
               <decimal value="1" />
             </value>
           </item>
-          <item displayName="$(string.1aaeb118e07565f32494042cb773f288)">
+          <item displayName="$(string.43b229623767bfb27def6fd3be88028e)">
             <value>
               <decimal value="2" />
             </value>
@@ -102,484 +271,57 @@
         </enum>
       </elements>
     </policy>
-    <policy name="97b6e6718ceee98f6407c49e21804ebe" class="Machine" displayName="$(string.d00efcc6a6f9ec2e32e3e2aa5556f054)" explainText="$(string.111dddcbdd5d488f8de54bee4eed869a)" presentation="$(presentation.97b6e6718ceee98f6407c49e21804ebe)" key="Software\FSLogix\Logging">
-      <parentCategory ref="2594ab6a0d5b818dbbc9ccba35b26929" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
+    <policy name="f2e88ffbb50940c943dd4ed446fc4ffe" class="Machine" displayName="$(string.ca99a00915d1ac0d0f787925a359113c)" explainText="$(string.eef20d7f6012633e6caf8156a3dea068)" presentation="$(presentation.f2e88ffbb50940c943dd4ed446fc4ffe)" key="Software\Policies\FSLogix\ODFC">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <decimal id="97b6e6718ceee98f6407c49e21804ebe" key="Software\FSLogix\Logging" valueName="LogFileKeepingPeriod" required="true" maxValue="180" />
+        <decimal id="f2e88ffbb50940c943dd4ed446fc4ffe" key="Software\Policies\FSLogix\ODFC" valueName="NumSessionVHDsToKeep" required="true" maxValue="10" />
       </elements>
     </policy>
-    <policy name="2d9083035a1b4ad02cbde7f0fd366a31" class="Machine" displayName="$(string.14598791e90ac8541507c6085b1186e9)" explainText="$(string.069f5339258498178ff4df8d398b6a5c)" presentation="$(presentation.2d9083035a1b4ad02cbde7f0fd366a31)" key="Software\FSLogix\Logging">
-      <parentCategory ref="2594ab6a0d5b818dbbc9ccba35b26929" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
+    <policy name="ad49d371ad8a438094de2e60bfe666c6" class="Machine" displayName="$(string.81b43c51619f1acc89589b76c8d669c8)" explainText="$(string.9249e28eb41f6e619b66eae69452b29b)" presentation="$(presentation.ad49d371ad8a438094de2e60bfe666c6)" key="Software\Policies\FSLogix\ODFC" valueName="OutlookCachedMode">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="2af9293f518e93f33ac6b6a8e6ef4bba" class="Machine" displayName="$(string.a4543341ef24354833d48571702cddc7)" explainText="$(string.29b15b57ffdf581252d0b3db035ae647)" presentation="$(presentation.2af9293f518e93f33ac6b6a8e6ef4bba)" key="Software\Policies\FSLogix\ODFC">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <text id="2d9083035a1b4ad02cbde7f0fd366a31" key="Software\FSLogix\Logging" valueName="LogDir" required="true" />
+        <text id="2af9293f518e93f33ac6b6a8e6ef4bba" key="Software\Policies\FSLogix\ODFC" valueName="OutlookFolderPath" required="true" />
       </elements>
     </policy>
-    <policy name="d5c9bb8ebca69ca9c44c0837bf8e5d01" class="Machine" displayName="$(string.0fecfff35a50cda87b6eec7600423c7d)" explainText="$(string.7556586bf0ae00f306267a9cfdade667)" presentation="$(presentation.d5c9bb8ebca69ca9c44c0837bf8e5d01)" key="Software\FSLogix\Logging">
-      <parentCategory ref="2594ab6a0d5b818dbbc9ccba35b26929" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
+    <policy name="eb0804d899f24d6189e8d352825d0d3e" class="Machine" displayName="$(string.7130f78edb2f7226a90f1a3fd9b915e3)" explainText="$(string.78d2a008727b0382138324b8a2abe9ad)" presentation="$(presentation.eb0804d899f24d6189e8d352825d0d3e)" key="Software\Policies\FSLogix\ODFC" valueName="PreventLoginWithFailure">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="e527faec58feac99c9ce76b53263e945" class="Machine" displayName="$(string.35ac956b268b81bbac261a58b5d92f33)" explainText="$(string.3c2c50f21d0e7f4fe46f4f67f6c1c743)" presentation="$(presentation.e527faec58feac99c9ce76b53263e945)" key="Software\Policies\FSLogix\ODFC" valueName="PreventLoginWithTempProfile">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="5409aa1518ca57520d7e44650775e6d6" class="Machine" displayName="$(string.ee7002618e6103e92ff1e4104af3ce74)" explainText="$(string.851b7288c9879527cffe4f0bedfae220)" presentation="$(presentation.5409aa1518ca57520d7e44650775e6d6)" key="Software\Policies\FSLogix\ODFC">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <boolean id="d5c9bb8ebca69ca9c44c0837bf8e5d01" key="Software\FSLogix\Logging" valueName="ConfigTool">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
+        <decimal id="5409aa1518ca57520d7e44650775e6d6" key="Software\Policies\FSLogix\ODFC" valueName="ReAttachRetryCount" required="true" maxValue="600" />
       </elements>
     </policy>
-    <policy name="d10116902f1325660d8195750362ed94" class="Machine" displayName="$(string.518167f2e105a6b850d66995cc0ad2a9)" explainText="$(string.7556586bf0ae00f306267a9cfdade667)" presentation="$(presentation.d10116902f1325660d8195750362ed94)" key="Software\FSLogix\Logging">
-      <parentCategory ref="2594ab6a0d5b818dbbc9ccba35b26929" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
+    <policy name="4330f2841859e58c35cc9022521c2aa8" class="Machine" displayName="$(string.e2fd67244b3e606d3d6ee0f6d6e224c0)" explainText="$(string.6fc1c3a2db6ace4f9155efe8ef9d491d)" presentation="$(presentation.4330f2841859e58c35cc9022521c2aa8)" key="Software\Policies\FSLogix\ODFC">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <boolean id="d10116902f1325660d8195750362ed94" key="Software\FSLogix\Logging" valueName="IEPlugin">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
+        <decimal id="4330f2841859e58c35cc9022521c2aa8" key="Software\Policies\FSLogix\ODFC" valueName="ReAttachIntervalSeconds" required="true" minValue="1" maxValue="60" />
       </elements>
     </policy>
-    <policy name="c41e9fd3247effc71668b2edd6683897" class="Machine" displayName="$(string.0f8c21534ef4cb5296a754f8a15d208d)" explainText="$(string.7556586bf0ae00f306267a9cfdade667)" presentation="$(presentation.c41e9fd3247effc71668b2edd6683897)" key="Software\FSLogix\Logging">
-      <parentCategory ref="2594ab6a0d5b818dbbc9ccba35b26929" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
+    <policy name="7d7897d720a2b5008c8a689b963ee0d6" class="Machine" displayName="$(string.e89e8d49eff810ba18afde3fd3facff6)" explainText="$(string.a3ed7225e925a90f8bbccd160c4972c9)" presentation="$(presentation.7d7897d720a2b5008c8a689b963ee0d6)" key="Software\Policies\FSLogix\ODFC">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <boolean id="c41e9fd3247effc71668b2edd6683897" key="Software\FSLogix\Logging" valueName="RuleEditor">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="b9f0049a87cb091c218548a623df8699" class="Machine" displayName="$(string.7ca9e8a9e30ae20f3d4e649ec323ae1a)" explainText="$(string.7556586bf0ae00f306267a9cfdade667)" presentation="$(presentation.b9f0049a87cb091c218548a623df8699)" key="Software\FSLogix\Logging">
-      <parentCategory ref="2594ab6a0d5b818dbbc9ccba35b26929" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
-      <elements>
-        <boolean id="b9f0049a87cb091c218548a623df8699" key="Software\FSLogix\Logging" valueName="JavaRuleEditor">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="81eb8a3b63e6f8d2788c204b34cf4573" class="Machine" displayName="$(string.7341f5c7ef08ce5d245182b5fe759937)" explainText="$(string.7556586bf0ae00f306267a9cfdade667)" presentation="$(presentation.81eb8a3b63e6f8d2788c204b34cf4573)" key="Software\FSLogix\Logging">
-      <parentCategory ref="2594ab6a0d5b818dbbc9ccba35b26929" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
-      <elements>
-        <boolean id="81eb8a3b63e6f8d2788c204b34cf4573" key="Software\FSLogix\Logging" valueName="Service">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="64454f83284b30d7b2cc9c031434daf2" class="Machine" displayName="$(string.e9d1824f1b8ac70c6fcdd27f657d0517)" explainText="$(string.7556586bf0ae00f306267a9cfdade667)" presentation="$(presentation.64454f83284b30d7b2cc9c031434daf2)" key="Software\FSLogix\Logging">
-      <parentCategory ref="2594ab6a0d5b818dbbc9ccba35b26929" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
-      <elements>
-        <boolean id="64454f83284b30d7b2cc9c031434daf2" key="Software\FSLogix\Logging" valueName="Profile">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="789ac1c420af4dee008b253208edb070" class="Machine" displayName="$(string.f221919257dc19c0e0b1dde45a1b75d0)" explainText="$(string.7556586bf0ae00f306267a9cfdade667)" presentation="$(presentation.789ac1c420af4dee008b253208edb070)" key="Software\FSLogix\Logging">
-      <parentCategory ref="2594ab6a0d5b818dbbc9ccba35b26929" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
-      <elements>
-        <boolean id="789ac1c420af4dee008b253208edb070" key="Software\FSLogix\Logging" valueName="FrxLauncher">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="19f4e2c7bb4bd8bdcba0487ee8d7b5dc" class="Machine" displayName="$(string.b6145b1359eaa566a61c145a8c35cf56)" explainText="$(string.7556586bf0ae00f306267a9cfdade667)" presentation="$(presentation.19f4e2c7bb4bd8bdcba0487ee8d7b5dc)" key="Software\FSLogix\Logging">
-      <parentCategory ref="2594ab6a0d5b818dbbc9ccba35b26929" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
-      <elements>
-        <boolean id="19f4e2c7bb4bd8bdcba0487ee8d7b5dc" key="Software\FSLogix\Logging" valueName="ODFC">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="1a6de4637a13e666fcd7fdc1360d4524" class="Machine" displayName="$(string.33799f5ae4663c55cf63545b84c8c2f9)" explainText="$(string.7556586bf0ae00f306267a9cfdade667)" presentation="$(presentation.1a6de4637a13e666fcd7fdc1360d4524)" key="Software\FSLogix\Logging">
-      <parentCategory ref="2594ab6a0d5b818dbbc9ccba35b26929" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
-      <elements>
-        <boolean id="1a6de4637a13e666fcd7fdc1360d4524" key="Software\FSLogix\Logging" valueName="RuleCompilation">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="2505ffad9dd11cb1fa7cef80db42a832" class="Machine" displayName="$(string.0d52ef38e81214a4a9f70880d9dc0896)" explainText="$(string.7556586bf0ae00f306267a9cfdade667)" presentation="$(presentation.2505ffad9dd11cb1fa7cef80db42a832)" key="Software\FSLogix\Logging">
-      <parentCategory ref="2594ab6a0d5b818dbbc9ccba35b26929" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
-      <elements>
-        <boolean id="2505ffad9dd11cb1fa7cef80db42a832" key="Software\FSLogix\Logging" valueName="Font">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="ae480fdf70ebb1dee5ad4574fbcde0a6" class="Machine" displayName="$(string.660815203001b91f7637569558e165f8)" explainText="$(string.7556586bf0ae00f306267a9cfdade667)" presentation="$(presentation.ae480fdf70ebb1dee5ad4574fbcde0a6)" key="Software\FSLogix\Logging">
-      <parentCategory ref="2594ab6a0d5b818dbbc9ccba35b26929" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
-      <elements>
-        <boolean id="ae480fdf70ebb1dee5ad4574fbcde0a6" key="Software\FSLogix\Logging" valueName="Network">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="3031078e6713cca426eb29f78802836b" class="Machine" displayName="$(string.1ea834df6431833f81bbcb2b61176a04)" explainText="$(string.7556586bf0ae00f306267a9cfdade667)" presentation="$(presentation.3031078e6713cca426eb29f78802836b)" key="Software\FSLogix\Logging">
-      <parentCategory ref="2594ab6a0d5b818dbbc9ccba35b26929" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
-      <elements>
-        <boolean id="3031078e6713cca426eb29f78802836b" key="Software\FSLogix\Logging" valueName="Printer">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="3aa9f3e2b83a97e9fe7b6756674073d8" class="Machine" displayName="$(string.0dc30b23fdd895c64832116dcb16a44f)" explainText="$(string.7556586bf0ae00f306267a9cfdade667)" presentation="$(presentation.3aa9f3e2b83a97e9fe7b6756674073d8)" key="Software\FSLogix\Logging">
-      <parentCategory ref="2594ab6a0d5b818dbbc9ccba35b26929" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
-      <elements>
-        <boolean id="3aa9f3e2b83a97e9fe7b6756674073d8" key="Software\FSLogix\Logging" valueName="AdsComputerGroup">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="07deb3b72b67736cbfdbca4ae9dff583" class="Machine" displayName="$(string.0870485c0f5f8b99b3022085bbc47de2)" explainText="$(string.7556586bf0ae00f306267a9cfdade667)" presentation="$(presentation.07deb3b72b67736cbfdbca4ae9dff583)" key="Software\FSLogix\Logging">
-      <parentCategory ref="2594ab6a0d5b818dbbc9ccba35b26929" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
-      <elements>
-        <boolean id="07deb3b72b67736cbfdbca4ae9dff583" key="Software\FSLogix\Logging" valueName="DriverInterface">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="642564301d9da4b8a2716cd1d8ce08f9" class="Machine" displayName="$(string.bf01a1b23c399c680fcdbe27cf30f246)" explainText="$(string.7556586bf0ae00f306267a9cfdade667)" presentation="$(presentation.642564301d9da4b8a2716cd1d8ce08f9)" key="Software\FSLogix\Logging">
-      <parentCategory ref="2594ab6a0d5b818dbbc9ccba35b26929" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
-      <elements>
-        <boolean id="642564301d9da4b8a2716cd1d8ce08f9" key="Software\FSLogix\Logging" valueName="Search">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="314d499239b0878b4701075ed4ddfdf5" class="Machine" displayName="$(string.92b25b7ed3f3bd9858ac2db7250933a3)" explainText="$(string.7556586bf0ae00f306267a9cfdade667)" presentation="$(presentation.314d499239b0878b4701075ed4ddfdf5)" key="Software\FSLogix\Logging">
-      <parentCategory ref="2594ab6a0d5b818dbbc9ccba35b26929" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
-      <elements>
-        <boolean id="314d499239b0878b4701075ed4ddfdf5" key="Software\FSLogix\Logging" valueName="SearchPlugin">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="5c3b2fc2abde9cf2484abbb7446ea16d" class="Machine" displayName="$(string.06b0c168c0b2a341dd2850715ea9dd60)" explainText="$(string.7556586bf0ae00f306267a9cfdade667)" presentation="$(presentation.5c3b2fc2abde9cf2484abbb7446ea16d)" key="Software\FSLogix\Logging">
-      <parentCategory ref="2594ab6a0d5b818dbbc9ccba35b26929" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
-      <elements>
-        <boolean id="5c3b2fc2abde9cf2484abbb7446ea16d" key="Software\FSLogix\Logging" valueName="ProcessStart">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="3e8dbd1d3a320d148f1e7566638fb96c" class="Machine" displayName="$(string.271e8c351ecdb7e90259dd1154fad898)" explainText="$(string.b610cd18de4584c47c5e6275edf4dc81)" presentation="$(presentation.3e8dbd1d3a320d148f1e7566638fb96c)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="d7b8a9babaaedbc7b58034d8ef9da5da" />
-      <supportedOn ref="65e68fdb5c72c08c04d825d434c43964" />
-      <elements>
-        <boolean id="3e8dbd1d3a320d148f1e7566638fb96c" key="Software\Policies\FSLogix\ODFC" valueName="Enabled">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="0ceb51ebe4453fc710be22f8eb646d91" class="Machine" displayName="$(string.7e38cb0238061de2af810505ab10b334)" explainText="$(string.b8754431ecbf22448c6998fd912bbc0d)" presentation="$(presentation.0ceb51ebe4453fc710be22f8eb646d91)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="d7b8a9babaaedbc7b58034d8ef9da5da" />
-      <supportedOn ref="65e68fdb5c72c08c04d825d434c43964" />
-      <elements>
-        <text id="0ceb51ebe4453fc710be22f8eb646d91" key="Software\Policies\FSLogix\ODFC" valueName="VHDLocations" required="true" />
-      </elements>
-    </policy>
-    <policy name="0652b623ea7482a040c3effd834274cf" class="Machine" displayName="$(string.9bbc48b1bce680ac24dbd1cf00394379)" explainText="$(string.820932e752fa1bbac31f1ec34b260e31)" presentation="$(presentation.0652b623ea7482a040c3effd834274cf)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="d7b8a9babaaedbc7b58034d8ef9da5da" />
-      <supportedOn ref="65e68fdb5c72c08c04d825d434c43964" />
-      <elements>
-        <boolean id="0652b623ea7482a040c3effd834274cf" key="Software\Policies\FSLogix\ODFC" valueName="IncludeOfficeActivation">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="20269a3ec556b75d84a719fba230cd4c" class="Machine" displayName="$(string.1d6b455ee5e61aaa18ee11904f2ebfee)" explainText="$(string.7812b3aa4b78e8e9e8aa64640fbee227)" presentation="$(presentation.20269a3ec556b75d84a719fba230cd4c)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="d7b8a9babaaedbc7b58034d8ef9da5da" />
-      <supportedOn ref="65e68fdb5c72c08c04d825d434c43964" />
-      <elements>
-        <boolean id="20269a3ec556b75d84a719fba230cd4c" key="Software\Policies\FSLogix\ODFC" valueName="IncludeOfficeFileCache">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="20bd12846158b59011a359b7cb38dc94" class="Machine" displayName="$(string.953d5f7f7bebff5ce9f7ee5cfefb7cea)" explainText="$(string.e0120f76396705ef6ee337526dea3b4f)" presentation="$(presentation.20bd12846158b59011a359b7cb38dc94)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="d7b8a9babaaedbc7b58034d8ef9da5da" />
-      <supportedOn ref="65e68fdb5c72c08c04d825d434c43964" />
-      <elements>
-        <boolean id="20bd12846158b59011a359b7cb38dc94" key="Software\Policies\FSLogix\ODFC" valueName="IncludeOneDrive">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="cdc4ebee6037a3cbb95cccff50832340" class="Machine" displayName="$(string.d22fff2e36edb9ddd53c9d711bc73f9c)" explainText="$(string.95e62f92b9437021b67f2f779d617bb2)" presentation="$(presentation.cdc4ebee6037a3cbb95cccff50832340)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="d7b8a9babaaedbc7b58034d8ef9da5da" />
-      <supportedOn ref="65e68fdb5c72c08c04d825d434c43964" />
-      <elements>
-        <boolean id="cdc4ebee6037a3cbb95cccff50832340" key="Software\Policies\FSLogix\ODFC" valueName="IncludeOneNote">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="9737511a02e71d547a925f4a20cd6235" class="Machine" displayName="$(string.f9ceb57248972df1c7b2f12710d5eac1)" explainText="$(string.cea5a5e8614e1ac0158b8ea726f26853)" presentation="$(presentation.9737511a02e71d547a925f4a20cd6235)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="d7b8a9babaaedbc7b58034d8ef9da5da" />
-      <supportedOn ref="65e68fdb5c72c08c04d825d434c43964" />
-      <elements>
-        <boolean id="9737511a02e71d547a925f4a20cd6235" key="Software\Policies\FSLogix\ODFC" valueName="IncludeOneNote_UWP">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="06ec18224280a28d70076257232a2825" class="Machine" displayName="$(string.3816ffa4d099e0339765127f84774807)" explainText="$(string.fffad933b9a883135cf04b51b19bf360)" presentation="$(presentation.06ec18224280a28d70076257232a2825)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="d7b8a9babaaedbc7b58034d8ef9da5da" />
-      <supportedOn ref="65e68fdb5c72c08c04d825d434c43964" />
-      <elements>
-        <boolean id="06ec18224280a28d70076257232a2825" key="Software\Policies\FSLogix\ODFC" valueName="IncludeOutlook">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="602634dab682e2e124a715dfb69c4793" class="Machine" displayName="$(string.4a91824e999794e9b6b621419d3ccb88)" explainText="$(string.07f6f4eb5f4bf0f1779eebc4fb70b7e3)" presentation="$(presentation.602634dab682e2e124a715dfb69c4793)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="d7b8a9babaaedbc7b58034d8ef9da5da" />
-      <supportedOn ref="65e68fdb5c72c08c04d825d434c43964" />
-      <elements>
-        <boolean id="602634dab682e2e124a715dfb69c4793" key="Software\Policies\FSLogix\ODFC" valueName="IncludeOutlookPersonalization">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="3ac4cf76a1089b989aa6bef92b24bb5c" class="Machine" displayName="$(string.5faeb51c0b2f251b8066bd60ae1c2e04)" explainText="$(string.f66516cc77e76d250f9d48c0778997ea)" presentation="$(presentation.3ac4cf76a1089b989aa6bef92b24bb5c)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="d7b8a9babaaedbc7b58034d8ef9da5da" />
-      <supportedOn ref="65e68fdb5c72c08c04d825d434c43964" />
-      <elements>
-        <boolean id="3ac4cf76a1089b989aa6bef92b24bb5c" key="Software\Policies\FSLogix\ODFC" valueName="IncludeSharepoint">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="e7eb397594548dba8c4e97baf05881f0" class="Machine" displayName="$(string.3dca476949a800045c2966f25819456e)" explainText="$(string.404c62f4a4552e3ab7774ac2f293f9df)" presentation="$(presentation.e7eb397594548dba8c4e97baf05881f0)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="d7b8a9babaaedbc7b58034d8ef9da5da" />
-      <supportedOn ref="65e68fdb5c72c08c04d825d434c43964" />
-      <elements>
-        <boolean id="e7eb397594548dba8c4e97baf05881f0" key="Software\Policies\FSLogix\ODFC" valueName="IncludeSkype">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="d38bd5fa570cc275d3fa6b8027c3a415" class="Machine" displayName="$(string.24e20d96c82ab525c2e2915d5ed58dd9)" explainText="$(string.56b6e1e5111c5a65692f659ac5ed82f5)" presentation="$(presentation.d38bd5fa570cc275d3fa6b8027c3a415)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="d7b8a9babaaedbc7b58034d8ef9da5da" />
-      <supportedOn ref="65e68fdb5c72c08c04d825d434c43964" />
-      <elements>
-        <boolean id="d38bd5fa570cc275d3fa6b8027c3a415" key="Software\Policies\FSLogix\ODFC" valueName="IncludeTeams">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="bc514a8d632d23dea6a24898035e4811" class="Machine" displayName="$(string.a63ede7c17dc230eb21e988953c4bdb2)" explainText="$(string.f229daa123a5aa3b81501adcf847cb5e)" presentation="$(presentation.bc514a8d632d23dea6a24898035e4811)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="d7b8a9babaaedbc7b58034d8ef9da5da" />
-      <supportedOn ref="65e68fdb5c72c08c04d825d434c43964" />
-      <elements>
-        <boolean id="bc514a8d632d23dea6a24898035e4811" key="Software\Policies\FSLogix\ODFC" valueName="IsDynamic">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="24702a43b9463ee0402194a8e69a61cd" class="Machine" displayName="$(string.4c34463973695e73aa0904e095ef1af5)" explainText="$(string.2fb31f3599bfe99c2faaf0006fb4d412)" presentation="$(presentation.24702a43b9463ee0402194a8e69a61cd)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="d7b8a9babaaedbc7b58034d8ef9da5da" />
-      <supportedOn ref="0cfb4e0b8f4f0a708a1b001eb3048750" />
-      <elements>
-        <decimal id="24702a43b9463ee0402194a8e69a61cd" key="Software\Policies\FSLogix\ODFC" valueName="NumSessionVHDsToKeep" required="true" maxValue="10" />
-      </elements>
-    </policy>
-    <policy name="342123147c27d01d3be41169c72e72ae" class="Machine" displayName="$(string.4bc39502ea99463de4eaade21912a8c2)" explainText="$(string.7e9374818377bff8306b1f1e6d3928b9)" presentation="$(presentation.342123147c27d01d3be41169c72e72ae)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="d7b8a9babaaedbc7b58034d8ef9da5da" />
-      <supportedOn ref="65e68fdb5c72c08c04d825d434c43964" />
-      <elements>
-        <text id="342123147c27d01d3be41169c72e72ae" key="Software\Policies\FSLogix\ODFC" valueName="OutlookFolderPath" required="true" />
-      </elements>
-    </policy>
-    <policy name="ac9afb095e0a4b36bf13bb8a9d5ce98b" class="Machine" displayName="$(string.8f4819998d2112131b0a7c4500f04784)" explainText="$(string.4d822133fd06dd6f3a4e98ba0b11603d)" presentation="$(presentation.ac9afb095e0a4b36bf13bb8a9d5ce98b)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="d7b8a9babaaedbc7b58034d8ef9da5da" />
-      <supportedOn ref="65e68fdb5c72c08c04d825d434c43964" />
-      <elements>
-        <boolean id="ac9afb095e0a4b36bf13bb8a9d5ce98b" key="Software\Policies\FSLogix\ODFC" valueName="OutlookCachedMode">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="06edc512dea075236dbdd85c19b75ec8" class="Machine" displayName="$(string.ac763ce70c76064b00b3ea926bd77f8c)" explainText="$(string.f0131784be39132c1c0ad805dd4a3226)" presentation="$(presentation.06edc512dea075236dbdd85c19b75ec8)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="d7b8a9babaaedbc7b58034d8ef9da5da" />
-      <supportedOn ref="65e68fdb5c72c08c04d825d434c43964" />
-      <elements>
-        <decimal id="06edc512dea075236dbdd85c19b75ec8" key="Software\Policies\FSLogix\ODFC" valueName="SizeInMBs" required="true" minValue="500" maxValue="1000000" />
-      </elements>
-    </policy>
-    <policy name="7734958a2bea42b959a8d52c84afe889" class="Machine" displayName="$(string.1cc8e2215e5ed549ffd041d80e478568)" explainText="$(string.6f7e557298ab2f7779221311597704fe)" presentation="$(presentation.7734958a2bea42b959a8d52c84afe889)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="d7b8a9babaaedbc7b58034d8ef9da5da" />
-      <supportedOn ref="65e68fdb5c72c08c04d825d434c43964" />
-      <elements>
-        <enum id="7734958a2bea42b959a8d52c84afe889" key="Software\Policies\FSLogix\ODFC" valueName="RoamSearch">
-          <item displayName="$(string.37b64760cd7801214af918f2e4be75fa)">
-            <value>
-              <decimal value="0" />
-            </value>
-          </item>
-          <item displayName="$(string.81f392dcfddf87c8de045f05cbd7c783)">
+        <enum id="7d7897d720a2b5008c8a689b963ee0d6" key="Software\Policies\FSLogix\ODFC" valueName="RedirectType">
+          <item displayName="$(string.165130a721eeea0c29c99673596062c3)">
             <value>
               <decimal value="1" />
             </value>
           </item>
-          <item displayName="$(string.0c37145916a5cbf3c742e858b7e0615e)">
+          <item displayName="$(string.2e1660e8b8481c170b9292d41ec82b50)">
             <value>
               <decimal value="2" />
             </value>
@@ -587,22 +329,30 @@
         </enum>
       </elements>
     </policy>
-    <policy name="0748503b25137cf6735ff2c877be3fd9" class="Machine" displayName="$(string.4ecedd27c31e739073868527885292fe)" explainText="$(string.cdcd2b62ff92ea01357eb5e29de59628)" presentation="$(presentation.0748503b25137cf6735ff2c877be3fd9)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="d7b8a9babaaedbc7b58034d8ef9da5da" />
-      <supportedOn ref="65e68fdb5c72c08c04d825d434c43964" />
+    <policy name="9f879b0c031fbddd12de86d7db3a6930" class="Machine" displayName="$(string.d232d6daddab6dd3ad5f31c3119650c0)" explainText="$(string.4483559cf385ab9596bfdd749eeae306)" presentation="$(presentation.9f879b0c031fbddd12de86d7db3a6930)" key="Software\Policies\FSLogix\ODFC" valueName="RefreshUserPolicy">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="4f2e2252544af68185401bd374894905" class="Machine" displayName="$(string.58bd43fb26f5dc2fafb4e56239ef6802)" explainText="$(string.ba4c2d9266e1ae691176f849466b857d)" presentation="$(presentation.4f2e2252544af68185401bd374894905)" key="Software\Policies\FSLogix\ODFC" valueName="RemoveOrphanedOSTFilesOnLogoff">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="a2e26113872f20f38203ad9c13d61b71" class="Machine" displayName="$(string.b0635365ddf5430f492b89118f541052)" explainText="$(string.113e25c31190f0b5452b73d0d6024b30)" presentation="$(presentation.a2e26113872f20f38203ad9c13d61b71)" key="Software\Policies\FSLogix\ODFC">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <enum id="0748503b25137cf6735ff2c877be3fd9" key="Software\Policies\FSLogix\ODFC" valueName="MirrorLocalOSTToVHD">
-          <item displayName="$(string.741775b7b0dffed52300365bcd0a5c83)">
+        <enum id="a2e26113872f20f38203ad9c13d61b71" key="Software\Policies\FSLogix\ODFC" valueName="RoamSearch">
+          <item displayName="$(string.53d407d0aad000fffc3f8ac6cdaec371)">
             <value>
               <decimal value="0" />
             </value>
           </item>
-          <item displayName="$(string.48f6a6ee66f95a132066bb7fe9ff3422)">
+          <item displayName="$(string.890023a9c649fbc57c01502372259884)">
             <value>
               <decimal value="1" />
             </value>
           </item>
-          <item displayName="$(string.bfa22ee40abd7b835f509a5ba450c2fd)">
+          <item displayName="$(string.3bb6bd0bb7f36a3176e0a85ad473e00b)">
             <value>
               <decimal value="2" />
             </value>
@@ -610,27 +360,34 @@
         </enum>
       </elements>
     </policy>
-    <policy name="40f65e30ebb8cc46e58f116a9e18e55f" class="Machine" displayName="$(string.95b03470a498c4a320da188eb6d8e00a)" explainText="$(string.b3ac69a64c90629bfb913c84d774e97d)" presentation="$(presentation.40f65e30ebb8cc46e58f116a9e18e55f)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="d7b8a9babaaedbc7b58034d8ef9da5da" />
-      <supportedOn ref="65e68fdb5c72c08c04d825d434c43964" />
+    <policy name="4e5ceb8910ef1891a0e7acaaa9e8e2b6" class="Machine" displayName="$(string.7d73ba02fbb3ad7684bb63ea0aa8deb3)" explainText="$(string.ac3ce288066d9f8ec7aadb4d541f9a50)" presentation="$(presentation.4e5ceb8910ef1891a0e7acaaa9e8e2b6)" key="Software\Policies\FSLogix\ODFC">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <enum id="40f65e30ebb8cc46e58f116a9e18e55f" key="Software\Policies\FSLogix\ODFC" valueName="VHDAccessMode">
-          <item displayName="$(string.f130fed77453d1242da80ea8dd707203)">
+        <decimal id="4e5ceb8910ef1891a0e7acaaa9e8e2b6" key="Software\Policies\FSLogix\ODFC" valueName="SizeInMBs" required="true" minValue="500" maxValue="1000000" />
+      </elements>
+    </policy>
+    <policy name="f8241a69e5121527b6896175df06cf43" class="Machine" displayName="$(string.025938e9641cbc741b2e0661f7f120b9)" explainText="$(string.aaa4720cfc79539ea91755b44169217c)" presentation="$(presentation.f8241a69e5121527b6896175df06cf43)" key="Software\Policies\FSLogix\ODFC">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+      <elements>
+        <enum id="f8241a69e5121527b6896175df06cf43" key="Software\Policies\FSLogix\ODFC" valueName="VHDAccessMode">
+          <item displayName="$(string.108eddf392479eb988cca15588a1f231)">
             <value>
               <decimal value="0" />
             </value>
           </item>
-          <item displayName="$(string.392f4f2c19803de11be2067f2eb3d172)">
+          <item displayName="$(string.3104810a78a35bd960a26d1724fc3a97)">
             <value>
               <decimal value="1" />
             </value>
           </item>
-          <item displayName="$(string.4a79fe814a41988d37b17f0b9e58d37f)">
+          <item displayName="$(string.6b0724a162ce50235c923366743046b5)">
             <value>
               <decimal value="2" />
             </value>
           </item>
-          <item displayName="$(string.5ec45a0fdce21ccdfceefb0d7c741650)">
+          <item displayName="$(string.f30bac94d5fee022427fc990057ed111)">
             <value>
               <decimal value="3" />
             </value>
@@ -638,175 +395,24 @@
         </enum>
       </elements>
     </policy>
-    <policy name="39ee8245110fb24ed74f1e62637b6093" class="Machine" displayName="$(string.25820c654cd1e82ec7d7b79fb81db6bb)" explainText="$(string.af94ab293575bd65b7ac8a96471f2ba6)" presentation="$(presentation.39ee8245110fb24ed74f1e62637b6093)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="d7b8a9babaaedbc7b58034d8ef9da5da" />
-      <supportedOn ref="65e68fdb5c72c08c04d825d434c43964" />
+    <policy name="0d1bc0c1cda56af72e536ae27265ad01" class="Machine" displayName="$(string.9c1f5e601eab264d21f13b364b515258)" explainText="$(string.9cb4d0b5085393a04a724262e54d5dc3)" presentation="$(presentation.0d1bc0c1cda56af72e536ae27265ad01)" key="Software\Policies\FSLogix\ODFC">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <enum id="39ee8245110fb24ed74f1e62637b6093" key="Software\Policies\FSLogix\ODFC" valueName="VolumeType">
-          <item displayName="$(string.1cab26e425de107dab0d6ddb53985120)">
-            <value>
-              <string>VHD</string>
-            </value>
-          </item>
-          <item displayName="$(string.620064eea3f84e09b2c0610756d52634)">
-            <value>
-              <string>VHDX</string>
-            </value>
-          </item>
-        </enum>
+        <text id="0d1bc0c1cda56af72e536ae27265ad01" key="Software\Policies\FSLogix\ODFC" valueName="VHDLocations" required="true" />
       </elements>
     </policy>
-    <policy name="4aa3e56009bb2b4246504d7bddaac159" class="Machine" displayName="$(string.5b9df3a177f2b5a1d6fa8f36b6744edb)" explainText="$(string.4f5dca198ffa01a938c0898eacf4564c)" presentation="$(presentation.4aa3e56009bb2b4246504d7bddaac159)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="0df0aa016cc68438eff38e3f95ea511b" />
-      <supportedOn ref="8d89edaa317214eee0022894c0065c03" />
+    <policy name="239b916826b60571c822427b3e666587" class="Machine" displayName="$(string.6c455aa839e94be613956a30bb0f3105)" explainText="$(string.667a00c08ef290a3054776019260f16c)" presentation="$(presentation.239b916826b60571c822427b3e666587)" key="Software\Policies\FSLogix\ODFC">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <text id="4aa3e56009bb2b4246504d7bddaac159" key="Software\Policies\FSLogix\ODFC" valueName="CCDLocations" required="true" />
-      </elements>
-    </policy>
-    <policy name="f985ba5be45d779b65ef9bc0f84f5391" class="Machine" displayName="$(string.5356c4ed83a5a1b137a5df21255a860a)" explainText="$(string.e51113eb64124737882f092e8242c7ac)" presentation="$(presentation.f985ba5be45d779b65ef9bc0f84f5391)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="0df0aa016cc68438eff38e3f95ea511b" />
-      <supportedOn ref="8d89edaa317214eee0022894c0065c03" />
-      <elements>
-        <boolean id="f985ba5be45d779b65ef9bc0f84f5391" key="Software\Policies\FSLogix\ODFC" valueName="ClearCacheOnLogoff">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="d58f65a7197076e52cf151010c3e327a" class="Machine" displayName="$(string.852a310f27feec4f442fa00c4db0f5df)" explainText="$(string.6a0aa9f4715fb813719e236864b36d7a)" presentation="$(presentation.d58f65a7197076e52cf151010c3e327a)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="0df0aa016cc68438eff38e3f95ea511b" />
-      <supportedOn ref="1012a2b91972a53a7888838a3a276834" />
-      <elements>
-        <decimal id="d58f65a7197076e52cf151010c3e327a" key="Software\Policies\FSLogix\ODFC" valueName="HealthyProvidersRequiredForRegister" required="true" maxValue="4" />
-      </elements>
-    </policy>
-    <policy name="d86ea5e2e5193c478228a022b8d2e429" class="Machine" displayName="$(string.d70ac2e474e2ba21dd9ed37d65e326b9)" explainText="$(string.c3cebfd5c8b7cc31101916b74f0f4b46)" presentation="$(presentation.d86ea5e2e5193c478228a022b8d2e429)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="0df0aa016cc68438eff38e3f95ea511b" />
-      <supportedOn ref="1012a2b91972a53a7888838a3a276834" />
-      <elements>
-        <decimal id="d86ea5e2e5193c478228a022b8d2e429" key="Software\Policies\FSLogix\ODFC" valueName="HealthyProvidersRequiredForUnregister" required="true" maxValue="4" />
-      </elements>
-    </policy>
-    <policy name="115483cbfbd101f056efc59bccc82c03" class="Machine" displayName="$(string.0a1eff84c1747306b55b1ad603bb06ae)" explainText="$(string.477a79144dd929dc63e07a92c9029631)" presentation="$(presentation.115483cbfbd101f056efc59bccc82c03)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="063ce13be83fe20d42ca6d23861eef23" />
-      <supportedOn ref="1012a2b91972a53a7888838a3a276834" />
-      <elements>
-        <decimal id="115483cbfbd101f056efc59bccc82c03" key="Software\Policies\FSLogix\ODFC" valueName="CcdUnregisterTimeout" required="true" maxValue="10000000" />
-      </elements>
-    </policy>
-    <policy name="089ac6e024fb9e0296260f39718c4d5c" class="Machine" displayName="$(string.92fa79c261d1f3ef2892d6ffb11ede39)" explainText="$(string.bcf09b53bdda862c94fc44076b85401b)" presentation="$(presentation.089ac6e024fb9e0296260f39718c4d5c)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="063ce13be83fe20d42ca6d23861eef23" />
-      <supportedOn ref="1012a2b91972a53a7888838a3a276834" />
-      <elements>
-        <boolean id="089ac6e024fb9e0296260f39718c4d5c" key="Software\Policies\FSLogix\ODFC" valueName="ClearCacheOnForcedUnregister">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="944266be3eb268125de24d6ecaa5365d" class="Machine" displayName="$(string.5a14f9c861f0a19b6d859e284b4e4f78)" explainText="$(string.a290cb8477e44dce1c60b3079b978c1d)" presentation="$(presentation.944266be3eb268125de24d6ecaa5365d)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="20aada25346cd8d3ba46b4cc90ec8c3d" />
-      <supportedOn ref="65e68fdb5c72c08c04d825d434c43964" />
-      <elements>
-        <boolean id="944266be3eb268125de24d6ecaa5365d" key="Software\Policies\FSLogix\ODFC" valueName="AccessNetworkAsComputerObject">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="869bc3d65df3e717ad2879b2ba5ff839" class="Machine" displayName="$(string.c7f3aa3fd8be846efbb4ed0bcbe71af9)" explainText="$(string.5f9d761e0a33d06d2d3fed7823f477fb)" presentation="$(presentation.869bc3d65df3e717ad2879b2ba5ff839)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="20aada25346cd8d3ba46b4cc90ec8c3d" />
-      <supportedOn ref="65e68fdb5c72c08c04d825d434c43964" />
-      <elements>
-        <decimal id="869bc3d65df3e717ad2879b2ba5ff839" key="Software\Policies\FSLogix\ODFC" valueName="LockedRetryCount" required="true" maxValue="10000" />
-      </elements>
-    </policy>
-    <policy name="271025708cdcb5a345d97fcaf20ff8a6" class="Machine" displayName="$(string.bfda3b27cd040de124cb7fc59fe60799)" explainText="$(string.097133c9894d0011ac2b64756b8cd922)" presentation="$(presentation.271025708cdcb5a345d97fcaf20ff8a6)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="20aada25346cd8d3ba46b4cc90ec8c3d" />
-      <supportedOn ref="65e68fdb5c72c08c04d825d434c43964" />
-      <elements>
-        <decimal id="271025708cdcb5a345d97fcaf20ff8a6" key="Software\Policies\FSLogix\ODFC" valueName="LockedRetryInterval" required="true" maxValue="600" />
-      </elements>
-    </policy>
-    <policy name="b9ea76485939c6ea6c598ed64a8d0f9c" class="Machine" displayName="$(string.5d99d86fdcec354c940672248a1d6da1)" explainText="$(string.e5a8c517c9067939b726aa3c554b6bcc)" presentation="$(presentation.b9ea76485939c6ea6c598ed64a8d0f9c)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="20aada25346cd8d3ba46b4cc90ec8c3d" />
-      <supportedOn ref="65e68fdb5c72c08c04d825d434c43964" />
-      <elements>
-        <decimal id="b9ea76485939c6ea6c598ed64a8d0f9c" key="Software\Policies\FSLogix\ODFC" valueName="VolumeWaitTimeMS" required="true" minValue="1000" maxValue="1000000" />
-      </elements>
-    </policy>
-    <policy name="7e8527e4fb7488a64c9d7adf6c9aa48c" class="Machine" displayName="$(string.bfd89965eae1b523bf59a6af344a8b0a)" explainText="$(string.cfab6ad67c8dd7eb1a347a7bfbd5c173)" presentation="$(presentation.7e8527e4fb7488a64c9d7adf6c9aa48c)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="20aada25346cd8d3ba46b4cc90ec8c3d" />
-      <supportedOn ref="8d89edaa317214eee0022894c0065c03" />
-      <elements>
-        <boolean id="7e8527e4fb7488a64c9d7adf6c9aa48c" key="Software\Policies\FSLogix\ODFC" valueName="PreventLoginWithFailure">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="0430377fca75e17e3a050a2d34e37d54" class="Machine" displayName="$(string.159bac74058bb28d550f39264a44b473)" explainText="$(string.44276969f2bbad943786b00d723a300b)" presentation="$(presentation.0430377fca75e17e3a050a2d34e37d54)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="20aada25346cd8d3ba46b4cc90ec8c3d" />
-      <supportedOn ref="8d89edaa317214eee0022894c0065c03" />
-      <elements>
-        <boolean id="0430377fca75e17e3a050a2d34e37d54" key="Software\Policies\FSLogix\ODFC" valueName="PreventLoginWithTempProfile">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="017540bd95786719aa8dc5dbbb11b6e0" class="Machine" displayName="$(string.58bd43fb26f5dc2fafb4e56239ef6802)" explainText="$(string.5cb9d11a18621556838e7f410eb9fe87)" presentation="$(presentation.017540bd95786719aa8dc5dbbb11b6e0)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="20aada25346cd8d3ba46b4cc90ec8c3d" />
-      <supportedOn ref="8d89edaa317214eee0022894c0065c03" />
-      <elements>
-        <boolean id="017540bd95786719aa8dc5dbbb11b6e0" key="Software\Policies\FSLogix\ODFC" valueName="RemoveOrphanedOSTFilesOnLogoff">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="729621bd6562233b2c6f8b018288e00b" class="Machine" displayName="$(string.e812c8099d279283d16a9dbcb31726e9)" explainText="$(string.8e290d531edef6f9a2cea571f7a3a243)" presentation="$(presentation.729621bd6562233b2c6f8b018288e00b)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="20aada25346cd8d3ba46b4cc90ec8c3d" />
-      <supportedOn ref="65e68fdb5c72c08c04d825d434c43964" />
-      <elements>
-        <text id="729621bd6562233b2c6f8b018288e00b" key="Software\Policies\FSLogix\ODFC" valueName="AttachVHDSDDL" required="true" />
-      </elements>
-    </policy>
-    <policy name="865ed8d276805290463bffaa3a2e84c7" class="Machine" displayName="$(string.010f9982dd41381631a0c55ad50bf77b)" explainText="$(string.97173ec0807634adbb7a8a4c33d5ec6a)" presentation="$(presentation.865ed8d276805290463bffaa3a2e84c7)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="20aada25346cd8d3ba46b4cc90ec8c3d" />
-      <supportedOn ref="65e68fdb5c72c08c04d825d434c43964" />
-      <elements>
-        <enum id="865ed8d276805290463bffaa3a2e84c7" key="Software\Policies\FSLogix\ODFC" valueName="VHDXSectorSize">
-          <item displayName="$(string.9fd631a2ed1f81634256ac2ad4b6c5ad)">
+        <enum id="239b916826b60571c822427b3e666587" key="Software\Policies\FSLogix\ODFC" valueName="VHDXSectorSize">
+          <item displayName="$(string.badfb7ea79e965827532059bfee5e211)">
             <value>
               <decimal value="512" />
             </value>
           </item>
-          <item displayName="$(string.15ec0ec5b9fa8edf9771c42f1251b714)">
+          <item displayName="$(string.6030c13d4f2d548af200f55fbccc3ee8)">
             <value>
               <decimal value="4096" />
             </value>
@@ -814,153 +420,206 @@
         </enum>
       </elements>
     </policy>
-    <policy name="23d3748c80f6c4ed024b31a732ed01c8" class="Machine" displayName="$(string.31f79b4313da521d2506184c75c6b0a0)" explainText="$(string.a892496735927dcf3b14b1f1223ce957)" presentation="$(presentation.23d3748c80f6c4ed024b31a732ed01c8)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="20aada25346cd8d3ba46b4cc90ec8c3d" />
-      <supportedOn ref="65e68fdb5c72c08c04d825d434c43964" />
+    <policy name="49f2cf83e9c69ebfbd01e3713d242b69" class="Machine" displayName="$(string.2253be1c36e6374ab66245aeacc31570)" explainText="$(string.a569f249e742012a582ac79a72d18e13)" presentation="$(presentation.49f2cf83e9c69ebfbd01e3713d242b69)" key="Software\Policies\FSLogix\ODFC">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <decimal id="23d3748c80f6c4ed024b31a732ed01c8" key="Software\Policies\FSLogix\ODFC" valueName="ReAttachRetryCount" required="true" maxValue="600" />
+        <enum id="49f2cf83e9c69ebfbd01e3713d242b69" key="Software\Policies\FSLogix\ODFC" valueName="VolumeType">
+          <item displayName="$(string.403c67268e821732b9355685bfd90c4c)">
+            <value>
+              <string>VHD</string>
+            </value>
+          </item>
+          <item displayName="$(string.a5bf962f9396aff0c8b8bd2785b7f056)">
+            <value>
+              <string>VHDX</string>
+            </value>
+          </item>
+        </enum>
       </elements>
     </policy>
-    <policy name="69bc744e00e8356b77ce74822a34aefb" class="Machine" displayName="$(string.6bcfa6edaeaf09e8890050141e801cb3)" explainText="$(string.9b0f178af3b65cdea6dfc0f36997500e)" presentation="$(presentation.69bc744e00e8356b77ce74822a34aefb)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="20aada25346cd8d3ba46b4cc90ec8c3d" />
-      <supportedOn ref="65e68fdb5c72c08c04d825d434c43964" />
+    <policy name="300155c3e1d3af8ac3b5f23f074bc2ec" class="Machine" displayName="$(string.394602d41cf18b04c6544d8502908973)" explainText="$(string.54110403ecafab3d2e8e33765b780e1a)" presentation="$(presentation.300155c3e1d3af8ac3b5f23f074bc2ec)" key="Software\Policies\FSLogix\ODFC">
+      <parentCategory ref="b0592220d6643c2e0c23bc7a00044694" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <decimal id="69bc744e00e8356b77ce74822a34aefb" key="Software\Policies\FSLogix\ODFC" valueName="ReAttachIntervalSeconds" required="true" minValue="1" maxValue="60" />
+        <decimal id="300155c3e1d3af8ac3b5f23f074bc2ec" key="Software\Policies\FSLogix\ODFC" valueName="VolumeWaitTimeMS" required="true" minValue="1000" maxValue="1000000" />
       </elements>
     </policy>
-    <policy name="44e98ade86002db6191731741769f9fd" class="Machine" displayName="$(string.d232d6daddab6dd3ad5f31c3119650c0)" explainText="$(string.1e888b69cd4ffc1208b9032ca08fc7bd)" presentation="$(presentation.44e98ade86002db6191731741769f9fd)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="20aada25346cd8d3ba46b4cc90ec8c3d" />
-      <supportedOn ref="5be0b4c6ad5ab3c93bda1c0244f6d1cb" />
+    <policy name="b0117232134cbb10fb2f8c15b32b27d7" class="Machine" displayName="$(string.f7aee170f1f93402974df3f85232d4fc)" explainText="$(string.0394b2a5b8102cc520cc04cfb95a98d1)" presentation="$(presentation.b0117232134cbb10fb2f8c15b32b27d7)" key="Software\Policies\FSLogix\ODFC">
+      <parentCategory ref="ab2ac8b0e3dc39a91cb839231a8ec990" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <boolean id="44e98ade86002db6191731741769f9fd" key="Software\Policies\FSLogix\ODFC" valueName="RefreshUserPolicy">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
+        <text id="b0117232134cbb10fb2f8c15b32b27d7" key="Software\Policies\FSLogix\ODFC" valueName="CCDLocations" required="true" />
       </elements>
     </policy>
-    <policy name="51ad665d6b005fc20b0e8732848e1151" class="Machine" displayName="$(string.a23fa1af0601e1d9bd7b3ace2d431c6c)" explainText="$(string.e6b8de3187e5e81b458394a273838370)" presentation="$(presentation.51ad665d6b005fc20b0e8732848e1151)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="ab0dd337fef4d410935aeedbce6a66e6" />
-      <supportedOn ref="65e68fdb5c72c08c04d825d434c43964" />
+    <policy name="bada617d0c278f9f017fa1cefc4d181a" class="Machine" displayName="$(string.1aa1b0fdd3ac8615fe209538cb54df48)" explainText="$(string.7fc6b549bd96de64bb16765b229f1dab)" presentation="$(presentation.bada617d0c278f9f017fa1cefc4d181a)" key="Software\Policies\FSLogix\ODFC">
+      <parentCategory ref="ab2ac8b0e3dc39a91cb839231a8ec990" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <text id="51ad665d6b005fc20b0e8732848e1151" key="Software\Policies\FSLogix\ODFC" valueName="DiffDiskParentFolderPath" required="true" />
+        <decimal id="bada617d0c278f9f017fa1cefc4d181a" key="Software\Policies\FSLogix\ODFC" valueName="CcdMaxCacheSizeInMBs" required="true" maxValue="10000000" />
       </elements>
     </policy>
-    <policy name="45b527d5b5de3bca6ca18c638bf8eb70" class="Machine" displayName="$(string.b6954e24603ac69ab0a5926310881e72)" explainText="$(string.5db45e32c9fd20fa4d2c4d1598a62ddf)" presentation="$(presentation.45b527d5b5de3bca6ca18c638bf8eb70)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="ab0dd337fef4d410935aeedbce6a66e6" />
-      <supportedOn ref="65e68fdb5c72c08c04d825d434c43964" />
+    <policy name="ea18fa7d261df4928cadebd9da036c84" class="Machine" displayName="$(string.f5bcb5ff7dd37cfba3e80179c9d38a05)" explainText="$(string.2e5fdb6bb46e5d74ef13e2daf6b6d17a)" presentation="$(presentation.ea18fa7d261df4928cadebd9da036c84)" key="Software\Policies\FSLogix\ODFC">
+      <parentCategory ref="ab2ac8b0e3dc39a91cb839231a8ec990" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <boolean id="45b527d5b5de3bca6ca18c638bf8eb70" key="Software\Policies\FSLogix\ODFC" valueName="NoProfileContainingFolder">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
+        <decimal id="ea18fa7d261df4928cadebd9da036c84" key="Software\Policies\FSLogix\ODFC" valueName="CCDUnregisterTimeout" required="true" maxValue="10000000" />
       </elements>
     </policy>
-    <policy name="19f5f1e2cfa3fdfb6c18eaae273176e4" class="Machine" displayName="$(string.4f4fc9c5f9cc563593bcc3df596280d0)" explainText="$(string.675bc9c351bccb1d864277ca3fedfa88)" presentation="$(presentation.19f5f1e2cfa3fdfb6c18eaae273176e4)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="ab0dd337fef4d410935aeedbce6a66e6" />
-      <supportedOn ref="65e68fdb5c72c08c04d825d434c43964" />
+    <policy name="1770720aa6bb54f3c9ee006587f2bd15" class="Machine" displayName="$(string.92fa79c261d1f3ef2892d6ffb11ede39)" explainText="$(string.2bcfd9db98b2aea71772ceae00629bcc)" presentation="$(presentation.1770720aa6bb54f3c9ee006587f2bd15)" key="Software\Policies\FSLogix\ODFC" valueName="ClearCacheOnForcedUnregister">
+      <parentCategory ref="ab2ac8b0e3dc39a91cb839231a8ec990" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="3fc759061f2b983173ded01a4f5f097d" class="Machine" displayName="$(string.dc27a5995f3d1566d0448f17c7c41ee4)" explainText="$(string.fde8042fbd348ac02ec0c8df0ac76809)" presentation="$(presentation.3fc759061f2b983173ded01a4f5f097d)" key="Software\Policies\FSLogix\ODFC" valueName="ClearCacheOnLogoff">
+      <parentCategory ref="ab2ac8b0e3dc39a91cb839231a8ec990" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="68cfdbda3dccfcbbd0b2f7a94098236d" class="Machine" displayName="$(string.852a310f27feec4f442fa00c4db0f5df)" explainText="$(string.81748c25adf2d16a909056e9aae71857)" presentation="$(presentation.68cfdbda3dccfcbbd0b2f7a94098236d)" key="Software\Policies\FSLogix\ODFC">
+      <parentCategory ref="ab2ac8b0e3dc39a91cb839231a8ec990" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <text id="19f5f1e2cfa3fdfb6c18eaae273176e4" key="Software\Policies\FSLogix\ODFC" valueName="SIDDirNameMatch" required="true" />
+        <decimal id="68cfdbda3dccfcbbd0b2f7a94098236d" key="Software\Policies\FSLogix\ODFC" valueName="HealthyProvidersRequiredForRegister" required="true" maxValue="4" />
       </elements>
     </policy>
-    <policy name="c29061b3cfc33769f080942b9cee4e77" class="Machine" displayName="$(string.e65adb7b00e5b3493a394480d7f88a6c)" explainText="$(string.c35b4f83cfcb3a94ebde37008e18108b)" presentation="$(presentation.c29061b3cfc33769f080942b9cee4e77)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="ab0dd337fef4d410935aeedbce6a66e6" />
-      <supportedOn ref="65e68fdb5c72c08c04d825d434c43964" />
+    <policy name="98b492eeb1c35c7e0143af7a19cb0d1c" class="Machine" displayName="$(string.d70ac2e474e2ba21dd9ed37d65e326b9)" explainText="$(string.5e339721e3a1edecaeff64117023c195)" presentation="$(presentation.98b492eeb1c35c7e0143af7a19cb0d1c)" key="Software\Policies\FSLogix\ODFC">
+      <parentCategory ref="ab2ac8b0e3dc39a91cb839231a8ec990" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <text id="c29061b3cfc33769f080942b9cee4e77" key="Software\Policies\FSLogix\ODFC" valueName="SIDDirNamePattern" required="true" />
+        <decimal id="98b492eeb1c35c7e0143af7a19cb0d1c" key="Software\Policies\FSLogix\ODFC" valueName="HealthyProvidersRequiredForUnregister" required="true" maxValue="4" />
       </elements>
     </policy>
-    <policy name="a9678d15344f894ff01885ae88a22fc6" class="Machine" displayName="$(string.682198c90ec40d09c09a002563516d06)" explainText="$(string.78f6f7405e0ce1e43e595f0e9b3c6dbc)" presentation="$(presentation.a9678d15344f894ff01885ae88a22fc6)" key="Software\Policies\FSLogix\ODFC">
-      <parentCategory ref="ab0dd337fef4d410935aeedbce6a66e6" />
-      <supportedOn ref="65e68fdb5c72c08c04d825d434c43964" />
+    <policy name="2ba7e2679c84d8a9f0a557f5d854bd5e" class="Machine" displayName="$(string.a23fa1af0601e1d9bd7b3ace2d431c6c)" explainText="$(string.259a1fd0b02ead44e3d5ef2cf97a330a)" presentation="$(presentation.2ba7e2679c84d8a9f0a557f5d854bd5e)" key="Software\Policies\FSLogix\ODFC">
+      <parentCategory ref="52960ad22b1e09a5cda5228ae61c4544" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <boolean id="a9678d15344f894ff01885ae88a22fc6" key="Software\Policies\FSLogix\ODFC" valueName="FlipFlopProfileDirectoryName">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
+        <text id="2ba7e2679c84d8a9f0a557f5d854bd5e" key="Software\Policies\FSLogix\ODFC" valueName="DiffDiskParentFolderPath" required="true" />
       </elements>
     </policy>
-    <policy name="6bf06db968eddea70ab86c1a5b03abce" class="Machine" displayName="$(string.271e8c351ecdb7e90259dd1154fad898)" explainText="$(string.b610cd18de4584c47c5e6275edf4dc81)" presentation="$(presentation.6bf06db968eddea70ab86c1a5b03abce)" key="Software\FSLogix\Profiles">
+    <policy name="2fa655d3383122259c00c9245061f4fb" class="Machine" displayName="$(string.6f843ed0ec2c5350c4e657fac4f09e2f)" explainText="$(string.d40b797664f943e8e9149da509fd6df5)" presentation="$(presentation.2fa655d3383122259c00c9245061f4fb)" key="Software\Policies\FSLogix\ODFC" valueName="FlipFlopProfileDirectoryName">
+      <parentCategory ref="52960ad22b1e09a5cda5228ae61c4544" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="be2e5d7e42f0df7ec7b9009ba56a77a5" class="Machine" displayName="$(string.cbaf45eab4f4180a9de6db51a12cb2d7)" explainText="$(string.97a32925b278d54e8b87e16691878323)" presentation="$(presentation.be2e5d7e42f0df7ec7b9009ba56a77a5)" key="Software\Policies\FSLogix\ODFC" valueName="NoProfileContainingFolder">
+      <parentCategory ref="52960ad22b1e09a5cda5228ae61c4544" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="2b537494e33c851cfed89ae1548d6911" class="Machine" displayName="$(string.4f48678c720ba174d766135037f7c921)" explainText="$(string.1176e18e7832fa83429597a99f8f71e9)" presentation="$(presentation.2b537494e33c851cfed89ae1548d6911)" key="Software\Policies\FSLogix\ODFC">
+      <parentCategory ref="52960ad22b1e09a5cda5228ae61c4544" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+      <elements>
+        <text id="2b537494e33c851cfed89ae1548d6911" key="Software\Policies\FSLogix\ODFC" valueName="SIDDirNameMatch" required="true" />
+      </elements>
+    </policy>
+    <policy name="2a959a0719b4804c7777f2cd6a750dac" class="Machine" displayName="$(string.e9fe287faaa6314e6f43ac4d683c4e19)" explainText="$(string.c9012cf4bede4169457d0dacb5cb7ae8)" presentation="$(presentation.2a959a0719b4804c7777f2cd6a750dac)" key="Software\Policies\FSLogix\ODFC">
+      <parentCategory ref="52960ad22b1e09a5cda5228ae61c4544" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+      <elements>
+        <text id="2a959a0719b4804c7777f2cd6a750dac" key="Software\Policies\FSLogix\ODFC" valueName="SIDDirNamePattern" required="true" />
+      </elements>
+    </policy>
+    <policy name="9642264508013d0d6098128658d413e2" class="Machine" displayName="$(string.7c6d8839851828b2dd55026fc047ec77)" explainText="$(string.75347fcad22245116bc745d03c336683)" presentation="$(presentation.9642264508013d0d6098128658d413e2)" key="Software\Policies\FSLogix\ODFC">
+      <parentCategory ref="52960ad22b1e09a5cda5228ae61c4544" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+      <elements>
+        <text id="9642264508013d0d6098128658d413e2" key="Software\Policies\FSLogix\ODFC" valueName="VHDNameMatch" required="true" />
+      </elements>
+    </policy>
+    <policy name="01e3b0537f0b828ee6efa662d696b8cc" class="Machine" displayName="$(string.6af6d9ad2c224e14aae82a710a00984f)" explainText="$(string.44e2bba29909e1f70da4869493d92d51)" presentation="$(presentation.01e3b0537f0b828ee6efa662d696b8cc)" key="Software\Policies\FSLogix\ODFC">
+      <parentCategory ref="52960ad22b1e09a5cda5228ae61c4544" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+      <elements>
+        <text id="01e3b0537f0b828ee6efa662d696b8cc" key="Software\Policies\FSLogix\ODFC" valueName="VHDNamePattern" required="true" />
+      </elements>
+    </policy>
+    <policy name="ebf0fac40184494281e615c06951b334" class="Machine" displayName="$(string.73299986bcb5346e1c58c6a6770a650f)" explainText="$(string.fcd7ab5aaee0681307d2f60f9eec3aae)" presentation="$(presentation.ebf0fac40184494281e615c06951b334)" key="Software\FSLogix\Profiles" valueName="AccessNetworkAsComputerObject">
       <parentCategory ref="6a0b4022f3fb5302d7535c6053c98986" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="b19e2840060ead81e844f13e14b18a3e" class="Machine" displayName="$(string.3041aa5a8c5e844e563b247c0665d772)" explainText="$(string.0904240a7c2b8c48fae28eebf62ec23a)" presentation="$(presentation.b19e2840060ead81e844f13e14b18a3e)" key="Software\FSLogix\Profiles">
+      <parentCategory ref="6a0b4022f3fb5302d7535c6053c98986" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <boolean id="6bf06db968eddea70ab86c1a5b03abce" key="Software\FSLogix\Profiles" valueName="Enabled">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
+        <text id="b19e2840060ead81e844f13e14b18a3e" key="Software\FSLogix\Profiles" valueName="AttachVHDSDDL" required="true" />
       </elements>
     </policy>
-    <policy name="7afe18ca9a4c1ba51f9fbc85c55b9f24" class="Machine" displayName="$(string.7e38cb0238061de2af810505ab10b334)" explainText="$(string.b8754431ecbf22448c6998fd912bbc0d)" presentation="$(presentation.7afe18ca9a4c1ba51f9fbc85c55b9f24)" key="Software\FSLogix\Profiles">
+    <policy name="e23ccb093fab1af62d13580d4ad776fc" class="Machine" displayName="$(string.c05c5964bda539da3330f65d17226e8c)" explainText="$(string.a0c31fa34473f389345747c4354ca151)" presentation="$(presentation.e23ccb093fab1af62d13580d4ad776fc)" key="Software\FSLogix\Profiles" valueName="CleanOutNotifications">
       <parentCategory ref="6a0b4022f3fb5302d7535c6053c98986" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="b51e4b48264ba6b773cef3565cef7e9e" class="Machine" displayName="$(string.adf6608ae22a0dbf093117a63785ef19)" explainText="$(string.7093c304f8ca5e102e35228b79be9326)" presentation="$(presentation.b51e4b48264ba6b773cef3565cef7e9e)" key="Software\FSLogix\Profiles" valueName="DeleteLocalProfileWhenVHDShouldApply">
+      <parentCategory ref="6a0b4022f3fb5302d7535c6053c98986" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="6bf06db968eddea70ab86c1a5b03abce" class="Machine" displayName="$(string.271e8c351ecdb7e90259dd1154fad898)" explainText="$(string.05eff41cf11f7bcfccbf6a912aa0cd2e)" presentation="$(presentation.6bf06db968eddea70ab86c1a5b03abce)" key="Software\FSLogix\Profiles" valueName="Enabled">
+      <parentCategory ref="6a0b4022f3fb5302d7535c6053c98986" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="b97df5083afac54e634f54e3534e905c" class="Machine" displayName="$(string.416158bcb73f9fba0a84d010f1e234d1)" explainText="$(string.5f02d939b66ac64a58c6e73a2aa2ff2c)" presentation="$(presentation.b97df5083afac54e634f54e3534e905c)" key="Software\FSLogix\Profiles" valueName="InstallAppxPackages">
+      <parentCategory ref="6a0b4022f3fb5302d7535c6053c98986" />
+      <supportedOn ref="b6fa43649764c3f6e85f04dee5e926b1" />
+    </policy>
+    <policy name="ccb2f59fecb36239ae39bf92a707c5db" class="Machine" displayName="$(string.871a9293666cbfa37ad34a770dd5af29)" explainText="$(string.f2750fdff20207ef99ad5572e6c5cc33)" presentation="$(presentation.ccb2f59fecb36239ae39bf92a707c5db)" key="Software\FSLogix\Profiles" valueName="IsDynamic">
+      <parentCategory ref="6a0b4022f3fb5302d7535c6053c98986" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="98b027ace14073441dc0a3ad9dd43c62" class="Machine" displayName="$(string.5f37d226a53d407e886f50d2ae0f06f8)" explainText="$(string.35e1ae37dbb6667b778021fa2e63cdbb)" presentation="$(presentation.98b027ace14073441dc0a3ad9dd43c62)" key="Software\FSLogix\Profiles" valueName="KeepLocalDir">
+      <parentCategory ref="6a0b4022f3fb5302d7535c6053c98986" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="fffc8fd5087cef2e462aad4dd49474cb" class="Machine" displayName="$(string.46ecd62882dbf029862d6d289c85a16e)" explainText="$(string.8cd64508affb84a04398b6dbaddcea1a)" presentation="$(presentation.fffc8fd5087cef2e462aad4dd49474cb)" key="Software\FSLogix\Profiles">
+      <parentCategory ref="6a0b4022f3fb5302d7535c6053c98986" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <text id="7afe18ca9a4c1ba51f9fbc85c55b9f24" key="Software\FSLogix\Profiles" valueName="VHDLocations" required="true" />
+        <decimal id="fffc8fd5087cef2e462aad4dd49474cb" key="Software\FSLogix\Profiles" valueName="LockedRetryCount" required="true" maxValue="600" />
       </elements>
     </policy>
-    <policy name="c61fde662af161090e0173b841ec880e" class="Machine" displayName="$(string.223281f42e034e9c6b9693d455af2b46)" explainText="$(string.c47bc3138453074b8c90e50283571ae5)" presentation="$(presentation.c61fde662af161090e0173b841ec880e)" key="Software\FSLogix\Profiles">
+    <policy name="4c42565c3e4ad642d198edf383758611" class="Machine" displayName="$(string.d116d601ae64d92666f1be1c9035a476)" explainText="$(string.439721bde769ae0e5f3948474c2af08a)" presentation="$(presentation.4c42565c3e4ad642d198edf383758611)" key="Software\FSLogix\Profiles">
       <parentCategory ref="6a0b4022f3fb5302d7535c6053c98986" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <boolean id="c61fde662af161090e0173b841ec880e" key="Software\FSLogix\Profiles" valueName="DeleteLocalProfileWhenVHDShouldApply">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
+        <decimal id="4c42565c3e4ad642d198edf383758611" key="Software\FSLogix\Profiles" valueName="LockedRetryInterval" required="true" maxValue="600" />
       </elements>
     </policy>
-    <policy name="7fda2f5a98dd35545ca0cf1e522a5d7d" class="Machine" displayName="$(string.a63ede7c17dc230eb21e988953c4bdb2)" explainText="$(string.f229daa123a5aa3b81501adcf847cb5e)" presentation="$(presentation.7fda2f5a98dd35545ca0cf1e522a5d7d)" key="Software\FSLogix\Profiles">
+    <policy name="6f6db8af97189d2a526deb7d6b3c72d1" class="Machine" displayName="$(string.81b43c51619f1acc89589b76c8d669c8)" explainText="$(string.8684d2a1940d1a9e35c777734bd071a9)" presentation="$(presentation.6f6db8af97189d2a526deb7d6b3c72d1)" key="Software\FSLogix\Profiles" valueName="OutlookCachedMode">
       <parentCategory ref="6a0b4022f3fb5302d7535c6053c98986" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="9f1e5ce01ce00cea68b3fcf6d180b9d0" class="Machine" displayName="$(string.7130f78edb2f7226a90f1a3fd9b915e3)" explainText="$(string.c01c86021da4bf43a89feb6f90c49023)" presentation="$(presentation.9f1e5ce01ce00cea68b3fcf6d180b9d0)" key="Software\FSLogix\Profiles" valueName="PreventLoginWithFailure">
+      <parentCategory ref="6a0b4022f3fb5302d7535c6053c98986" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="bbf11da3f73115f8df92b448bab36932" class="Machine" displayName="$(string.35ac956b268b81bbac261a58b5d92f33)" explainText="$(string.749d7e788051db97dcbf64b56fcaa21f)" presentation="$(presentation.bbf11da3f73115f8df92b448bab36932)" key="Software\FSLogix\Profiles" valueName="PreventLoginWithTempProfile">
+      <parentCategory ref="6a0b4022f3fb5302d7535c6053c98986" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="a26fb0c92f56743795659629e936836c" class="Machine" displayName="$(string.401036396d8a8cab93041665349ce95b)" explainText="$(string.2d67aee6abb4fb46f8619fb5f872f8d9)" presentation="$(presentation.a26fb0c92f56743795659629e936836c)" key="Software\FSLogix\Profiles">
+      <parentCategory ref="6a0b4022f3fb5302d7535c6053c98986" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <boolean id="7fda2f5a98dd35545ca0cf1e522a5d7d" key="Software\FSLogix\Profiles" valueName="IsDynamic">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
+        <text id="a26fb0c92f56743795659629e936836c" key="Software\FSLogix\Profiles" valueName="ProfileDirSDDL" required="true" />
       </elements>
     </policy>
-    <policy name="03bc1aeec81e3beb20f31faa17b77e0f" class="Machine" displayName="$(string.338c0728e7b1e1e6e7e2d036cc2b59d6)" explainText="$(string.8e4ef82fa39aa9b531813d5d834fb05e)" presentation="$(presentation.03bc1aeec81e3beb20f31faa17b77e0f)" key="Software\FSLogix\Profiles">
+    <policy name="f90e42cb8b68bed61b25126e0246759d" class="Machine" displayName="$(string.1517cca67b9bf49fc4f828e7a62de76a)" explainText="$(string.d52d9f49ba23501fd8cf5b385c78a9ca)" presentation="$(presentation.f90e42cb8b68bed61b25126e0246759d)" key="Software\FSLogix\Profiles">
       <parentCategory ref="6a0b4022f3fb5302d7535c6053c98986" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <enum id="03bc1aeec81e3beb20f31faa17b77e0f" key="Software\FSLogix\Profiles" valueName="ProfileType">
-          <item displayName="$(string.5ca9fce39e8f9dcf6f2dfbc3b963b51a)">
+        <enum id="f90e42cb8b68bed61b25126e0246759d" key="Software\FSLogix\Profiles" valueName="ProfileType">
+          <item displayName="$(string.acfaa97c6447d13f0124e28e8b616e29)">
             <value>
               <decimal value="0" />
             </value>
           </item>
-          <item displayName="$(string.c8c8b74391b86738ff02afb6c249d36c)">
+          <item displayName="$(string.622545a3ff5731b270ddec41756df9a9)">
             <value>
               <decimal value="1" />
             </value>
           </item>
-          <item displayName="$(string.ee934c66842cb332b4f02f75afb4cfbc)">
+          <item displayName="$(string.52a39b71f0cf887a3efd735b52619725)">
             <value>
               <decimal value="2" />
             </value>
           </item>
-          <item displayName="$(string.4f2ea40aa9a1460a7e9c536326f3dd11)">
+          <item displayName="$(string.d015c4142efd31171497dd8d12fd6d8f)">
             <value>
               <decimal value="3" />
             </value>
@@ -968,43 +627,36 @@
         </enum>
       </elements>
     </policy>
-    <policy name="3dc36f78b7c4edded82fc6b6411a36f6" class="Machine" displayName="$(string.8f4819998d2112131b0a7c4500f04784)" explainText="$(string.4d822133fd06dd6f3a4e98ba0b11603d)" presentation="$(presentation.3dc36f78b7c4edded82fc6b6411a36f6)" key="Software\FSLogix\Profiles">
+    <policy name="5c92fba53486c1eb36521fd0c5e006a7" class="Machine" displayName="$(string.ee7002618e6103e92ff1e4104af3ce74)" explainText="$(string.ad28313f74fea0b6615a46c3e7e4dc0b)" presentation="$(presentation.5c92fba53486c1eb36521fd0c5e006a7)" key="Software\FSLogix\Profiles">
       <parentCategory ref="6a0b4022f3fb5302d7535c6053c98986" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <boolean id="3dc36f78b7c4edded82fc6b6411a36f6" key="Software\FSLogix\Profiles" valueName="OutlookCachedMode">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
+        <decimal id="5c92fba53486c1eb36521fd0c5e006a7" key="Software\FSLogix\Profiles" valueName="ReAttachRetryCount" required="true" maxValue="600" />
       </elements>
     </policy>
-    <policy name="dbab4f3dbd14a4ac225da477288e4451" class="Machine" displayName="$(string.ac763ce70c76064b00b3ea926bd77f8c)" explainText="$(string.f0131784be39132c1c0ad805dd4a3226)" presentation="$(presentation.dbab4f3dbd14a4ac225da477288e4451)" key="Software\FSLogix\Profiles">
+    <policy name="d538250e1708833cb8c396f5dcfaa1ee" class="Machine" displayName="$(string.e2fd67244b3e606d3d6ee0f6d6e224c0)" explainText="$(string.8df90f9a475561bce182f5c4b7657ffa)" presentation="$(presentation.d538250e1708833cb8c396f5dcfaa1ee)" key="Software\FSLogix\Profiles">
       <parentCategory ref="6a0b4022f3fb5302d7535c6053c98986" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <decimal id="dbab4f3dbd14a4ac225da477288e4451" key="Software\FSLogix\Profiles" valueName="SizeInMBs" required="true" minValue="500" maxValue="1000000" />
+        <decimal id="d538250e1708833cb8c396f5dcfaa1ee" key="Software\FSLogix\Profiles" valueName="ReAttachIntervalSeconds" required="true" minValue="1" maxValue="60" />
       </elements>
     </policy>
-    <policy name="1dcfac6231f2694d89b668fd498c0e2c" class="Machine" displayName="$(string.df6f20233858e992cf8e4f0108ebcf6a)" explainText="$(string.ef390afceaf3938c5626238b893ece89)" presentation="$(presentation.1dcfac6231f2694d89b668fd498c0e2c)" key="Software\FSLogix\Profiles">
+    <policy name="18b367c760d1f15c79539a97e1ed3861" class="Machine" displayName="$(string.2b9f7ffec2622203d246bcebc533130d)" explainText="$(string.f21d25d0778e99d5870b9ee28185322b)" presentation="$(presentation.18b367c760d1f15c79539a97e1ed3861)" key="Software\FSLogix\Profiles">
       <parentCategory ref="6a0b4022f3fb5302d7535c6053c98986" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <enum id="1dcfac6231f2694d89b668fd498c0e2c" key="Software\FSLogix\Profiles" valueName="RoamSearch">
-          <item displayName="$(string.777e070c965a7923aebf31409e999499)">
+        <enum id="18b367c760d1f15c79539a97e1ed3861" key="Software\FSLogix\Profiles" valueName="RebootOnUserLogoff">
+          <item displayName="$(string.6ca72dc0e5e44abe5d316e99ca4953c6)">
             <value>
               <decimal value="0" />
             </value>
           </item>
-          <item displayName="$(string.00214cf48c5d8448dc14efb455c11f3d)">
+          <item displayName="$(string.4bf9ded9e6cfba7b0ef6c524ddb16388)">
             <value>
               <decimal value="1" />
             </value>
           </item>
-          <item displayName="$(string.4aeed1ece1feaa9c58a03e4943787b38)">
+          <item displayName="$(string.dd9440f296cbf16a14ae88f4758ebbdf)">
             <value>
               <decimal value="2" />
             </value>
@@ -1012,387 +664,261 @@
         </enum>
       </elements>
     </policy>
-    <policy name="aae8e1d2d05127f5d24f5e4f2b632dc5" class="Machine" displayName="$(string.5b9df3a177f2b5a1d6fa8f36b6744edb)" explainText="$(string.4f5dca198ffa01a938c0898eacf4564c)" presentation="$(presentation.aae8e1d2d05127f5d24f5e4f2b632dc5)" key="Software\FSLogix\Profiles">
-      <parentCategory ref="1e07548adbc5c619c55b3d9dffe70e78" />
-      <supportedOn ref="564801452e7a36a014c203011eb4975d" />
+    <policy name="25a066d83b78f2f3eaeddd2ed0592444" class="Machine" displayName="$(string.e89e8d49eff810ba18afde3fd3facff6)" explainText="$(string.324e09c14ef558e3d8e421ddf5541634)" presentation="$(presentation.25a066d83b78f2f3eaeddd2ed0592444)" key="Software\FSLogix\Profiles">
+      <parentCategory ref="6a0b4022f3fb5302d7535c6053c98986" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <text id="aae8e1d2d05127f5d24f5e4f2b632dc5" key="Software\FSLogix\Profiles" valueName="CCDLocations" required="true" />
+        <enum id="25a066d83b78f2f3eaeddd2ed0592444" key="Software\FSLogix\Profiles" valueName="RedirectType">
+          <item displayName="$(string.dc275bddb338adbacd4eeb469d03919b)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.068c0dd0a38fd978a96b2f06c07b26e8)">
+            <value>
+              <decimal value="2" />
+            </value>
+          </item>
+        </enum>
       </elements>
     </policy>
-    <policy name="6a50499c3e990b6fe11357d115592ba6" class="Machine" displayName="$(string.5356c4ed83a5a1b137a5df21255a860a)" explainText="$(string.e51113eb64124737882f092e8242c7ac)" presentation="$(presentation.6a50499c3e990b6fe11357d115592ba6)" key="Software\FSLogix\Profiles">
-      <parentCategory ref="1e07548adbc5c619c55b3d9dffe70e78" />
-      <supportedOn ref="564801452e7a36a014c203011eb4975d" />
+    <policy name="a3c41d63f3392ae100f1c16dae356d60" class="Machine" displayName="$(string.69458f05e6a19778310936bcb762e2d4)" explainText="$(string.db8807437036da262ca93a579f790494)" presentation="$(presentation.a3c41d63f3392ae100f1c16dae356d60)" key="Software\FSLogix\Profiles">
+      <parentCategory ref="6a0b4022f3fb5302d7535c6053c98986" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <boolean id="6a50499c3e990b6fe11357d115592ba6" key="Software\FSLogix\Profiles" valueName="ClearCacheOnLogoff">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
+        <text id="a3c41d63f3392ae100f1c16dae356d60" key="Software\FSLogix\Profiles" valueName="RedirXMLSourceFolder" required="true" />
       </elements>
     </policy>
-    <policy name="30c6caba665e2db1ff5d2598c046372a" class="Machine" displayName="$(string.852a310f27feec4f442fa00c4db0f5df)" explainText="$(string.6a0aa9f4715fb813719e236864b36d7a)" presentation="$(presentation.30c6caba665e2db1ff5d2598c046372a)" key="Software\FSLogix\Profiles">
+    <policy name="027a1413cbe776e5951646abb4382e11" class="Machine" displayName="$(string.58bd43fb26f5dc2fafb4e56239ef6802)" explainText="$(string.f2a2594c4c9d5e7155ab67d1cb97c033)" presentation="$(presentation.027a1413cbe776e5951646abb4382e11)" key="Software\FSLogix\Profiles" valueName="RemoveOrphanedOSTFilesOnLogoff">
+      <parentCategory ref="6a0b4022f3fb5302d7535c6053c98986" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="eb58efadfa618dc73bfa0753a49585c1" class="Machine" displayName="$(string.520389b903c27c2d9cfbbb068be84343)" explainText="$(string.23c3d3d120471b2864afe419119ace1d)" presentation="$(presentation.eb58efadfa618dc73bfa0753a49585c1)" key="Software\FSLogix\Profiles" valueName="RoamIdentity">
+      <parentCategory ref="6a0b4022f3fb5302d7535c6053c98986" />
+      <supportedOn ref="a9442527f3270f84c19325b927c855b6" />
+    </policy>
+    <policy name="490798cba68330ab495bad5d41d59f91" class="Machine" displayName="$(string.b0635365ddf5430f492b89118f541052)" explainText="$(string.1f640bddd7eeeb9ad7e7d4077c655d52)" presentation="$(presentation.490798cba68330ab495bad5d41d59f91)" key="Software\FSLogix\Profiles">
+      <parentCategory ref="6a0b4022f3fb5302d7535c6053c98986" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+      <elements>
+        <enum id="490798cba68330ab495bad5d41d59f91" key="Software\FSLogix\Profiles" valueName="RoamSearch">
+          <item displayName="$(string.bcab55ffb176cb13c94e314598c5b8e4)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+          <item displayName="$(string.f9f963c6ad9d9b84168d42a1e1d44f87)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.de28260e30bac2e768697623fe083b4e)">
+            <value>
+              <decimal value="2" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="392768834dafec5f9074689b1c554207" class="Machine" displayName="$(string.1e09af5703d1a45d987899a2dfc2eb1b)" explainText="$(string.5f99430b96a79e4cca7622cb400b9dcd)" presentation="$(presentation.392768834dafec5f9074689b1c554207)" key="Software\FSLogix\Profiles">
+      <parentCategory ref="6a0b4022f3fb5302d7535c6053c98986" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+      <elements>
+        <enum id="392768834dafec5f9074689b1c554207" key="Software\FSLogix\Profiles" valueName="SetTempToLocalPath">
+          <item displayName="$(string.613c270b964437d9f7d5fdd470960eec)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+          <item displayName="$(string.9bd5525ea96998fb6751241e0ad661e8)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.bdead5cc4398f94c69e2bf0365bc990d)">
+            <value>
+              <decimal value="2" />
+            </value>
+          </item>
+          <item displayName="$(string.183298c23d79c90d5c24eab2d5bfc536)">
+            <value>
+              <decimal value="3" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="68c0cf68316d29d8ad665e0c991aa059" class="Machine" displayName="$(string.fe5174f65ffded539600e52c7cfec2ae)" explainText="$(string.d953b91854c48d0226af39a7f6374c86)" presentation="$(presentation.68c0cf68316d29d8ad665e0c991aa059)" key="Software\FSLogix\Profiles">
+      <parentCategory ref="6a0b4022f3fb5302d7535c6053c98986" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+      <elements>
+        <enum id="68c0cf68316d29d8ad665e0c991aa059" key="Software\FSLogix\Profiles" valueName="ShutdownOnUserLogoff">
+          <item displayName="$(string.9c3af2688f5c6eaa4c30cd6196e50865)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+          <item displayName="$(string.1ccfa76281537926c5b944c3933f3720)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.ef008020d884debb4609dd09c4de24ad)">
+            <value>
+              <decimal value="2" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="da46cbcbe7aeed3d6ff8de47e98a4aaa" class="Machine" displayName="$(string.8ec4e014f41059dd97dfc7a9bdaaeea3)" explainText="$(string.1e35275dea5dbcfbdbff69c2d2466162)" presentation="$(presentation.da46cbcbe7aeed3d6ff8de47e98a4aaa)" key="Software\FSLogix\Profiles">
+      <parentCategory ref="6a0b4022f3fb5302d7535c6053c98986" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+      <elements>
+        <text id="da46cbcbe7aeed3d6ff8de47e98a4aaa" key="Software\FSLogix\Profiles" valueName="SIDDirSDDL" required="true" />
+      </elements>
+    </policy>
+    <policy name="6a7be553c62a204711afb367bd65cca3" class="Machine" displayName="$(string.7d73ba02fbb3ad7684bb63ea0aa8deb3)" explainText="$(string.3152b964e51da225e0235bec552abd49)" presentation="$(presentation.6a7be553c62a204711afb367bd65cca3)" key="Software\FSLogix\Profiles">
+      <parentCategory ref="6a0b4022f3fb5302d7535c6053c98986" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+      <elements>
+        <decimal id="6a7be553c62a204711afb367bd65cca3" key="Software\FSLogix\Profiles" valueName="SizeInMBs" required="true" minValue="500" maxValue="1000000" />
+      </elements>
+    </policy>
+    <policy name="d3a0c11121409498758de11dcaaf8f08" class="Machine" displayName="$(string.9c1f5e601eab264d21f13b364b515258)" explainText="$(string.50089060bf84bb763f23b3c2fbf518af)" presentation="$(presentation.d3a0c11121409498758de11dcaaf8f08)" key="Software\FSLogix\Profiles">
+      <parentCategory ref="6a0b4022f3fb5302d7535c6053c98986" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+      <elements>
+        <text id="d3a0c11121409498758de11dcaaf8f08" key="Software\FSLogix\Profiles" valueName="VHDLocations" required="true" />
+      </elements>
+    </policy>
+    <policy name="0c39fd9719788c6823f56d0343bda246" class="Machine" displayName="$(string.6c455aa839e94be613956a30bb0f3105)" explainText="$(string.fc5595fb583651465cb3dc5d6175f17c)" presentation="$(presentation.0c39fd9719788c6823f56d0343bda246)" key="Software\FSLogix\Profiles">
+      <parentCategory ref="6a0b4022f3fb5302d7535c6053c98986" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+      <elements>
+        <enum id="0c39fd9719788c6823f56d0343bda246" key="Software\FSLogix\Profiles" valueName="VHDXSectorSize">
+          <item displayName="$(string.7758369726c2cf264b83a7213119cb71)">
+            <value>
+              <decimal value="512" />
+            </value>
+          </item>
+          <item displayName="$(string.10d6352041cafe8a347fb66dabb875c9)">
+            <value>
+              <decimal value="4096" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="05b48de476eea9ac8fa4ff56c12bbe8d" class="Machine" displayName="$(string.394602d41cf18b04c6544d8502908973)" explainText="$(string.c3f73188360d7cd45567e2b43147deb7)" presentation="$(presentation.05b48de476eea9ac8fa4ff56c12bbe8d)" key="Software\FSLogix\Profiles">
+      <parentCategory ref="6a0b4022f3fb5302d7535c6053c98986" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+      <elements>
+        <decimal id="05b48de476eea9ac8fa4ff56c12bbe8d" key="Software\FSLogix\Profiles" valueName="VolumeWaitTimeMS" required="true" minValue="1000" maxValue="1000000" />
+      </elements>
+    </policy>
+    <policy name="ff53a30ef9a3b4f8d1f2f03e560f9070" class="Machine" displayName="$(string.f7aee170f1f93402974df3f85232d4fc)" explainText="$(string.a2182c8e1331e624447f4ea19f5b31ec)" presentation="$(presentation.ff53a30ef9a3b4f8d1f2f03e560f9070)" key="Software\FSLogix\Profiles">
       <parentCategory ref="1e07548adbc5c619c55b3d9dffe70e78" />
-      <supportedOn ref="1012a2b91972a53a7888838a3a276834" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+      <elements>
+        <text id="ff53a30ef9a3b4f8d1f2f03e560f9070" key="Software\FSLogix\Profiles" valueName="CCDLocations" required="true" />
+      </elements>
+    </policy>
+    <policy name="93afaa29dfc1128c8f83ef10e92092b4" class="Machine" displayName="$(string.1aa1b0fdd3ac8615fe209538cb54df48)" explainText="$(string.833243d417f6c43f60945736c2b042b6)" presentation="$(presentation.93afaa29dfc1128c8f83ef10e92092b4)" key="Software\FSLogix\Profiles">
+      <parentCategory ref="1e07548adbc5c619c55b3d9dffe70e78" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+      <elements>
+        <decimal id="93afaa29dfc1128c8f83ef10e92092b4" key="Software\FSLogix\Profiles" valueName="CcdMaxCacheSizeInMBs" required="true" maxValue="10000000" />
+      </elements>
+    </policy>
+    <policy name="2dc278ff3bab44ea3c8bbe0b12dd061f" class="Machine" displayName="$(string.f5bcb5ff7dd37cfba3e80179c9d38a05)" explainText="$(string.a92b7208ba43a3b37054ba8802dfe5ab)" presentation="$(presentation.2dc278ff3bab44ea3c8bbe0b12dd061f)" key="Software\FSLogix\Profiles">
+      <parentCategory ref="1e07548adbc5c619c55b3d9dffe70e78" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+      <elements>
+        <decimal id="2dc278ff3bab44ea3c8bbe0b12dd061f" key="Software\FSLogix\Profiles" valueName="CcdUnregisterTimeout" required="true" maxValue="10000000" />
+      </elements>
+    </policy>
+    <policy name="ef0e8322eab359a7cc7a5faed4fba63b" class="Machine" displayName="$(string.58bef371c251111cd3bd3f6f09e2a22d)" explainText="$(string.7f9f67676a32f0cf97b537beac46c874)" presentation="$(presentation.ef0e8322eab359a7cc7a5faed4fba63b)" key="Software\FSLogix\Profiles" valueName="ClearCacheOnForcedUnregister">
+      <parentCategory ref="1e07548adbc5c619c55b3d9dffe70e78" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="ee8ad49d49923e080715bfb19cdf878e" class="Machine" displayName="$(string.d58277690d790fdb160bd25017e7180d)" explainText="$(string.3108d7cdff735f7d6fa76b36940fac80)" presentation="$(presentation.ee8ad49d49923e080715bfb19cdf878e)" key="Software\FSLogix\Profiles" valueName="ClearCacheOnLogoff">
+      <parentCategory ref="1e07548adbc5c619c55b3d9dffe70e78" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="30c6caba665e2db1ff5d2598c046372a" class="Machine" displayName="$(string.852a310f27feec4f442fa00c4db0f5df)" explainText="$(string.8910bd0621d171d3e40994b98ae83f65)" presentation="$(presentation.30c6caba665e2db1ff5d2598c046372a)" key="Software\FSLogix\Profiles">
+      <parentCategory ref="1e07548adbc5c619c55b3d9dffe70e78" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
         <decimal id="30c6caba665e2db1ff5d2598c046372a" key="Software\FSLogix\Profiles" valueName="HealthyProvidersRequiredForRegister" required="true" maxValue="4" />
       </elements>
     </policy>
-    <policy name="cadf73b309ba0f4a680cc9a9b76e9dbc" class="Machine" displayName="$(string.d70ac2e474e2ba21dd9ed37d65e326b9)" explainText="$(string.c3cebfd5c8b7cc31101916b74f0f4b46)" presentation="$(presentation.cadf73b309ba0f4a680cc9a9b76e9dbc)" key="Software\FSLogix\Profiles">
+    <policy name="cadf73b309ba0f4a680cc9a9b76e9dbc" class="Machine" displayName="$(string.d70ac2e474e2ba21dd9ed37d65e326b9)" explainText="$(string.cb2e5502beb35ccaab44786437283ef9)" presentation="$(presentation.cadf73b309ba0f4a680cc9a9b76e9dbc)" key="Software\FSLogix\Profiles">
       <parentCategory ref="1e07548adbc5c619c55b3d9dffe70e78" />
-      <supportedOn ref="1012a2b91972a53a7888838a3a276834" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
         <decimal id="cadf73b309ba0f4a680cc9a9b76e9dbc" key="Software\FSLogix\Profiles" valueName="HealthyProvidersRequiredForUnregister" required="true" maxValue="4" />
       </elements>
     </policy>
-    <policy name="67efe8ba19fb5ac464df746cbf28b3f3" class="Machine" displayName="$(string.0a1eff84c1747306b55b1ad603bb06ae)" explainText="$(string.477a79144dd929dc63e07a92c9029631)" presentation="$(presentation.67efe8ba19fb5ac464df746cbf28b3f3)" key="Software\FSLogix\Profiles">
-      <parentCategory ref="45019325e62c825e056911b5137887f7" />
-      <supportedOn ref="1012a2b91972a53a7888838a3a276834" />
-      <elements>
-        <decimal id="67efe8ba19fb5ac464df746cbf28b3f3" key="Software\FSLogix\Profiles" valueName="CcdUnregisterTimeout" required="true" maxValue="10000000" />
-      </elements>
-    </policy>
-    <policy name="7bf0c4077b77a472a6c672a0d992c8a5" class="Machine" displayName="$(string.92fa79c261d1f3ef2892d6ffb11ede39)" explainText="$(string.bcf09b53bdda862c94fc44076b85401b)" presentation="$(presentation.7bf0c4077b77a472a6c672a0d992c8a5)" key="Software\FSLogix\Profiles">
-      <parentCategory ref="45019325e62c825e056911b5137887f7" />
-      <supportedOn ref="1012a2b91972a53a7888838a3a276834" />
-      <elements>
-        <boolean id="7bf0c4077b77a472a6c672a0d992c8a5" key="Software\FSLogix\Profiles" valueName="ClearCacheOnForcedUnregister">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="edec32d467028f9fae92d95484d990f7" class="Machine" displayName="$(string.5a14f9c861f0a19b6d859e284b4e4f78)" explainText="$(string.a290cb8477e44dce1c60b3079b978c1d)" presentation="$(presentation.edec32d467028f9fae92d95484d990f7)" key="Software\FSLogix\Profiles">
-      <parentCategory ref="66530266148a698477a6d33560717d5d" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
-      <elements>
-        <boolean id="edec32d467028f9fae92d95484d990f7" key="Software\FSLogix\Profiles" valueName="AccessNetworkAsComputerObject">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="d5d2df5ad6046e369d584cc78fab45f2" class="Machine" displayName="$(string.ceed899020c0146a0b2cf98cee88a2b8)" explainText="$(string.5bad8700e86c2dc6a5e35d5ec0396930)" presentation="$(presentation.d5d2df5ad6046e369d584cc78fab45f2)" key="Software\FSLogix\Profiles">
-      <parentCategory ref="66530266148a698477a6d33560717d5d" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
-      <elements>
-        <boolean id="d5d2df5ad6046e369d584cc78fab45f2" key="Software\FSLogix\Profiles" valueName="KeepLocalDir">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="0725e8f4d3e86d5882d04629e610e3f5" class="Machine" displayName="$(string.c7f3aa3fd8be846efbb4ed0bcbe71af9)" explainText="$(string.5f9d761e0a33d06d2d3fed7823f477fb)" presentation="$(presentation.0725e8f4d3e86d5882d04629e610e3f5)" key="Software\FSLogix\Profiles">
-      <parentCategory ref="66530266148a698477a6d33560717d5d" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
-      <elements>
-        <decimal id="0725e8f4d3e86d5882d04629e610e3f5" key="Software\FSLogix\Profiles" valueName="LockedRetryCount" required="true" maxValue="10000" />
-      </elements>
-    </policy>
-    <policy name="4de637372fd58f3ecb988b8ed9197f42" class="Machine" displayName="$(string.bfda3b27cd040de124cb7fc59fe60799)" explainText="$(string.be82810bcb8be482bbdbb49cf1cee2f6)" presentation="$(presentation.4de637372fd58f3ecb988b8ed9197f42)" key="Software\FSLogix\Profiles">
-      <parentCategory ref="66530266148a698477a6d33560717d5d" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
-      <elements>
-        <decimal id="4de637372fd58f3ecb988b8ed9197f42" key="Software\FSLogix\Profiles" valueName="LockedRetryInterval" required="true" maxValue="600" />
-      </elements>
-    </policy>
-    <policy name="d104a405b823ac8baed905994f554aa6" class="Machine" displayName="$(string.5d99d86fdcec354c940672248a1d6da1)" explainText="$(string.e5a8c517c9067939b726aa3c554b6bcc)" presentation="$(presentation.d104a405b823ac8baed905994f554aa6)" key="Software\FSLogix\Profiles">
-      <parentCategory ref="66530266148a698477a6d33560717d5d" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
-      <elements>
-        <decimal id="d104a405b823ac8baed905994f554aa6" key="Software\FSLogix\Profiles" valueName="VolumeWaitTimeMS" required="true" minValue="1000" maxValue="1000000" />
-      </elements>
-    </policy>
-    <policy name="dea9d5fe0e39b02ed410a9ba50751be9" class="Machine" displayName="$(string.bfd89965eae1b523bf59a6af344a8b0a)" explainText="$(string.cfab6ad67c8dd7eb1a347a7bfbd5c173)" presentation="$(presentation.dea9d5fe0e39b02ed410a9ba50751be9)" key="Software\FSLogix\Profiles">
-      <parentCategory ref="66530266148a698477a6d33560717d5d" />
-      <supportedOn ref="564801452e7a36a014c203011eb4975d" />
-      <elements>
-        <boolean id="dea9d5fe0e39b02ed410a9ba50751be9" key="Software\FSLogix\Profiles" valueName="PreventLoginWithFailure">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="a8b1f74b18543adf46ea806a5ddfea02" class="Machine" displayName="$(string.159bac74058bb28d550f39264a44b473)" explainText="$(string.44276969f2bbad943786b00d723a300b)" presentation="$(presentation.a8b1f74b18543adf46ea806a5ddfea02)" key="Software\FSLogix\Profiles">
-      <parentCategory ref="66530266148a698477a6d33560717d5d" />
-      <supportedOn ref="564801452e7a36a014c203011eb4975d" />
-      <elements>
-        <boolean id="a8b1f74b18543adf46ea806a5ddfea02" key="Software\FSLogix\Profiles" valueName="PreventLoginWithTempProfile">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="456b108373d05e4aeed59b29c62e2acd" class="Machine" displayName="$(string.5ca44cb444b9119959fe250302f1787e)" explainText="$(string.3cf5e2e6d8fc79b5f392d3ba336b3a4a)" presentation="$(presentation.456b108373d05e4aeed59b29c62e2acd)" key="Software\FSLogix\Profiles">
-      <parentCategory ref="66530266148a698477a6d33560717d5d" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
-      <elements>
-        <text id="456b108373d05e4aeed59b29c62e2acd" key="Software\FSLogix\Profiles" valueName="RedirXMLSourceFolder" required="true" />
-      </elements>
-    </policy>
-    <policy name="750bcf88b73c4ebb80925d01f6fcb121" class="Machine" displayName="$(string.71c729bf5481ae7d3d1863d714803767)" explainText="$(string.dc2982f14c63cadfda30e22be514cb56)" presentation="$(presentation.750bcf88b73c4ebb80925d01f6fcb121)" key="Software\FSLogix\Profiles">
-      <parentCategory ref="66530266148a698477a6d33560717d5d" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
-      <elements>
-        <enum id="750bcf88b73c4ebb80925d01f6fcb121" key="Software\FSLogix\Profiles" valueName="RebootOnUserLogoff">
-          <item displayName="$(string.77c4d5080dcf034871fb7d261bdfa499)">
-            <value>
-              <decimal value="0" />
-            </value>
-          </item>
-          <item displayName="$(string.ab5e890a028e794f9c611e3d723f8627)">
-            <value>
-              <decimal value="1" />
-            </value>
-          </item>
-          <item displayName="$(string.ac0a274d8ae1c313b0c54361867d5aec)">
-            <value>
-              <decimal value="2" />
-            </value>
-          </item>
-        </enum>
-      </elements>
-    </policy>
-    <policy name="5cb6cce1cb2791260ebcdff0f6b05517" class="Machine" displayName="$(string.abddb89c7aed80a20f14938b207d4930)" explainText="$(string.a9c4f3b52ee684d4fff2bbf13d21b70e)" presentation="$(presentation.5cb6cce1cb2791260ebcdff0f6b05517)" key="Software\FSLogix\Profiles">
-      <parentCategory ref="66530266148a698477a6d33560717d5d" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
-      <elements>
-        <enum id="5cb6cce1cb2791260ebcdff0f6b05517" key="Software\FSLogix\Profiles" valueName="SetTempToLocalPath">
-          <item displayName="$(string.58aefe8dd37e37466b6a8110689d60e6)">
-            <value>
-              <decimal value="0" />
-            </value>
-          </item>
-          <item displayName="$(string.b8a6dd2abb846aa48a3ae982db0cf80c)">
-            <value>
-              <decimal value="1" />
-            </value>
-          </item>
-          <item displayName="$(string.649e28ca2f10e885e4c4a2b521c1aa5d)">
-            <value>
-              <decimal value="2" />
-            </value>
-          </item>
-          <item displayName="$(string.1ece06400b7acc786aa46fd90d8ca92e)">
-            <value>
-              <decimal value="3" />
-            </value>
-          </item>
-        </enum>
-      </elements>
-    </policy>
-    <policy name="20475e62235f9b2e114bad3944d6ead7" class="Machine" displayName="$(string.58bd43fb26f5dc2fafb4e56239ef6802)" explainText="$(string.5cb9d11a18621556838e7f410eb9fe87)" presentation="$(presentation.20475e62235f9b2e114bad3944d6ead7)" key="Software\FSLogix\Profiles">
-      <parentCategory ref="66530266148a698477a6d33560717d5d" />
-      <supportedOn ref="564801452e7a36a014c203011eb4975d" />
-      <elements>
-        <boolean id="20475e62235f9b2e114bad3944d6ead7" key="Software\FSLogix\Profiles" valueName="RemoveOrphanedOSTFilesOnLogoff">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-    <policy name="7fadc55cb0853eaeae78cbb39dd75cda" class="Machine" displayName="$(string.e812c8099d279283d16a9dbcb31726e9)" explainText="$(string.8e290d531edef6f9a2cea571f7a3a243)" presentation="$(presentation.7fadc55cb0853eaeae78cbb39dd75cda)" key="Software\FSLogix\Profiles">
-      <parentCategory ref="66530266148a698477a6d33560717d5d" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
-      <elements>
-        <text id="7fadc55cb0853eaeae78cbb39dd75cda" key="Software\FSLogix\Profiles" valueName="AttachVHDSDDL" required="true" />
-      </elements>
-    </policy>
-    <policy name="a663a69c78f397da454a849f9c850991" class="Machine" displayName="$(string.f0d7affe3c35c32d7ac46e4461526aac)" explainText="$(string.d3e825f7e3083fe26b2116f340f65a79)" presentation="$(presentation.a663a69c78f397da454a849f9c850991)" key="Software\FSLogix\Profiles">
-      <parentCategory ref="66530266148a698477a6d33560717d5d" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
-      <elements>
-        <text id="a663a69c78f397da454a849f9c850991" key="Software\FSLogix\Profiles" valueName="ProfileDirSDDL" required="true" />
-      </elements>
-    </policy>
-    <policy name="4c2ae432256b58304413f30fdbc9b187" class="Machine" displayName="$(string.4163ca31a43afaf5e92b5502bd670afe)" explainText="$(string.5b2d4b5364a6bd627a687c2727cd295a)" presentation="$(presentation.4c2ae432256b58304413f30fdbc9b187)" key="Software\FSLogix\Profiles">
-      <parentCategory ref="66530266148a698477a6d33560717d5d" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
-      <elements>
-        <text id="4c2ae432256b58304413f30fdbc9b187" key="Software\FSLogix\Profiles" valueName="SIDDirSDDL" required="true" />
-      </elements>
-    </policy>
-    <policy name="ecae426988b9ee1fa9c6b6ea61ecc0e7" class="Machine" displayName="$(string.98c7baa754fb05b91ecaf4cfed96e9e2)" explainText="$(string.1dfa92cf8eac870843bd21001ec71532)" presentation="$(presentation.ecae426988b9ee1fa9c6b6ea61ecc0e7)" key="Software\FSLogix\Profiles">
-      <parentCategory ref="66530266148a698477a6d33560717d5d" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
-      <elements>
-        <enum id="ecae426988b9ee1fa9c6b6ea61ecc0e7" key="Software\FSLogix\Profiles" valueName="ShutdownOnUserLogoff">
-          <item displayName="$(string.8f02ff4d00b488320924644cb7a7c5cf)">
-            <value>
-              <decimal value="0" />
-            </value>
-          </item>
-          <item displayName="$(string.adb4dfd2a8ab641b5b6bb4995510d122)">
-            <value>
-              <decimal value="1" />
-            </value>
-          </item>
-          <item displayName="$(string.33c010ffc7ae9dee2190cec81ea5e99f)">
-            <value>
-              <decimal value="2" />
-            </value>
-          </item>
-        </enum>
-      </elements>
-    </policy>
-    <policy name="52aca12a7a0e653760015aa6f63dbb85" class="Machine" displayName="$(string.010f9982dd41381631a0c55ad50bf77b)" explainText="$(string.97173ec0807634adbb7a8a4c33d5ec6a)" presentation="$(presentation.52aca12a7a0e653760015aa6f63dbb85)" key="Software\FSLogix\Profiles">
-      <parentCategory ref="66530266148a698477a6d33560717d5d" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
-      <elements>
-        <enum id="52aca12a7a0e653760015aa6f63dbb85" key="Software\FSLogix\Profiles" valueName="VHDXSectorSize">
-          <item displayName="$(string.3c1cac72e6e2bd667451630c624394e2)">
-            <value>
-              <decimal value="512" />
-            </value>
-          </item>
-          <item displayName="$(string.6ef931b0ea9be231e1e04f7597764627)">
-            <value>
-              <decimal value="4096" />
-            </value>
-          </item>
-        </enum>
-      </elements>
-    </policy>
-    <policy name="8b984065e92ab51bf0fbff38b8901a18" class="Machine" displayName="$(string.31f79b4313da521d2506184c75c6b0a0)" explainText="$(string.a892496735927dcf3b14b1f1223ce957)" presentation="$(presentation.8b984065e92ab51bf0fbff38b8901a18)" key="Software\FSLogix\Profiles">
-      <parentCategory ref="66530266148a698477a6d33560717d5d" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
-      <elements>
-        <decimal id="8b984065e92ab51bf0fbff38b8901a18" key="Software\FSLogix\Profiles" valueName="ReAttachRetryCount" required="true" maxValue="600" />
-      </elements>
-    </policy>
-    <policy name="08383795bf271f869f9d03b9b033e306" class="Machine" displayName="$(string.6bcfa6edaeaf09e8890050141e801cb3)" explainText="$(string.9b0f178af3b65cdea6dfc0f36997500e)" presentation="$(presentation.08383795bf271f869f9d03b9b033e306)" key="Software\FSLogix\Profiles">
-      <parentCategory ref="66530266148a698477a6d33560717d5d" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
-      <elements>
-        <decimal id="08383795bf271f869f9d03b9b033e306" key="Software\FSLogix\Profiles" valueName="ReAttachIntervalSeconds" required="true" minValue="1" maxValue="60" />
-      </elements>
-    </policy>
-    <policy name="574c3400373e27faa3c7e58769bd671b" class="Machine" displayName="$(string.a23fa1af0601e1d9bd7b3ace2d431c6c)" explainText="$(string.e6b8de3187e5e81b458394a273838370)" presentation="$(presentation.574c3400373e27faa3c7e58769bd671b)" key="Software\FSLogix\Profiles">
+    <policy name="574c3400373e27faa3c7e58769bd671b" class="Machine" displayName="$(string.a23fa1af0601e1d9bd7b3ace2d431c6c)" explainText="$(string.b9d997d37364440b7a18b555c2908602)" presentation="$(presentation.574c3400373e27faa3c7e58769bd671b)" key="Software\FSLogix\Profiles">
       <parentCategory ref="a885268a05693066a9ec2ba0c5ac3240" />
-      <supportedOn ref="564801452e7a36a014c203011eb4975d" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
         <text id="574c3400373e27faa3c7e58769bd671b" key="Software\FSLogix\Profiles" valueName="DiffDiskParentFolderPath" required="true" />
       </elements>
     </policy>
-    <policy name="f42d47452c7caf78ab4a57032b6d55c2" class="Machine" displayName="$(string.b6954e24603ac69ab0a5926310881e72)" explainText="$(string.5db45e32c9fd20fa4d2c4d1598a62ddf)" presentation="$(presentation.f42d47452c7caf78ab4a57032b6d55c2)" key="Software\FSLogix\Profiles">
+    <policy name="f55b6b954ddae592140cc84208bef683" class="Machine" displayName="$(string.6f843ed0ec2c5350c4e657fac4f09e2f)" explainText="$(string.d1e04dcfdb80943cb732c7ec6e40dfc7)" presentation="$(presentation.f55b6b954ddae592140cc84208bef683)" key="Software\FSLogix\Profiles" valueName="FlipFlopProfileDirectoryName">
       <parentCategory ref="a885268a05693066a9ec2ba0c5ac3240" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="d857e9841eea737cf0089f8372e113ba" class="Machine" displayName="$(string.cbaf45eab4f4180a9de6db51a12cb2d7)" explainText="$(string.c0adfa0f19b10ca36ea62325f902786d)" presentation="$(presentation.d857e9841eea737cf0089f8372e113ba)" key="Software\FSLogix\Profiles" valueName="NoProfileContainingFolder">
+      <parentCategory ref="a885268a05693066a9ec2ba0c5ac3240" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
+    </policy>
+    <policy name="b0027798d23ea1ff10b12ef243040724" class="Machine" displayName="$(string.4f48678c720ba174d766135037f7c921)" explainText="$(string.eff455102dfc9712d99e1dba2c4338e1)" presentation="$(presentation.b0027798d23ea1ff10b12ef243040724)" key="Software\FSLogix\Profiles">
+      <parentCategory ref="a885268a05693066a9ec2ba0c5ac3240" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <boolean id="f42d47452c7caf78ab4a57032b6d55c2" key="Software\FSLogix\Profiles" valueName="NoProfileContainingFolder">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
+        <text id="b0027798d23ea1ff10b12ef243040724" key="Software\FSLogix\Profiles" valueName="SIDDirNameMatch" required="true" />
       </elements>
     </policy>
-    <policy name="5d6bc6bb40c85684400f65c171da8097" class="Machine" displayName="$(string.4f4fc9c5f9cc563593bcc3df596280d0)" explainText="$(string.675bc9c351bccb1d864277ca3fedfa88)" presentation="$(presentation.5d6bc6bb40c85684400f65c171da8097)" key="Software\FSLogix\Profiles">
+    <policy name="8fc790799f20b0a4fd710ab8703122cd" class="Machine" displayName="$(string.e9fe287faaa6314e6f43ac4d683c4e19)" explainText="$(string.15db3d71f6d3eaaab666bf48a10a10c4)" presentation="$(presentation.8fc790799f20b0a4fd710ab8703122cd)" key="Software\FSLogix\Profiles">
       <parentCategory ref="a885268a05693066a9ec2ba0c5ac3240" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <text id="5d6bc6bb40c85684400f65c171da8097" key="Software\FSLogix\Profiles" valueName="SIDDirNameMatch" required="true" />
+        <text id="8fc790799f20b0a4fd710ab8703122cd" key="Software\FSLogix\Profiles" valueName="SIDDirNamePattern" required="true" />
       </elements>
     </policy>
-    <policy name="aacecbd95c5d065f159473f1db912896" class="Machine" displayName="$(string.e65adb7b00e5b3493a394480d7f88a6c)" explainText="$(string.c35b4f83cfcb3a94ebde37008e18108b)" presentation="$(presentation.aacecbd95c5d065f159473f1db912896)" key="Software\FSLogix\Profiles">
+    <policy name="cf53fe58775e46652ead48b0da693c9d" class="Machine" displayName="$(string.7c6d8839851828b2dd55026fc047ec77)" explainText="$(string.5d84f4f6ae07fbc60d2d4386250e4524)" presentation="$(presentation.cf53fe58775e46652ead48b0da693c9d)" key="Software\FSLogix\Profiles">
       <parentCategory ref="a885268a05693066a9ec2ba0c5ac3240" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <text id="aacecbd95c5d065f159473f1db912896" key="Software\FSLogix\Profiles" valueName="SIDDirNamePattern" required="true" />
+        <text id="cf53fe58775e46652ead48b0da693c9d" key="Software\FSLogix\Profiles" valueName="VHDNameMatch" required="true" />
       </elements>
     </policy>
-    <policy name="fc6ef30e1fb0b9ca421aaa56919eef24" class="Machine" displayName="$(string.682198c90ec40d09c09a002563516d06)" explainText="$(string.8511390bdc24ded976f6538fa44d0b53)" presentation="$(presentation.fc6ef30e1fb0b9ca421aaa56919eef24)" key="Software\FSLogix\Profiles">
+    <policy name="c98f8ac170670d9cdf0e45dd78591364" class="Machine" displayName="$(string.6af6d9ad2c224e14aae82a710a00984f)" explainText="$(string.d5c1a8d129cd68dc33dc9ea9e899e751)" presentation="$(presentation.c98f8ac170670d9cdf0e45dd78591364)" key="Software\FSLogix\Profiles">
       <parentCategory ref="a885268a05693066a9ec2ba0c5ac3240" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <boolean id="fc6ef30e1fb0b9ca421aaa56919eef24" key="Software\FSLogix\Profiles" valueName="FlipFlopProfileDirectoryName">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
+        <text id="c98f8ac170670d9cdf0e45dd78591364" key="Software\FSLogix\Profiles" valueName="VHDNamePattern" required="true" />
       </elements>
     </policy>
-    <policy name="14579f546d01177ca9f5b16ff5fb0db2" class="Machine" displayName="$(string.0d50ce5504a954ccc87fc958cba56f83)" explainText="$(string.ebd968d87fd867719cc4aee85e238c48)" presentation="$(presentation.14579f546d01177ca9f5b16ff5fb0db2)" key="Software\FSLogix\Profiles">
+    <policy name="3490b388f39e8d89f67a345eac416619" class="Machine" displayName="$(string.2253be1c36e6374ab66245aeacc31570)" explainText="$(string.9c77c31802885e2485c3833131a67cc4)" presentation="$(presentation.3490b388f39e8d89f67a345eac416619)" key="Software\FSLogix\Profiles">
       <parentCategory ref="a885268a05693066a9ec2ba0c5ac3240" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
+      <supportedOn ref="366cf3eec6a8bd75ff4f6d84a46f1c68" />
       <elements>
-        <text id="14579f546d01177ca9f5b16ff5fb0db2" key="Software\FSLogix\Profiles" valueName="VHDNameMatch" required="true" />
-      </elements>
-    </policy>
-    <policy name="25fbf469206878ec1dc4d25865062524" class="Machine" displayName="$(string.3e6218032bda5dc96cd9ed71404a1240)" explainText="$(string.6c3e7f1c883080b337d62e9b8d8d5f37)" presentation="$(presentation.25fbf469206878ec1dc4d25865062524)" key="Software\FSLogix\Profiles">
-      <parentCategory ref="a885268a05693066a9ec2ba0c5ac3240" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
-      <elements>
-        <text id="25fbf469206878ec1dc4d25865062524" key="Software\FSLogix\Profiles" valueName="VHDNamePattern" required="true" />
-      </elements>
-    </policy>
-    <policy name="2569640d13155c8f7ba400191940a6d0" class="Machine" displayName="$(string.25820c654cd1e82ec7d7b79fb81db6bb)" explainText="$(string.af94ab293575bd65b7ac8a96471f2ba6)" presentation="$(presentation.2569640d13155c8f7ba400191940a6d0)" key="Software\FSLogix\Profiles">
-      <parentCategory ref="a885268a05693066a9ec2ba0c5ac3240" />
-      <supportedOn ref="18aba9a1585c1a6d76e6736fcb39d2b8" />
-      <elements>
-        <enum id="2569640d13155c8f7ba400191940a6d0" key="Software\FSLogix\Profiles" valueName="VolumeType">
-          <item displayName="$(string.1cfac29e698df2094e19248e8a12fe7a)">
+        <enum id="3490b388f39e8d89f67a345eac416619" key="Software\FSLogix\Profiles" valueName="VolumeType">
+          <item displayName="$(string.44b2a87cddf065b56bc3ddc1569b18bc)">
             <value>
               <string>VHD</string>
             </value>
           </item>
-          <item displayName="$(string.9707876bbbd2ed73aed29519308fbcfc)">
+          <item displayName="$(string.170d2893ed24ff3f4312ffcaf6c49bbe)">
             <value>
               <string>VHDX</string>
             </value>
           </item>
         </enum>
-      </elements>
-    </policy>
-    <policy name="a98d2947370b8b7cc69bd68ad3b2b312" class="Machine" displayName="$(string.2d00b34b20f039e66100d9e0c168c0f4)" explainText="$(string.365cdf6452107a5678edf05d9395cfed)" presentation="$(presentation.a98d2947370b8b7cc69bd68ad3b2b312)" key="SYSTEM\CurrentControlSet\Services\frxccd\Parameters">
-      <parentCategory ref="b8f3d24eae9ad612a8c81be009950edf" />
-      <supportedOn ref="c58309e00747afb63483df80cdf843d3" />
-      <elements>
-        <text id="a98d2947370b8b7cc69bd68ad3b2b312" key="SYSTEM\CurrentControlSet\Services\frxccd\Parameters" valueName="CacheDirectory" required="true" />
-      </elements>
-    </policy>
-    <policy name="e2a35b031731fca30d1f37f59b3a7354" class="Machine" displayName="$(string.135da57ead17211373006243047d8dcb)" explainText="$(string.c48d429431b701109a272a494922cb50)" presentation="$(presentation.e2a35b031731fca30d1f37f59b3a7354)" key="SYSTEM\CurrentControlSet\Services\frxccds\Parameters">
-      <parentCategory ref="b8f3d24eae9ad612a8c81be009950edf" />
-      <supportedOn ref="c58309e00747afb63483df80cdf843d3" />
-      <elements>
-        <text id="e2a35b031731fca30d1f37f59b3a7354" key="SYSTEM\CurrentControlSet\Services\frxccds\Parameters" valueName="ProxyDirectory" required="true" />
-      </elements>
-    </policy>
-    <policy name="9c1890907000d13850e01686be0d7b92" class="Machine" displayName="$(string.af6f16093b7c780879ab63950f6b1287)" explainText="$(string.48a623d0c2a3393338b0f87ffb0a909b)" presentation="$(presentation.9c1890907000d13850e01686be0d7b92)" key="SYSTEM\CurrentControlSet\Services\frxccds\Parameters">
-      <parentCategory ref="b8f3d24eae9ad612a8c81be009950edf" />
-      <supportedOn ref="2a6ef2f6dc30c6436deb209b6779266b" />
-      <elements>
-        <text id="9c1890907000d13850e01686be0d7b92" key="SYSTEM\CurrentControlSet\Services\frxccds\Parameters" valueName="WriteCacheDirectory" required="true" />
       </elements>
     </policy>
   </policies>

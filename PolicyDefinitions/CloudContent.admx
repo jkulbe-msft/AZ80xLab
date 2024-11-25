@@ -142,5 +142,15 @@
         <decimal value="0" />
       </disabledValue>
     </policy>
+    <policy name="EnableOrganizationalMessages" class="User" displayName="$(string.EnableOrganizationalMessagesContent)" explainText="$(string.EnableOrganizationalMessagesContent_Help)" key="Software\Policies\Microsoft\Windows\CloudContent" valueName="EnableOrganizationalMessages">
+      <parentCategory ref="CloudContent" />
+      <supportedOn ref="windows:SUPPORTED_Windows_11_0_NOSERVER" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
   </policies>
 </policyDefinitions>

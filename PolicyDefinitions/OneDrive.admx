@@ -9,6 +9,7 @@
   <resources minRequiredRevision="1.0" />
   <categories>
     <category name="OneDriveNGSC" displayName="$(string.OneDriveNGSCSettingCategory)"/>
+    <category name="NucleusListSync" displayName="$(string.NucleusSettingCategory)"/>
   </categories>
   <policies>
     <policy name="DisablePersonalSync" class="User" displayName="$(string.DisablePersonalSync)" explainText="$(string.DisablePersonalSync_help)" key="SOFTWARE\Policies\Microsoft\OneDrive" valueName="DisablePersonalSync">
@@ -77,6 +78,13 @@
       <disabledValue>
         <decimal value="0" />
       </disabledValue>
+    </policy>
+    <policy name="EnableAutoStart" class="User" displayName="$(string.EnableAutoStart)" explainText="$(string.EnableAutoStart_help)" key="SOFTWARE\Policies\Microsoft\OneDrive" valueName="EnableAutoStart">
+      <parentCategory ref="OneDriveNGSC" />
+      <supportedOn ref="windows:SUPPORTED_Windows10" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
     </policy>
     <policy name="AutomaticUploadBandwidthPercentage" class="Machine" displayName="$(string.AutomaticUploadBandwidthPercentage)" explainText="$(string.AutomaticUploadBandwidthPercentage_help)"  presentation="$(presentation.AutomaticUploadBandwidthPercentage_Pres)"  key="SOFTWARE\Policies\Microsoft\OneDrive">
       <parentCategory ref="OneDriveNGSC" />
@@ -189,6 +197,16 @@
     <policy name="DisableFRETutorial" class="User" displayName="$(string.DisableFRETutorial)" explainText="$(string.DisableFRETutorial_help)" key="SOFTWARE\Policies\Microsoft\OneDrive" valueName="DisableTutorial">
       <parentCategory ref="OneDriveNGSC" />
       <supportedOn ref="windows:SUPPORTED_Windows7" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="DisableFREAnimation" class="User" displayName="$(string.DisableFREAnimation)" explainText="$(string.DisableFREAnimation_help)" key="SOFTWARE\Policies\Microsoft\OneDrive" valueName="DisableFREAnimation">
+      <parentCategory ref="OneDriveNGSC" />
+      <supportedOn ref="windows:SUPPORTED_Windows_10_0_TH1" />
       <enabledValue>
         <decimal value="1" />
       </enabledValue>
@@ -398,6 +416,143 @@
         <disabledValue>
             <decimal value="0" />
         </disabledValue>
+    </policy>
+    <policy name="EnableSyncAdminReports" class="Machine" displayName="$(string.EnableSyncAdminReports)" explainText="$(string.EnableSyncAdminReports_help)" presentation="$(presentation.EnableSyncAdminReports_Pres)" key="SOFTWARE\Policies\Microsoft\OneDrive" valueName="EnableSyncAdminReports">
+      <parentCategory ref="OneDriveNGSC" />
+      <supportedOn ref="windows:SUPPORTED_Windows_10_0_RS3" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="EnableFeedbackAndSupport" class="Machine" displayName="$(string.EnableFeedbackAndSupport)" explainText="$(string.EnableFeedbackAndSupport_help)" presentation="$(presentation.GranularFeedbackControl_Pres)" key="SOFTWARE\Policies\Microsoft\OneDrive">
+      <parentCategory ref="OneDriveNGSC"/>
+      <supportedOn ref="windows:SUPPORTED_Windows7" />
+      <elements>
+        <boolean id="GranularFeedbackControl_SendFeedback_Checkbox" valueName="EnableSendFeedback">
+           <trueValue>
+             <decimal value="1" />
+           </trueValue>
+           <falseValue>
+             <decimal value="0" />
+           </falseValue>
+        </boolean>
+        <boolean id="GranularFeedbackControl_ReceiveSurveys_Checkbox" valueName="EnableSurveyCampaigns">
+           <trueValue>
+             <decimal value="1" />
+           </trueValue>
+           <falseValue>
+             <decimal value="0" />
+           </falseValue>
+        </boolean>
+        <boolean id="GranularFeedbackControl_ContactSupport_Checkbox" valueName="EnableContactSupport">
+           <trueValue>
+             <decimal value="1" />
+           </trueValue>
+           <falseValue>
+             <decimal value="0" />
+           </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <policy name="DisableListSync" class="Machine" displayName="$(string.DisableListSync)" explainText="$(string.DisableListSync_help)" key="SOFTWARE\Policies\Microsoft\OneDrive" valueName="DisableNucleusSync">
+      <parentCategory ref="NucleusListSync" />
+      <supportedOn ref="windows:SUPPORTED_Windows7" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="BlockExternalListSync" class="Machine" displayName="$(string.BlockExternalListSync)" explainText="$(string.BlockExternalListSync_help)" key="SOFTWARE\Policies\Microsoft\OneDrive" valueName="BlockExternalListSync">
+      <parentCategory ref="NucleusListSync" />
+      <supportedOn ref="windows:SUPPORTED_Windows7" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="DisableListSyncSilentConfig" class="Machine" displayName="$(string.DisableNucleusSilentConfig)" explainText="$(string.DisableNucleusSilentConfig_help)" key="SOFTWARE\Policies\Microsoft\OneDrive" valueName="DisableNucleusSilentConfig">
+      <parentCategory ref="NucleusListSync" />
+      <supportedOn ref="windows:SUPPORTED_Windows7" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="DisableOfflineMode" class="Machine" displayName="$(string.DisableOfflineMode)" explainText="$(string.DisableOfflineMode_help)" key="SOFTWARE\Policies\Microsoft\OneDrive" valueName="DisableOfflineMode">
+      <parentCategory ref="OneDriveNGSC" />
+      <supportedOn ref="windows:SUPPORTED_Windows7" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="DisableOfflineModeForExternalLibraries" class="Machine" displayName="$(string.DisableOfflineModeForExternalLibraries)" explainText="$(string.DisableOfflineModeForExternalLibraries_help)" key="SOFTWARE\Policies\Microsoft\OneDrive" valueName="DisableOfflineModeForExternalLibraries">
+      <parentCategory ref="OneDriveNGSC" />
+      <supportedOn ref="windows:SUPPORTED_Windows7" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="DisableAutoConfig" class="Machine" displayName="$(string.DisableAutoConfig)" explainText="$(string.DisableAutoConfig_help)"  presentation="$(presentation.DisableAutoConfig_Pres)"  key="SOFTWARE\Policies\Microsoft\OneDrive">
+      <parentCategory ref="OneDriveNGSC" />
+      <supportedOn ref="windows:SUPPORTED_Windows_10_0_RS3" />
+      <elements>
+        <decimal id="DisableAutoConfigTypes" valueName="DisableAutoConfig" minValue="0" maxValue="128"  />
+      </elements>
+    </policy>
+    <policy name="DisableNewAccountDetection" class="Machine" displayName="$(string.DisableNewAccountDetection)" explainText="$(string.DisableNewAccountDetection_help)" key="SOFTWARE\Policies\Microsoft\OneDrive" valueName="DisableNewAccountDetection">
+      <parentCategory ref="OneDriveNGSC" />
+      <supportedOn ref="windows:SUPPORTED_Windows_10_0_RS3" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="AddedFolderHardDeleteOnUnmount" class="Machine" displayName="$(string.AddedFolderHardDeleteOnUnmount)" explainText="$(string.AddedFolderHardDeleteOnUnmount_help)" key="SOFTWARE\Policies\Microsoft\OneDrive" valueName="AddedFolderHardDeleteOnUnmount">
+      <parentCategory ref="OneDriveNGSC" />
+      <supportedOn ref="windows:SUPPORTED_Windows_10_0_TH1" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="AddedFolderUnmountOnPermissionsLoss" class="Machine" displayName="$(string.AddedFolderUnmountOnPermissionsLoss)" explainText="$(string.AddedFolderUnmountOnPermissionsLoss_help)" key="SOFTWARE\Policies\Microsoft\OneDrive" valueName="AddedFolderUnmountOnPermissionsLoss">
+      <parentCategory ref="OneDriveNGSC" />
+      <supportedOn ref="windows:SUPPORTED_Windows_10_0_TH1" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="SharedContentDeleteConfirmation" class="Machine" displayName="$(string.SharedContentDeleteConfirmation)" explainText="$(string.SharedContentDeleteConfirmation_help)" key="SOFTWARE\Policies\Microsoft\OneDrive" valueName="SharedContentDeleteConfirmation">
+      <parentCategory ref="OneDriveNGSC" />
+      <supportedOn ref="windows:SUPPORTED_Windows_10_0_TH1" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
     </policy>
   </policies>
 </policyDefinitions>
