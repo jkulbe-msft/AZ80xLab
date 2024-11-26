@@ -58,7 +58,7 @@ The environment in this guide has the below configurations. This section is inte
 1. Azure Virtual Network Information.
     + VNet High Level Configuration.
         + Name: Nested-Fun
-        + Address Space: 10.0.0.0/22
+        + Address Space: 10.0.0.0/21
         + Note: This will be made up of four Subnets. Also, these ranges are not set in stone. Feel free to address your environment however you want.
 
     + First Subnet High Level Configuration.
