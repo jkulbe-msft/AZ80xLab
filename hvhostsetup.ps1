@@ -184,7 +184,7 @@ Invoke-LabCommand -ActivityName "second admin permissions" -ComputerName DC1 -Sc
 Copy-LabFileItem -Path $PSScriptRoot\PolicyDefinitions -ComputerName DC1 -DestinationFolderPath C:\Windows\Sysvol\domain\Policies
 Copy-LabFileItem -Path $PSScriptRoot\SecurityBaselineGPO -ComputerName DC1 -DestinationFolderPath C:\Lab
 Invoke-LabCommand -ActivityName "GPO import" -ComputerName DC1 -ScriptBlock { C:\Lab\SecurityBaselineGPO\import-baselinegpo.ps1 }
-Invoke-LabCommand -ActivityName "resgister AD Schema extension" -ComputerName ADM1 -ScriptBlock { regsvr32 /s schmmgmt.dll }
+Invoke-LabCommand -ActivityName "register AD Schema extension" -ComputerName ADM1 -ScriptBlock { regsvr32 /s schmmgmt.dll }
 # Authentication Silo
 # TODO add GPO to enable Kerberos armoring
 Invoke-LabCommand -ActivityName "Authentication Silo" -ComputerName DC1 -ScriptBlock {  
