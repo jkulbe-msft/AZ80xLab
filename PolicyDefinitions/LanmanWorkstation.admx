@@ -374,5 +374,22 @@
         <decimal value="0" />
       </disabledValue>
     </policy>
+    <policy
+        class="Machine"
+        displayName="$(string.Pol_DisabledSMBQUICServerExceptionList_Name)"
+        explainText="$(string.Pol_DisabledSMBQUICServerExceptionList_Help)"
+        key="Software\Policies\Microsoft\Windows\LanmanWorkstation"
+        name="Pol_DisabledSMBQUICServerExceptionList"
+        presentation="$(presentation.Pol_DisabledSMBQUICServerExceptionList)"
+        >
+      <parentCategory ref="Cat_LanmanWorkstation"/>
+      <supportedOn ref="SUPPORTED_Windows_Server_2025_Windows_11_0" />
+      <elements>
+        <multiText
+            id="MultiText_DisabledSMBQUICServerExceptionList"
+            valueName="DisabledSMBQUICServerExceptionList"
+            />
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>

@@ -103,9 +103,9 @@ If you enable this policy setting, the SMB client won't use NTLM for remote conn
 If you disable or do not configure this policy setting, the SMB client can still use NTLM.
       </string>
       <string id="Pol_BlockNTLMServerExceptionList_Name">Block NTLM Server Exception List</string>
-      <string id="Pol_BlockNTLMServerExceptionList_Help">This policy setting determines if NTLM could be used to access to specified servers.
+      <string id="Pol_BlockNTLMServerExceptionList_Help">This policy setting determines if NTLM can be used to access specified servers.
 
-If you enable this policy setting (vaild only if the Block NTLM (LM, NTLM, NTLMv2) policy is enabled), NTLM could be used to access servers specified. Please enter the desired servers (DNS name, IP address or NetBIOS name) in the edit box, one server name per line.
+If you enable this policy setting (valid only if NTLM (LM, NTLM, NTLMv2) is blocked), NTLM can be used to access servers specified. Please enter the desired servers (DNS name, IP address or NetBIOS name) in the edit box, one server name per line.
 
 If you disable or do not configure this policy setting, the NTLM access to servers will be determined by other settings.
       </string>
@@ -181,6 +181,13 @@ Note: This policy does not require a Windows reboot to take effect.
 If you disable this policy setting, the SMB client will not allow initiating connections over QUIC. In this case, if the user attempts to connect over QUIC, SMB client will attempt to connect over TCP.
 
 If you do not configure this policy setting, the SMB client may allow initiating connections over QUIC.
+      </string>
+      <string id="Pol_DisabledSMBQUICServerExceptionList_Name">Disabled SMB over QUIC Server Exception List</string>
+      <string id="Pol_DisabledSMBQUICServerExceptionList_Help">This policy setting specifies the servers the SMB client can connect to over QUIC.
+
+If you enable this policy setting (valid only if SMB over QUIC is disabled), the SMB client can connect to the specified servers over QUIC. Please enter the desired servers (DNS name, IP address or NetBIOS name) in the edit box, one server name per line.
+
+If you disable or do not configure this policy setting, the SMB client's ability to connect to servers over QUIC will be determined by other settings.
     </string>
     </stringTable>
     <presentationTable>
@@ -203,6 +210,10 @@ If you do not configure this policy setting, the SMB client may allow initiating
       <presentation id="Pol_AlternativePortMappings">
         <text>Alternative Port Registry Mappings:</text>
         <multiTextBox refId="MultiText_AlternativePortMappings"/>
+      </presentation>
+      <presentation id="Pol_DisabledSMBQUICServerExceptionList">
+        <text>Disabled SMB over QUIC Server Exception List:</text>
+        <multiTextBox refId="MultiText_DisabledSMBQUICServerExceptionList"/>
       </presentation>
     </presentationTable>
   </resources>

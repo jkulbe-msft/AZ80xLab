@@ -478,7 +478,7 @@ If you enable this setting, the computer will operate in Windows protected print
 
 If you disable this setting or do not configure it, there are not any restrictions on the print drivers that can be installed or print functionality.
 
-For more information, please see [insert link to web page with WPP info]
+For more information, please see https://learn.microsoft.com/en-us/windows-hardware/drivers/print/windows-protected-print-mode
       </string>
     </stringTable>
     <presentationTable>

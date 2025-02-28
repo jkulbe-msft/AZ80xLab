@@ -437,6 +437,15 @@ If an app is open when this Group Policy object is applied on a device, employee
         <text>Force deny these specific apps (use Package Family Names):</text>
         <multiTextBox refId="LetAppsAccessEmail_ForceDenyTheseApps_List"/>
       </presentation>
+      <presentation id="LetAppsAccessWindowsIntelligence">
+        <dropdownList refId="LetAppsAccessWindowsIntelligence_Enum" noSort="true" defaultItem="0">Default for all apps:</dropdownList>
+        <text>Put user in control of these specific apps (use Package Family Names):</text>
+        <multiTextBox refId="LetAppsAccessWindowsIntelligence_UserInControlOfTheseApps_List"/>
+        <text>Force allow these specific apps (use Package Family Names):</text>
+        <multiTextBox refId="LetAppsAccessWindowsIntelligence_ForceAllowTheseApps_List"/>
+        <text>Force deny these specific apps (use Package Family Names):</text>
+        <multiTextBox refId="LetAppsAccessWindowsIntelligence_ForceDenyTheseApps_List"/>
+      </presentation>
       <presentation id="LetAppsAccessGraphicsCaptureProgrammatic">
         <dropdownList refId="LetAppsAccessGraphicsCaptureProgrammatic_Enum" noSort="true" defaultItem="0">Default for all apps:</dropdownList>
         <text>Put user in control of these specific apps (use Package Family Names):</text>
